@@ -1,6 +1,6 @@
 # Learning Go
 
-## Becoming a Go Developer
+## Professional Go Developer
 
 - Learn the basics
 - Build a REST API
@@ -10,5 +10,3 @@
 - Performance
 - Testing
 - Frontend Apps with Gin Framework
-
-
