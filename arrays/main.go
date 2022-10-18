@@ -45,6 +45,7 @@ func arrayDeclaration() {
 		fmt.Printf("%d\n", v)
 	}
 
+	// the elements of a new array variable are initially set to zero value for the element type
 	var q [3]int = [3]int{1, 2, 3}
 	var r [3]int = [3]int{1, 2}
 	fmt.Println(q[0])
