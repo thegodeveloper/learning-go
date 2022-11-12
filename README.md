@@ -1,5 +1,7 @@
 # Learning Go
 
+I'm learning Go, I want to master this programming language, build my own tools using Go.
+
 ## Professional Go Developer
 
 - Learn the basics
@@ -13,13 +15,16 @@
 - Learn Hugo
 - Deploy applications to Google Cloud Run
 
-## Golang Path
+## Books to read
 
-- The way to Go
 - The Go Programming Language
-- Let's Go Further
-- Let's Go
+- Network Programming with Go
+- Go for DevOps
+- Building Distributed Applications in Gin
 - Building Distributed Application in Gin
-- Mastering Go
-- Learning Go
 - Build Systems with Go
+- Learning Go
+- Concurrency in Go
+- Distributed Services with Go
+- Mastering Go
+- Let's Go Further
