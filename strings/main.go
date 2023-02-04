@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	extractingSingleValue()
+	toBeAwareInStrings()
 }
 
 func extractingSingleValue() {
@@ -19,4 +20,12 @@ func extractingSingleValue() {
 	fmt.Println("s2:", s2)
 	fmt.Println("s3:", s3)
 	fmt.Println("s4:", s4)
+}
+
+func toBeAwareInStrings() {
+	fmt.Println("--- to be aware of working with strings ---")
+	s := "Hello ★"
+	fmt.Println("s:", s)
+	fmt.Println("s lenght:", len(s))
+	fmt.Println("the ★ occupies 3 bytes")
 }
