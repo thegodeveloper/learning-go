@@ -1,6 +1,6 @@
 # Learning Go
 
-I'm learning Go, I want to master this programming language, build my own tools using Go.
+Mastering Golang.
 
 ## Professional Go Developer
 
@@ -17,14 +17,14 @@ I'm learning Go, I want to master this programming language, build my own tools 
 
 ## Books to read
 
-- The Go Programming Language
-- Network Programming with Go
-- Go for DevOps
-- Building Distributed Applications in Gin
-- Building Distributed Application in Gin
-- Build Systems with Go
 - Learning Go
+- The Go Programming Language
 - Concurrency in Go
 - Distributed Services with Go
+- Network Programming with Go
+- Go for DevOps
+- 100 Go Mistakes
+- Building Distributed Applications in Gin
+- Build Systems with Go
 - Mastering Go
 - Let's Go Further
