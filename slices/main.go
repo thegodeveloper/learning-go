@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	// this is a string array of 5 elements
 	a := [5]string{"a", "b", "c", "d", "e"}
 
 	fmt.Println(a)
@@ -20,10 +21,13 @@ func main() {
 	copyArrayToSlice()
 	copySlice()
 	copyingSliceToArray()
+	sliceWithSpecificValuesPerIndex()
+	sliceAppend()
 }
 
 func slicingSlices() {
 	fmt.Println("--- slicing slices ---")
+	// this is a slice
 	x := []int{1, 2, 3, 4}
 	y := x[:2]
 	z := x[1:2]
@@ -50,6 +54,21 @@ func slicesShareMemory() {
 	fmt.Println("x:", x)
 	fmt.Println("y:", y)
 	fmt.Println("z:", z)
+}
+
+func sliceAppend() {
+	var x []int
+	fmt.Println("Initial Slice Length:", len(x))
+	fmt.Println("Initial Slice Capacity:", cap(x))
+	x = append(x, 10)
+	fmt.Println("Slice Append, value of x:", x)
+	fmt.Println("Slice Length:", len(x))
+	fmt.Println("Slice Capacity:", cap(x))
+	x = append(x, 20)
+	fmt.Println("Slice Capacity:", cap(x))
+	x = []int{10, 20, 30}
+	fmt.Println("Current x values:", x)
+	fmt.Println("New slice capacity:", cap(x))
 }
 
 func appendOverlappingSlices() {
@@ -106,4 +125,11 @@ func copyingSliceToArray() {
 	fmt.Println("y:", y)
 	copy(d[:], x) // copying slice to array
 	fmt.Println("d:", d)
+}
+
+func sliceWithSpecificValuesPerIndex() {
+	// this creates a slice of 12 ints
+	x := []int{1, 5: 6, 10: 100, 15}
+	println("--- slice with specific values per index ---")
+	println("x values: ", x)
 }
