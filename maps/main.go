@@ -49,6 +49,10 @@ func main() {
 	fmt.Println()
 
 	mapsDeclarations()
+
+	commaOkIdiomInMaps()
+
+	deletingFromMaps()
 }
 
 func mapsDeclarations() {
@@ -82,4 +86,31 @@ func mapsDeclarations() {
 	ages := make(map[int][]string, 10)
 	fmt.Println("ages:", ages)
 	fmt.Println("ages length:", len(ages))
+}
+
+func commaOkIdiomInMaps() {
+	fmt.Println("--- Comma OK Idiom in Maps")
+	m := map[string]int{
+		"hello": 7,
+		"world": 7,
+	}
+	v, ok := m["hello"]
+	fmt.Println(v, ok)
+
+	v, ok = m["world"]
+	fmt.Println(v, ok)
+
+	v, ok = m["goodbye"]
+	fmt.Println(v, ok) // if the key doesn't exist in the map, it returns false and assign the zero value to v
+}
+
+func deletingFromMaps() {
+	fmt.Println("--- Deleting From Maps ---")
+	m := map[string]int{
+		"hello": 7,
+		"world": 7,
+	}
+	fmt.Println("Original m value:", m)
+	delete(m, "world")
+	fmt.Println("New m value after removing a key", m)
 }
