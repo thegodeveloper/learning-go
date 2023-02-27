@@ -33,4 +33,6 @@ func main() {
 	forContinue()
 
 	forRange()
+
+	forRangeMaps()
 }
