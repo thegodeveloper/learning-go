@@ -31,4 +31,6 @@ func main() {
 	}
 
 	forContinue()
+
+	forRange()
 }
