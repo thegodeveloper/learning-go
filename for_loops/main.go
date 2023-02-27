@@ -17,7 +17,7 @@ func main() {
 	fmt.Println()
 
 	for {
-		if x % 2 != 0 {
+		if x%2 != 0 {
 			fmt.Printf("%d is odd\n", x)
 			x++
 			continue
@@ -30,4 +30,5 @@ func main() {
 		break
 	}
 
+	forContinue()
 }
