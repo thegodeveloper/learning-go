@@ -24,10 +24,12 @@ func main() {
 		fmt.Println("Humans usually have no more than five fingers")
 	}
 
+	switchStatement()
 	switchWithConditions()
 }
 
 func switchWithConditions() {
+	fmt.Println("--- Switch Conditions ---")
 	rand.Seed(time.Now().UnixNano())
 	x := rand.Float32()
 
