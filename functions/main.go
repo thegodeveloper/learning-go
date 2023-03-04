@@ -76,4 +76,7 @@ func main() {
 	for i := 0; i < 3; i++ {
 		fmt.Println(twoBase(i), threeBase(i))
 	}
+
+	fmt.Println("--- print file content ---")
+	printFileContent("books.txt")
 }
