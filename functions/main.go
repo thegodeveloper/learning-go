@@ -35,28 +35,21 @@ func accumulator(increment int) func() int {
 }
 
 func main() {
-	res := sum(7, 7)
-	fmt.Println(res)
+	fmt.Println("--- simulating named and optional parameters ---")
+	simulatingNamedOptionalParams(MyFuncOpts{
+		LastName: "Patel",
+		Age:      50,
+	})
+	simulatingNamedOptionalParams(MyFuncOpts{
+		FirstName: "Joe",
+		LastName:  "Smith",
+	})
 
-	sum, subs := ops(7, 7)
-	fmt.Println("7 + 7 = ", sum, "7 - 7 =", subs)
-	b, _ := ops(7, 7)
-	fmt.Println("7 + 7=", b)
-
-	// calling sum variadic number
-	total := sumVariadic(1, 2, 3, 4, 5, 6, 7)
-	fmt.Println("the first five numbers sum is", total)
-
-	c := doit(sum, 7, 7)
-	fmt.Println("7 + 7=", c)
-	d := doit(multiply, 7, 7)
-	fmt.Println("2 * 3 =", d)
-
-	a := accumulator(1)
-	b := accumulator(2)
-
-	fmt.Println("a", "b")
-	for i:= 0; i < 5; i++ {
-		fmt.Println(a(), b(()))
-	}
+	fmt.Println("--- using a variadic function ---")
+	fmt.Println(addTo(3))
+	fmt.Println(addTo(3, 2))
+	fmt.Println(addTo(3, 5, 7, 11, 13, 17))
+	a := []int{4, 3}
+	fmt.Println(addTo(7, a...))
+	fmt.Println(addTo(7, []int{1, 3, 5, 7, 11, 13, 17}...))
 }
