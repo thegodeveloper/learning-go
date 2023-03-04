@@ -69,4 +69,11 @@ func main() {
 	fmt.Printf("result: %d, remainder: %d\n", result, remainder)
 
 	sortSlice()
+
+	fmt.Println("--- return a function ---")
+	twoBase := makeMult(2)
+	threeBase := makeMult(3)
+	for i := 0; i < 3; i++ {
+		fmt.Println(twoBase(i), threeBase(i))
+	}
 }
