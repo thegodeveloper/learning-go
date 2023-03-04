@@ -6,12 +6,22 @@ import (
 	"os"
 )
 
+func getFile(name string) (*os.File, func(), error) {
+	file, err := os.Open(name)
+	if err != nil {
+		return nil, nil, err
+	}
+	return file, func() {
+		file.Close()
+	}, nil
+}
+
 func printFileContent(fileName string) {
-	f, err := os.Open(fileName)
+	f, closer, err := getFile(fileName)
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer f.Close()
+	defer closer()
 
 	data := make([]byte, 2048)
 	for {
