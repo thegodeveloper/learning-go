@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 // pointers in Go are types that store the address of the value, not the value.
+// A pointer is simply a variable whose contents are the address where another variable is stored.
 
 // you cannot store int in intPtr, you can only store the address of int
 var intPtr *int
