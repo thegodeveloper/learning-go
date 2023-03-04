@@ -26,6 +26,7 @@ func main() {
 
 	switchStatement()
 	switchWithConditions()
+	ifElseWithSwitch()
 }
 
 func switchWithConditions() {
