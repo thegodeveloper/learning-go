@@ -35,4 +35,5 @@ func main() {
 	forRangeMaps()
 	forString()
 	forWithLabels()
+	forBreakFromSwitch()
 }
