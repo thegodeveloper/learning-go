@@ -52,4 +52,12 @@ func main() {
 	a := []int{4, 3}
 	fmt.Println(addTo(7, a...))
 	fmt.Println(addTo(7, []int{1, 3, 5, 7, 11, 13, 17}...))
+
+	// Returning multiple values
+	result, remainder, err := divAndRemainder(7, 7)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	fmt.Printf("result: %d, remainder: %d", result, remainder)
 }
