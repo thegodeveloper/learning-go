@@ -60,4 +60,13 @@ func main() {
 		return
 	}
 	fmt.Printf("result: %d, remainder: %d", result, remainder)
+
+	result, remainder, err = divAndRemainderNamed(7, 7)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	fmt.Printf("result: %d, remainder: %d\n", result, remainder)
+
+	sortSlice()
 }
