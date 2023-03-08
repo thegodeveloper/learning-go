@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
 	// this is a string array of 5 elements
@@ -24,6 +27,10 @@ func main() {
 	sliceWithSpecificValuesPerIndex()
 	sliceAppend()
 	sliceWithMake()
+	err := slicesAsBuffers("books.txt")
+	if err != nil {
+		fmt.Println(err)
+	}
 }
 
 func slicingSlices() {
@@ -145,4 +152,24 @@ func sliceWithMake() {
 	fmt.Println("y values:", y)
 	fmt.Println("y length:", len(y))
 	fmt.Println("y capacity:", cap(y))
+}
+
+func slicesAsBuffers(fileName string) error {
+	f, err := os.Open(fileName)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+
+	data := make([]byte, 100)
+	for {
+		count, err := f.Read(data)
+		if err != nil {
+			return err
+		}
+		if count == 0 {
+			return nil
+		}
+		fmt.Printf("Data: %v\n", data[:count])
+	}
 }
