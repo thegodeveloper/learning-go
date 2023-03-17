@@ -1,16 +1,17 @@
 package main
 
 import (
+	"context"
 	"flag"
 	"fmt"
-	metav1 "k8s.io/apimachinery/api/apis/meta/v1"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/clientcmd"
 	"log"
 )
 
 func main() {
-	kubeconfig := flag.String("kubeconfig", "~/.kube/config", "kubeconfig file")
+	kubeconfig := flag.String("kubeconfig", "/home/william/.kube/config", "kubeconfig file location")
 	flag.Parse()
 	config, err := clientcmd.BuildConfigFromFlags("", *kubeconfig)
 	if err != nil {
@@ -21,10 +22,12 @@ func main() {
 		log.Fatal(err)
 	}
 
-	pod, err := clientset.CoreV1().Pods("book").Get("example", metav1.GetOptions{})
+	pods, err := clientset.CoreV1().Pods("default").List(context.Background(), metav1.ListOptions{})
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("value of pod: %v\n", pod)
+	for _, pod := range pods.Items {
+		fmt.Printf("%s\n", pod.Name)
+	}
 }
