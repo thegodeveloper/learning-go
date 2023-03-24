@@ -46,9 +46,11 @@ func LoginAndGetData(uid, pwd, file string) ([]byte, error) {
 }
 
 func login(uid, pwd string) error {
+	fmt.Printf("uid: %s, pwd: %s", uid, pwd)
 	return nil
 }
 
 func getData(file string) ([]byte, error) {
+	fmt.Printf("file: %s", file)
 	return nil, nil
 }
