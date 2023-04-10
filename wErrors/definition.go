@@ -10,5 +10,8 @@ func Master(show bool) {
 
 		fmt.Println("-- Returning errors")
 		basics()
+
+		fmt.Println("-- Simple Errors")
+		simpleErrors()
 	}
 }
