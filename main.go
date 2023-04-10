@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"github.com/williammunozr/learning-go/wErrors"
+)
 
 func main() {
-	fmt.Println("--- Learning Go ---")
+	// Errors
+	wErrors.Master(true)
 }
