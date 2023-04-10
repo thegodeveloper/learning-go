@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-var Musketeers = []string {
+var Musketeers = []string{
 	"Athos", "Porthos", "Aramis", "D'Artagnan",
 }
 
