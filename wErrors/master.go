@@ -13,5 +13,8 @@ func Master(show bool) {
 
 		fmt.Println("-- Simple Errors")
 		simpleErrors()
+
+		fmt.Println("-- Sentinel Errors")
+		sentinelErrors()
 	}
 }

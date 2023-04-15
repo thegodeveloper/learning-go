@@ -1,10 +1,14 @@
 package main
 
 import (
+	"github.com/williammunozr/learning-go/wArrays"
 	"github.com/williammunozr/learning-go/wErrors"
 )
 
 func main() {
 	// Errors
-	wErrors.Master(true)
+	wErrors.Master(false)
+
+	// Arrays
+	wArrays.Master(false)
 }
