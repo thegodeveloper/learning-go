@@ -16,5 +16,14 @@ func Master(show bool) {
 
 		fmt.Println("-- Sentinel Errors")
 		sentinelErrors()
+
+		fmt.Println("-- Errors are Values")
+		_, err := LoginAndGetData("bill", "xyz", "mozart")
+		if err != nil {
+			fmt.Println("Error:", err)
+		}
+
+		fmt.Println("-- Wrapping Errors")
+		wrappingErrors()
 	}
 }

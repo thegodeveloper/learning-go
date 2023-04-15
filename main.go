@@ -7,7 +7,7 @@ import (
 
 func main() {
 	// Errors
-	wErrors.Master(false)
+	wErrors.Master(true)
 
 	// Arrays
 	wArrays.Master(false)
