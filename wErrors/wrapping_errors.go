@@ -27,3 +27,12 @@ func wrappingErrors() {
 		}
 	}
 }
+
+func errorsIs() {
+	err := fileChecker("not_here.txt")
+	if err != nil {
+		if errors.Is(err, os.ErrNotExist) {
+			fmt.Println("That file doesn't exist")
+		}
+	}
+}

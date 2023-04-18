@@ -26,6 +26,13 @@ func (se StatusErr) Unwrap() error {
 	return se.Err
 }
 
+func UseLoginAndGetData() {
+	_, err := LoginAndGetData("bill", "xyz", "mozart")
+	if err != nil {
+		fmt.Println("Error:", err)
+	}
+}
+
 func LoginAndGetData(uid, pwd, file string) ([]byte, error) {
 	err := login(uid, pwd)
 	if err != nil {

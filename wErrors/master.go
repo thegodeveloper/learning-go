@@ -18,12 +18,12 @@ func Master(show bool) {
 		sentinelErrors()
 
 		fmt.Println("-- Errors are Values")
-		_, err := LoginAndGetData("bill", "xyz", "mozart")
-		if err != nil {
-			fmt.Println("Error:", err)
-		}
+		UseLoginAndGetData()
 
 		fmt.Println("-- Wrapping Errors")
 		wrappingErrors()
+
+		fmt.Println("-- Errors Is")
+		errorsIs()
 	}
 }
