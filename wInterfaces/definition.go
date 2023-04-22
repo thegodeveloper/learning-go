@@ -6,16 +6,16 @@ type Stringer interface {
 	String() string
 }
 
-type Person struct {
+type Persona struct {
 	First, Last string
 }
 
-func (p Person) String() string {
+func (p Persona) String() string {
 	return fmt.Sprintf("%s %s", p.First, p.Last)
 }
 
 func definition() {
-	p := Person{
+	p := Persona{
 		First: "Will",
 		Last:  "MR",
 	}

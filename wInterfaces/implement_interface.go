@@ -1,4 +1,4 @@
-package main
+package wIntefaces
 
 import "fmt"
 
@@ -18,7 +18,7 @@ func isAPerson(h Person) {
 	fmt.Println(h.greet())
 }
 
-func main() {
+func implementInterface() {
 	var a = Human{
 		Name: "Will",
 	}

@@ -12,5 +12,8 @@ func Master(show bool) {
 
 		fmt.Println("-- Empty Interfaces")
 		emptyInterface()
+
+		fmt.Println("-- Implement Interface")
+		implementInterface()
 	}
 }
