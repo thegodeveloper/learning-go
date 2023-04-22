@@ -6,5 +6,8 @@ func Master(show bool) {
 	if show {
 		fmt.Println("-- Interface Definition")
 		definition()
+
+		fmt.Println("-- Zero Value Interfaces")
+		zerovalue()
 	}
 }

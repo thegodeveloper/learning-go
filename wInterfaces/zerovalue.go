@@ -1,10 +1,10 @@
-package main
+package wIntefaces
 
 import "fmt"
 
 type zeroValue interface{}
 
-func main() {
+func zerovalue() {
 	var a zeroValue
 
 	fmt.Println(a) // <nil>
