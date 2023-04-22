@@ -4,6 +4,7 @@ import (
 	"github.com/williammunozr/learning-go/wArrays"
 	"github.com/williammunozr/learning-go/wErrors"
 	"github.com/williammunozr/learning-go/wInterfaces"
+	"github.com/williammunozr/learning-go/wRand"
 )
 
 func main() {
@@ -14,5 +15,8 @@ func main() {
 	wArrays.Master(false)
 
 	// Interfaces
-	wIntefaces.Master(true)
+	wIntefaces.Master(false)
+
+	// Random Values
+	wRand.Master(true)
 }
