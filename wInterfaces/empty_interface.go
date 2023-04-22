@@ -1,8 +1,8 @@
-package main
+package wIntefaces
 
 import "fmt"
 
-func main() {
+func emptyInterface() {
 	// empty interface
 	// a way to say that a variable could store a value of any type
 	var i interface{}

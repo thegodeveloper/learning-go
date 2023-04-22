@@ -9,5 +9,8 @@ func Master(show bool) {
 
 		fmt.Println("-- Zero Value Interfaces")
 		zerovalue()
+
+		fmt.Println("-- Empty Interfaces")
+		emptyInterface()
 	}
 }
