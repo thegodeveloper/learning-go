@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/williammunozr/learning-go/wAdapter"
 	"github.com/williammunozr/learning-go/wArrays"
 	"github.com/williammunozr/learning-go/wErrors"
 	"github.com/williammunozr/learning-go/wExternalPackages"
@@ -26,5 +27,8 @@ func main() {
 	wPackages.Master(false)
 
 	// External Packages
-	wExternalPackages.Master(true)
+	wExternalPackages.Master(false)
+
+	// Adapter Pattern
+	wAdapter.Master(true)
 }
