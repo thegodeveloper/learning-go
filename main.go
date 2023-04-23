@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/williammunozr/learning-go/channels"
 	"github.com/williammunozr/learning-go/wAdapter"
 	"github.com/williammunozr/learning-go/wArrays"
 	"github.com/williammunozr/learning-go/wErrors"
@@ -30,5 +31,8 @@ func main() {
 	wExternalPackages.Master(false)
 
 	// Adapter Pattern
-	wAdapter.Master(true)
+	wAdapter.Master(false)
+
+	// Channels
+	channels.Master(true)
 }
