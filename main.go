@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/williammunozr/learning-go/channels"
+	"github.com/williammunozr/learning-go/goroutines"
 	"github.com/williammunozr/learning-go/wAdapter"
 	"github.com/williammunozr/learning-go/wArrays"
 	"github.com/williammunozr/learning-go/wErrors"
@@ -34,5 +35,8 @@ func main() {
 	wAdapter.Master(false)
 
 	// Channels
-	channels.Master(true)
+	channels.Master(false)
+
+	// Goroutines
+	goroutines.Master(false)
 }
