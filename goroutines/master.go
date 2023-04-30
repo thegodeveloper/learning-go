@@ -1,18 +1,36 @@
 package goroutines
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
 
 func Master(show bool) {
 	if show {
 		fmt.Println("-- Goroutines")
-		cancelFunctionToTerminateGoroutine()
+
+		implementCountTo()
+		implementCancelFunctionTerminateGoroutine()
+		implementBackpressure()
 	}
 }
 
-func cancelFunctionToTerminateGoroutine() {
+func implementCountTo() {
 	for i := range countTo(7) {
 		fmt.Println(i)
 	}
+}
+
+func implementCancelFunctionTerminateGoroutine() {
+	fmt.Println("-- Implement Cancel Function Terminate Goroutine")
+	ch, cancel := countTo2(7)
+	for i := range ch {
+		if i > 3 {
+			break
+		}
+		fmt.Println(i)
+	}
+	cancel()
 }
 
 // Don't do this in a real program
@@ -26,4 +44,18 @@ func countTo(max int) <-chan int {
 		close(ch)
 	}()
 	return ch
+}
+
+func implementBackpressure() {
+	pg := New(10)
+	http.HandleFunc("/request", func(w http.ResponseWriter, r *http.Request) {
+		err := pg.Process(func() {
+			w.Write([]byte(doThingThatShouldBeLimited()))
+		})
+		if err != nil {
+			w.WriteHeader(http.StatusTooManyRequests)
+			w.Write([]byte("Too many requests"))
+		}
+	})
+	http.ListenAndServe(":8080", nil)
 }
