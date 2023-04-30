@@ -10,21 +10,20 @@ func Master(show bool) {
 }
 
 func cancelFunctionToTerminateGoroutine() {
-
+	for i := range countTo(7) {
+		fmt.Println(i)
+	}
 }
 
-func countTo(max int) (<-chan int, func()) {
+// Don't do this in a real program
+// This violates one of our "when to use concurrency" guidelines
+func countTo(max int) <-chan int {
 	ch := make(chan int)
-	done := make(chan struct{})
-	cancel := func() {
-		close(done)
-	}
 	go func() {
 		for i := 0; i < max; i++ {
-			select {
-			case <-done:
-				retunr
-			}
+			ch <- i
 		}
-	}
+		close(ch)
+	}()
+	return ch
 }

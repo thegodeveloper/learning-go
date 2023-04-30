@@ -38,5 +38,5 @@ func main() {
 	channels.Master(false)
 
 	// Goroutines
-	goroutines.Master(false)
+	goroutines.Master(true)
 }
