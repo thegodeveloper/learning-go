@@ -5,6 +5,7 @@ import (
 	"github.com/williammunozr/learning-go/goroutines"
 	"github.com/williammunozr/learning-go/wAdapter"
 	"github.com/williammunozr/learning-go/wArrays"
+	"github.com/williammunozr/learning-go/wConcurrency"
 	"github.com/williammunozr/learning-go/wErrors"
 	"github.com/williammunozr/learning-go/wExternalPackages"
 	"github.com/williammunozr/learning-go/wInterfaces"
@@ -38,5 +39,8 @@ func main() {
 	channels.Master(false)
 
 	// Goroutines
-	goroutines.Master(true)
+	goroutines.Master(false)
+
+	// Concurrency
+	wConcurrency.Master(true)
 }
