@@ -2,6 +2,8 @@ package wArrays
 
 import "fmt"
 
+type Currency int
+
 const (
 	USD Currency = iota
 	EUR
