@@ -18,7 +18,7 @@ func main() {
 	wErrors.Master(false)
 
 	// Arrays
-	wArrays.Master(false)
+	wArrays.Master(true)
 
 	// Interfaces
 	wIntefaces.Master(false)
@@ -42,5 +42,5 @@ func main() {
 	goroutines.Master(false)
 
 	// Concurrency
-	wConcurrency.Master(true)
+	wConcurrency.Master(false)
 }
