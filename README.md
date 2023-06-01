@@ -15,7 +15,7 @@ Mastering Golang.
 - Learn Hugo
 - Deploy applications to Google Cloud Run
 
-## Books to read
+## Books
 
 - The Go Programming Language
 - Learning Go
