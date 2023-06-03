@@ -11,6 +11,7 @@ import (
 	"github.com/williammunozr/learning-go/wInterfaces"
 	"github.com/williammunozr/learning-go/wPackages"
 	"github.com/williammunozr/learning-go/wRand"
+	"github.com/williammunozr/learning-go/wStructs"
 )
 
 func main() {
@@ -18,7 +19,7 @@ func main() {
 	wErrors.Master(false)
 
 	// Arrays
-	wArrays.Master(true)
+	wArrays.Master(false)
 
 	// Interfaces
 	wIntefaces.Master(false)
@@ -43,4 +44,7 @@ func main() {
 
 	// Concurrency
 	wConcurrency.Master(false)
+
+	// Structs
+	wStructs.Master(true)
 }
