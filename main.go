@@ -9,6 +9,7 @@ import (
 	"github.com/williammunozr/learning-go/wErrors"
 	"github.com/williammunozr/learning-go/wExternalPackages"
 	"github.com/williammunozr/learning-go/wInterfaces"
+	"github.com/williammunozr/learning-go/wOpenPage"
 	"github.com/williammunozr/learning-go/wPackages"
 	"github.com/williammunozr/learning-go/wRand"
 	"github.com/williammunozr/learning-go/wStructs"
@@ -46,5 +47,8 @@ func main() {
 	wConcurrency.Master(false)
 
 	// Structs
-	wStructs.Master(true)
+	wStructs.Master(false)
+
+	// Open Web Page
+	wOpenPage.Master(true)
 }
