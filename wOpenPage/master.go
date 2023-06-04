@@ -7,10 +7,12 @@ import (
 	"net/http"
 )
 
+const URL = "https://www.dolar-colombia.com/"
+
 func Master(show bool) {
 	if show {
 		fmt.Println("-- Open Web Page")
-		fmt.Println(OnPage("https://www.dolar-colombia.com/"))
+		fmt.Println(OnPage(URL))
 	}
 }
 
