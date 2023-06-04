@@ -16,8 +16,8 @@ func Master(show bool) {
 	}
 }
 
-func OnPage(link string) string {
-	res, err := http.Get(link)
+func OnPage(url string) string {
+	res, err := http.Get(url)
 	if err != nil {
 		log.Fatal(err)
 	}
