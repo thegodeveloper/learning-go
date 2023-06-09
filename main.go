@@ -50,5 +50,5 @@ func main() {
 	wStructs.Master(false)
 
 	// Open Web Page
-	wOpenPage.Master(true)
+	wOpenPage.Master(false)
 }
