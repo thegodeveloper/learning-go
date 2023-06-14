@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/williammunozr/learning-go/channels"
 	"github.com/williammunozr/learning-go/goroutines"
+	"github.com/williammunozr/learning-go/wAWSPresignedURL"
 	"github.com/williammunozr/learning-go/wAdapter"
 	"github.com/williammunozr/learning-go/wArrays"
 	"github.com/williammunozr/learning-go/wConcurrency"
@@ -51,4 +52,7 @@ func main() {
 
 	// Open Web Page
 	wOpenPage.Master(false)
+
+	// AWS Pre-signed URL
+	wAWSPresignedURL.Master(true)
 }

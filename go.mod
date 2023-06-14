@@ -3,6 +3,7 @@ module github.com/williammunozr/learning-go
 go 1.20
 
 require (
+	github.com/aws/aws-sdk-go v1.44.282
 	github.com/learning-go-book/formatter v0.0.0-20200921021027-5abc380940ae
 	github.com/shopspring/decimal v1.3.1
 	k8s.io/apimachinery v0.26.2
@@ -22,6 +23,7 @@ require (
 	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/google/gofuzz v1.1.0 // indirect
 	github.com/imdario/mergo v0.3.6 // indirect
+	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/mailru/easyjson v0.7.6 // indirect
