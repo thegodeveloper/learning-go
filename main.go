@@ -54,5 +54,5 @@ func main() {
 	wOpenPage.Master(false)
 
 	// AWS Pre-signed URL
-	wAWSPresignedURL.Master(true)
+	wAWSPresignedURL.Master(false)
 }
