@@ -10,6 +10,7 @@ import (
 	"github.com/williammunozr/learning-go/wErrors"
 	"github.com/williammunozr/learning-go/wExternalPackages"
 	"github.com/williammunozr/learning-go/wInterfaces"
+	"github.com/williammunozr/learning-go/wJSON"
 	"github.com/williammunozr/learning-go/wOpenPage"
 	"github.com/williammunozr/learning-go/wPackages"
 	"github.com/williammunozr/learning-go/wRand"
@@ -55,4 +56,7 @@ func main() {
 
 	// AWS Pre-signed URL
 	wAWSPresignedURL.Master(false)
+
+	// JSON
+	wJSON.Master(false)
 }
