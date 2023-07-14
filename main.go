@@ -15,6 +15,7 @@ import (
 	"github.com/williammunozr/learning-go/wPackages"
 	"github.com/williammunozr/learning-go/wRand"
 	"github.com/williammunozr/learning-go/wStructs"
+	"github.com/williammunozr/learning-go/wTime"
 )
 
 func main() {
@@ -59,4 +60,7 @@ func main() {
 
 	// JSON
 	wJSON.Master(false)
+
+	// Time
+	wTime.Master(false)
 }
