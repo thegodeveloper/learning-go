@@ -1,4 +1,4 @@
-module github.com/williammunozr/learning-go
+module github.com/thegodeveloper/learning-go
 
 go 1.20
 

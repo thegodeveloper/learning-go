@@ -1,21 +1,22 @@
 package main
 
 import (
-	"github.com/williammunozr/learning-go/channels"
-	"github.com/williammunozr/learning-go/goroutines"
-	"github.com/williammunozr/learning-go/wAWSPresignedURL"
-	"github.com/williammunozr/learning-go/wAdapter"
-	"github.com/williammunozr/learning-go/wArrays"
-	"github.com/williammunozr/learning-go/wConcurrency"
-	"github.com/williammunozr/learning-go/wErrors"
-	"github.com/williammunozr/learning-go/wExternalPackages"
-	"github.com/williammunozr/learning-go/wInterfaces"
-	"github.com/williammunozr/learning-go/wJSON"
-	"github.com/williammunozr/learning-go/wOpenPage"
-	"github.com/williammunozr/learning-go/wPackages"
-	"github.com/williammunozr/learning-go/wRand"
-	"github.com/williammunozr/learning-go/wStructs"
-	"github.com/williammunozr/learning-go/wTime"
+	"github.com/thegodeveloper/learning-go/channels"
+	"github.com/thegodeveloper/learning-go/goroutines"
+	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
+	"github.com/thegodeveloper/learning-go/wAdapter"
+	"github.com/thegodeveloper/learning-go/wArrays"
+	"github.com/thegodeveloper/learning-go/wConcurrency"
+	"github.com/thegodeveloper/learning-go/wErrors"
+	"github.com/thegodeveloper/learning-go/wExternalPackages"
+	"github.com/thegodeveloper/learning-go/wInterfaces"
+	"github.com/thegodeveloper/learning-go/wJSON"
+	"github.com/thegodeveloper/learning-go/wOpenPage"
+	"github.com/thegodeveloper/learning-go/wPackages"
+	"github.com/thegodeveloper/learning-go/wRand"
+	"github.com/thegodeveloper/learning-go/wStructs"
+	"github.com/thegodeveloper/learning-go/wTest"
+	"github.com/thegodeveloper/learning-go/wTime"
 )
 
 func main() {
@@ -63,4 +64,7 @@ func main() {
 
 	// Time
 	wTime.Master(false)
+
+	// Test
+	wTest.Master(false)
 }
