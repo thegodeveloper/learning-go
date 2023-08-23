@@ -19,6 +19,7 @@ Mastering Golang.
 
 - The Go Programming Language
 - Learning Go
+- The Power of Go Tools
 - Concurrency in Go
 - Distributed Services with Go
 - Network Programming with Go
@@ -29,6 +30,5 @@ Mastering Golang.
 - Mastering Go
 - Let's Go
 - Let's Go Further
-- The Power of Go Tools
 - Microservices with Go
 - Building Modern CLI Applications with Go
