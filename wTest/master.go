@@ -2,7 +2,6 @@ package wTest
 
 import (
 	"fmt"
-	"testing"
 )
 
 func Master(show bool) {
@@ -11,13 +10,6 @@ func Master(show bool) {
 	}
 }
 
-func addNumber(x, y int) int {
+func addNumbers(x, y int) int {
 	return x + y
-}
-
-func Test_addNumber(t *testing.T) {
-	result := addNumber(2, 3)
-	if result != 5 {
-		t.Error("incorrect result: expected 5, got", result)
-	}
 }
