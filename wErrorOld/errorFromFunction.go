@@ -1,4 +1,4 @@
-package main
+package wErrorOld
 
 import (
 	"errors"
@@ -6,13 +6,15 @@ import (
 	"os"
 )
 
-func main() {
-	rem, mod, err := calcRemainderAdnMod(7, 7)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(1)
+func errorFromFunction(show bool) {
+	if show {
+		rem, mod, err := calcRemainderAdnMod(7, 7)
+		if err != nil {
+			fmt.Println(err)
+			os.Exit(1)
+		}
+		fmt.Println(rem, mod)
 	}
-	fmt.Println(rem, mod)
 }
 
 func calcRemainderAdnMod(numerator, denominator int) (int, int, error) {

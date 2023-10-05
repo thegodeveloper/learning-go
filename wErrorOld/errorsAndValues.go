@@ -1,4 +1,4 @@
-package main
+package wErrorOld
 
 import "fmt"
 
@@ -18,13 +18,17 @@ func (se StatusErr) Error() string {
 	return se.Message
 }
 
-func main() {
-	data, err := LoginAndGetData("uid", "pwd", "file")
-	if err != nil {
-		fmt.Println("error opening a file")
-		return
+func errorsAndValues(show bool) {
+	if show {
+		println("\n-- Errors and Values")
+
+		data, err := LoginAndGetData("uid", "pwd", "file")
+		if err != nil {
+			fmt.Println("error opening a file")
+			return
+		}
+		fmt.Println(data)
 	}
-	fmt.Println(data)
 }
 
 func LoginAndGetData(uid, pwd, file string) ([]byte, error) {

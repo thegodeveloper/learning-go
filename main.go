@@ -12,10 +12,14 @@ import (
 	"github.com/thegodeveloper/learning-go/wConcurrency"
 	"github.com/thegodeveloper/learning-go/wConstants"
 	"github.com/thegodeveloper/learning-go/wCountOccurrencesInFile"
+	"github.com/thegodeveloper/learning-go/wCustomType"
+	"github.com/thegodeveloper/learning-go/wDefer"
+	"github.com/thegodeveloper/learning-go/wErrorOld"
 	"github.com/thegodeveloper/learning-go/wErrors"
 	"github.com/thegodeveloper/learning-go/wExternalPackages"
 	"github.com/thegodeveloper/learning-go/wInterfaces"
 	"github.com/thegodeveloper/learning-go/wJSON"
+	"github.com/thegodeveloper/learning-go/wNilZero"
 	"github.com/thegodeveloper/learning-go/wOpenPage"
 	"github.com/thegodeveloper/learning-go/wPackages"
 	"github.com/thegodeveloper/learning-go/wRand"
@@ -60,7 +64,7 @@ func main() {
 	wConcurrency.Master(false)
 
 	// Structs
-	wStructs.Master(true)
+	wStructs.Master(false)
 
 	// Open Web Page
 	wOpenPage.Master(false)
@@ -88,4 +92,16 @@ func main() {
 
 	// Occurrences in File
 	wCountOccurrencesInFile.Master(false)
+
+	// Custom Type
+	wCustomType.Master(false)
+
+	// Defer
+	wDefer.Master(false)
+
+	// Nil and Zero Values
+	wNilZero.Master(false)
+
+	// Errors Old
+	wErrorOld.Master(true)
 }

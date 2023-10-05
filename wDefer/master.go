@@ -1,12 +1,14 @@
-package main
+package wDefer
 
 import (
 	"io"
 	"os"
 )
 
-func main() {
-
+func Master(show bool) {
+	if show {
+		println("\n-- Defer")
+	}
 }
 
 func CopyFile(dstName, srcName string) (written int64, err error) {

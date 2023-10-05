@@ -1,4 +1,4 @@
-package main
+package wErrorOld
 
 import (
 	"errors"
@@ -14,7 +14,7 @@ func doubleEvenWithErrors(i int) (int, error) {
 
 func doubleEvenWithFmt(i int) (int, error) {
 	if i%2 != 0 {
-		return 0, fmt.Errorf("%d isn't an even number")
+		return 0, fmt.Errorf("%d isn't an even number", i)
 	}
 	return i * 2, nil
 }

@@ -1,4 +1,4 @@
-package main
+package wErrorOld
 
 import (
 	"errors"
@@ -6,12 +6,16 @@ import (
 	"os"
 )
 
-func main() {
-	err := fileChecker("not_here.txt")
-	if err != nil {
-		fmt.Println(err)
-		if wrappedErr := errors.Unwrap(err); wrappedErr != nil {
-			fmt.Println(wrappedErr)
+func wrappingErrors(show bool) {
+	if show {
+		fmt.Println("\n-- Wrapping Errors")
+
+		err := fileChecker("not_here.txt")
+		if err != nil {
+			fmt.Println(err)
+			if wrappedErr := errors.Unwrap(err); wrappedErr != nil {
+				fmt.Println(wrappedErr)
+			}
 		}
 	}
 }
