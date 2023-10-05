@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/thegodeveloper/learning-go/channels"
 	"github.com/thegodeveloper/learning-go/goroutines"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
@@ -28,9 +27,9 @@ import (
 	"github.com/thegodeveloper/learning-go/wTime"
 )
 
-func init() {
+/*func init() {
 	fmt.Println("init from my program")
-}
+}*/
 
 func main() {
 	// Errors
@@ -103,5 +102,5 @@ func main() {
 	wNilZero.Master(false)
 
 	// Errors Old
-	wErrorOld.Master(true)
+	wErrorOld.Master(false)
 }
