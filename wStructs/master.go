@@ -11,6 +11,8 @@ func Master(show bool) {
 		definition(false)
 
 		Demo(false)
+
+		Activity(true)
 	}
 }
 
