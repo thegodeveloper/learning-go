@@ -1,4 +1,4 @@
-package main
+package wStructs
 
 import (
 	"fmt"
@@ -9,11 +9,6 @@ type person struct {
 	name string
 	age  int
 	pet  string
-}
-
-func main() {
-	structDeclaration()
-	anonymousStruct()
 }
 
 func structDeclaration() {
@@ -42,4 +37,13 @@ func anonymousStruct() {
 	}
 
 	fmt.Println("Pet Value:", pet)
+}
+
+func Demo(show bool) {
+	if show {
+		println("\n### Demo ###")
+
+		structDeclaration()
+		anonymousStruct()
+	}
 }

@@ -7,6 +7,15 @@ import (
 
 func Master(show bool) {
 	if show {
+
+		definition(false)
+
+		Demo(false)
+	}
+}
+
+func definition(show bool) {
+	if show {
 		fmt.Println("-- Structs")
 		bill := createEmployee(
 			123,
@@ -22,7 +31,6 @@ func Master(show bool) {
 		fmt.Printf("Initial value of a: %v\n", a)
 		Sort(a)
 		fmt.Printf("Final value of a: %v\n", a)
-
 	}
 }
 

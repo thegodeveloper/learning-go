@@ -1,12 +1,17 @@
 package main
 
 import (
+	"fmt"
 	"github.com/thegodeveloper/learning-go/channels"
 	"github.com/thegodeveloper/learning-go/goroutines"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
 	"github.com/thegodeveloper/learning-go/wAdapter"
 	"github.com/thegodeveloper/learning-go/wArrays"
+	"github.com/thegodeveloper/learning-go/wCalculator"
+	"github.com/thegodeveloper/learning-go/wComplex"
 	"github.com/thegodeveloper/learning-go/wConcurrency"
+	"github.com/thegodeveloper/learning-go/wConstants"
+	"github.com/thegodeveloper/learning-go/wCountOccurrencesInFile"
 	"github.com/thegodeveloper/learning-go/wErrors"
 	"github.com/thegodeveloper/learning-go/wExternalPackages"
 	"github.com/thegodeveloper/learning-go/wInterfaces"
@@ -18,6 +23,10 @@ import (
 	"github.com/thegodeveloper/learning-go/wTest"
 	"github.com/thegodeveloper/learning-go/wTime"
 )
+
+func init() {
+	fmt.Println("init from my program")
+}
 
 func main() {
 	// Errors
@@ -51,7 +60,7 @@ func main() {
 	wConcurrency.Master(false)
 
 	// Structs
-	wStructs.Master(false)
+	wStructs.Master(true)
 
 	// Open Web Page
 	wOpenPage.Master(false)
@@ -67,4 +76,16 @@ func main() {
 
 	// Test
 	wTest.Master(false)
+
+	// Calculator
+	wCalculator.Master(false)
+
+	// Complex
+	wComplex.Master(false)
+
+	// Constants
+	wConstants.Master(false)
+
+	// Occurrences in File
+	wCountOccurrencesInFile.Master(false)
 }
