@@ -31,3 +31,14 @@ func Test_addNumber(t *testing.T) {
 		t.Error("incorrect result: expected 7, got", result)
 	}
 }
+
+func TestFileLen(t *testing.T) {
+	result, err := FileLen("../README.md", 1)
+	if err != nil {
+		t.Fatal(err)
+	}
+	fmt.Println(result)
+	if result != 655 {
+		t.Error("Expected 655, got", result)
+	}
+}
