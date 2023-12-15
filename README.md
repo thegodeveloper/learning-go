@@ -50,3 +50,17 @@ goimports -l -w .
 - The `-l` flat tells `goimports` to print the files with incorrect formatting to the console.
 - The `-w` flag tells `goimports` to modify the files in-place.
 - The `.` specifies the files to be scanned: everything in the current directory and all of its subdirectories.
+
+## go vet
+
+There is another class of errors that developers run into. The code is syntactically valid, but there are mistakes that are not what you meant to do.
+This includes things like passing the wrong number of parameters to formatting methods or assigning values to variables that are never used.
+
+Run `go vet` on your project with the command:
+
+```shell
+go vet ./...
+
+# github.com/thegodeveloper/learning-go/wTime
+wTime/master.go:13:25: 2006-02-01 should be 2006-01-02
+```
