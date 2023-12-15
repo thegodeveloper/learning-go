@@ -1,8 +1,9 @@
 package wCalculator_test
 
 import (
-	"github.com/thegodeveloper/learning-go/wCalculator"
 	"testing"
+
+	"github.com/thegodeveloper/learning-go/wCalculator"
 )
 
 func TestAdd(t *testing.T) {

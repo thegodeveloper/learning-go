@@ -2,9 +2,10 @@ package wExternalPackages
 
 import (
 	"fmt"
+	"log"
+
 	"github.com/learning-go-book/formatter"
 	"github.com/shopspring/decimal"
-	"log"
 )
 
 func Master(show bool) {

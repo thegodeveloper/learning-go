@@ -16,7 +16,7 @@ import (
 	"github.com/thegodeveloper/learning-go/wErrorOld"
 	"github.com/thegodeveloper/learning-go/wErrors"
 	"github.com/thegodeveloper/learning-go/wExternalPackages"
-	"github.com/thegodeveloper/learning-go/wInterfaces"
+	wIntefaces "github.com/thegodeveloper/learning-go/wInterfaces"
 	"github.com/thegodeveloper/learning-go/wJSON"
 	"github.com/thegodeveloper/learning-go/wNilZero"
 	"github.com/thegodeveloper/learning-go/wOpenPage"

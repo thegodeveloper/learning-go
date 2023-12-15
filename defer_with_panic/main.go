@@ -17,4 +17,3 @@ func main() {
 	something()
 	fmt.Println("something was finished") // this is not called
 }
-

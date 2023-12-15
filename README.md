@@ -32,3 +32,18 @@ Mastering Golang.
 - Let's Go Further
 - Microservices with Go
 - Building Modern CLI Applications with Go
+
+## Install goimports
+
+Enhanced version of `go fmt` called `goimports`.
+
+```shell
+go install golang.org/x/tools/cmd/goimports@latest
+```
+
+To run it across a project:
+
+```shell
+goimports -l -w .
+```
+
