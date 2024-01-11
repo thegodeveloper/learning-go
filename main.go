@@ -16,6 +16,7 @@ import (
 	"github.com/thegodeveloper/learning-go/wErrorOld"
 	"github.com/thegodeveloper/learning-go/wErrors"
 	"github.com/thegodeveloper/learning-go/wExternalPackages"
+	"github.com/thegodeveloper/learning-go/wGoroutines"
 	wIntefaces "github.com/thegodeveloper/learning-go/wInterfaces"
 	"github.com/thegodeveloper/learning-go/wJSON"
 	"github.com/thegodeveloper/learning-go/wNilZero"
@@ -103,4 +104,7 @@ func main() {
 
 	// Errors Old
 	wErrorOld.Master(false)
+
+	// Goroutines Example
+	wGoroutines.Master(true)
 }
