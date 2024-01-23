@@ -17,6 +17,7 @@ import (
 	"github.com/thegodeveloper/learning-go/wErrors"
 	"github.com/thegodeveloper/learning-go/wExternalPackages"
 	"github.com/thegodeveloper/learning-go/wGoroutines"
+	"github.com/thegodeveloper/learning-go/wIntegerTypes"
 	wIntefaces "github.com/thegodeveloper/learning-go/wInterfaces"
 	"github.com/thegodeveloper/learning-go/wJSON"
 	"github.com/thegodeveloper/learning-go/wNilZero"
@@ -107,4 +108,7 @@ func main() {
 
 	// Goroutines Example
 	wGoroutines.Master(false)
+
+	// Integer Types
+	wIntegerTypes.Master(false)
 }
