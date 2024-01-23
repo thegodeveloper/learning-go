@@ -106,5 +106,5 @@ func main() {
 	wErrorOld.Master(false)
 
 	// Goroutines Example
-	wGoroutines.Master(true)
+	wGoroutines.Master(false)
 }
