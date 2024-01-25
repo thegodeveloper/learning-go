@@ -1,4 +1,4 @@
-package deferPanicRecover
+package deferpanicrecover
 
 import "fmt"
 

@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/thegodeveloper/learning-go/internal/channels"
-	"github.com/thegodeveloper/learning-go/internal/deferPanicRecover"
 	"github.com/thegodeveloper/learning-go/internal/deferWithPanic"
 	"github.com/thegodeveloper/learning-go/internal/deferpanic"
+	"github.com/thegodeveloper/learning-go/internal/deferpanicrecover"
 	"github.com/thegodeveloper/learning-go/internal/enums"
 	"github.com/thegodeveloper/learning-go/internal/forLoops"
 	"github.com/thegodeveloper/learning-go/internal/functionalOptionsPattern"
@@ -57,7 +57,7 @@ func main() {
 	enums.Master(false)
 
 	// Defer Panic Recover
-	deferPanicRecover.Master(false)
+	deferpanicrecover.Master(false)
 
 	// Errors
 	wErrors.Master(false)
