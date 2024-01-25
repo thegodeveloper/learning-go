@@ -1,4 +1,4 @@
-package functionalOptionsPattern
+package functionaloptions
 
 import "fmt"
 

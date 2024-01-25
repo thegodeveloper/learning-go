@@ -7,7 +7,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/deferwithpanic"
 	"github.com/thegodeveloper/learning-go/internal/enums"
 	"github.com/thegodeveloper/learning-go/internal/forloops"
-	"github.com/thegodeveloper/learning-go/internal/functionalOptionsPattern"
+	"github.com/thegodeveloper/learning-go/internal/functionaloptions"
 	"github.com/thegodeveloper/learning-go/internal/functions"
 	"github.com/thegodeveloper/learning-go/internal/goroutines"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
@@ -45,7 +45,7 @@ func main() {
 	functions.Master(false)
 
 	// Functional Options Pattern
-	functionalOptionsPattern.Master(false)
+	functionaloptions.Master(false)
 
 	// Defer with Panic
 	deferwithpanic.Master(false)
