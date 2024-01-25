@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/thegodeveloper/learning-go/goroutines"
 	"github.com/thegodeveloper/learning-go/internal/channels"
 	"github.com/thegodeveloper/learning-go/internal/deferPanicRecover"
 	"github.com/thegodeveloper/learning-go/internal/deferWithPanic"
@@ -10,6 +9,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/forLoops"
 	"github.com/thegodeveloper/learning-go/internal/functionalOptionsPattern"
 	"github.com/thegodeveloper/learning-go/internal/functions"
+	"github.com/thegodeveloper/learning-go/internal/goroutines"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
 	"github.com/thegodeveloper/learning-go/wAdapter"
 	"github.com/thegodeveloper/learning-go/wArrays"

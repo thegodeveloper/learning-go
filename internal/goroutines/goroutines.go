@@ -12,7 +12,7 @@ func Master(show bool) {
 		implementCountTo()
 		implementCancelFunctionTerminateGoroutine()
 		implementBackpressure()
-		passing_copy_goroutine()
+		passingCopyGoroutine()
 	}
 }
 
