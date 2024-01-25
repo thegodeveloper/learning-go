@@ -6,7 +6,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/deferpanicrecover"
 	"github.com/thegodeveloper/learning-go/internal/deferwithpanic"
 	"github.com/thegodeveloper/learning-go/internal/enums"
-	"github.com/thegodeveloper/learning-go/internal/forLoops"
+	"github.com/thegodeveloper/learning-go/internal/forloops"
 	"github.com/thegodeveloper/learning-go/internal/functionalOptionsPattern"
 	"github.com/thegodeveloper/learning-go/internal/functions"
 	"github.com/thegodeveloper/learning-go/internal/goroutines"
@@ -51,7 +51,7 @@ func main() {
 	deferwithpanic.Master(false)
 
 	// For Loops
-	forLoops.Master(false)
+	forloops.Master(false)
 
 	// Enums
 	enums.Master(false)
