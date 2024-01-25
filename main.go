@@ -1,8 +1,12 @@
 package main
 
 import (
-	"github.com/thegodeveloper/learning-go/channels"
 	"github.com/thegodeveloper/learning-go/goroutines"
+	"github.com/thegodeveloper/learning-go/internal/channels"
+	"github.com/thegodeveloper/learning-go/internal/deferPanic"
+	"github.com/thegodeveloper/learning-go/internal/deferPanicRecover"
+	"github.com/thegodeveloper/learning-go/internal/enums"
+	"github.com/thegodeveloper/learning-go/internal/forLoops"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
 	"github.com/thegodeveloper/learning-go/wAdapter"
 	"github.com/thegodeveloper/learning-go/wArrays"
@@ -34,8 +38,20 @@ import (
 }*/
 
 func main() {
+	// For Loops
+	forLoops.Master(false)
+
+	// Enums
+	enums.Master(false)
+
+	// Defer Panic Recover
+	deferPanicRecover.Master(false)
+
 	// Errors
 	wErrors.Master(false)
+
+	// Defer Panic
+	deferPanic.Master(false)
 
 	// Arrays
 	wArrays.Master(false)

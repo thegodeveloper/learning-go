@@ -1,4 +1,4 @@
-package main
+package deferPanicRecover
 
 import "fmt"
 
@@ -19,8 +19,10 @@ func something() {
 	fmt.Println("closed something normally")
 }
 
-func main() {
-	defer fmt.Println("closed main")
-	something()
-	fmt.Println("main was finished")
+func Master(show bool) {
+	if show {
+		defer fmt.Println("closed main")
+		something()
+		fmt.Println("main was finished")
+	}
 }
