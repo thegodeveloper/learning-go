@@ -1,4 +1,4 @@
-package main
+package functions
 
 func addTo(base int, vals ...int) []int {
 	out := make([]int, 0, len(vals))

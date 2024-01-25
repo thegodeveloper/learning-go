@@ -1,4 +1,4 @@
-package main
+package functions
 
 func makeMult(base int) func(int) int {
 	return func(factor int) int {

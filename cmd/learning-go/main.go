@@ -9,6 +9,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/enums"
 	"github.com/thegodeveloper/learning-go/internal/forLoops"
 	"github.com/thegodeveloper/learning-go/internal/functionalOptionsPattern"
+	"github.com/thegodeveloper/learning-go/internal/functions"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
 	"github.com/thegodeveloper/learning-go/wAdapter"
 	"github.com/thegodeveloper/learning-go/wArrays"
@@ -40,6 +41,9 @@ import (
 }*/
 
 func main() {
+	// Functions
+	functions.Master(false)
+
 	// Functional Options Pattern
 	functionalOptionsPattern.Master(false)
 
