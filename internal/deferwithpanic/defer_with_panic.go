@@ -1,4 +1,4 @@
-package deferWithPanic
+package deferwithpanic
 
 import "fmt"
 
