@@ -3,9 +3,9 @@ package main
 import (
 	"github.com/thegodeveloper/learning-go/goroutines"
 	"github.com/thegodeveloper/learning-go/internal/channels"
-	"github.com/thegodeveloper/learning-go/internal/deferPanic"
 	"github.com/thegodeveloper/learning-go/internal/deferPanicRecover"
 	"github.com/thegodeveloper/learning-go/internal/deferWithPanic"
+	"github.com/thegodeveloper/learning-go/internal/deferpanic"
 	"github.com/thegodeveloper/learning-go/internal/enums"
 	"github.com/thegodeveloper/learning-go/internal/forLoops"
 	"github.com/thegodeveloper/learning-go/internal/functionalOptionsPattern"
@@ -63,7 +63,7 @@ func main() {
 	wErrors.Master(false)
 
 	// Defer Panic
-	deferPanic.Master(false)
+	deferpanic.Master(false)
 
 	// Arrays
 	wArrays.Master(false)
