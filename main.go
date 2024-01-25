@@ -5,6 +5,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/channels"
 	"github.com/thegodeveloper/learning-go/internal/deferPanic"
 	"github.com/thegodeveloper/learning-go/internal/deferPanicRecover"
+	"github.com/thegodeveloper/learning-go/internal/deferWithPanic"
 	"github.com/thegodeveloper/learning-go/internal/enums"
 	"github.com/thegodeveloper/learning-go/internal/forLoops"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
@@ -38,6 +39,9 @@ import (
 }*/
 
 func main() {
+	// Defer with Panic
+	deferWithPanic.Master(false)
+
 	// For Loops
 	forLoops.Master(false)
 
