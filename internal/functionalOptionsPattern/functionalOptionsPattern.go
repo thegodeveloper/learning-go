@@ -1,4 +1,4 @@
-package main
+package functionalOptionsPattern
 
 import "fmt"
 
@@ -65,8 +65,10 @@ func WithPaneerTopping() func(config *Pizza) {
 	}
 }
 
-func main() {
-	coolPizza := BuildPizza(WIthPepper(), WithExtraCheese(), WithChickenTopping())
+func Master(show bool) {
+	if show {
+		coolPizza := BuildPizza(WIthPepper(), WithExtraCheese(), WithChickenTopping())
 
-	fmt.Printf("eating delicious Pizza: %v", coolPizza)
+		fmt.Printf("eating delicious Pizza: %v", coolPizza)
+	}
 }
