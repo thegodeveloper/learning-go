@@ -21,6 +21,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/passingarguments"
 	"github.com/thegodeveloper/learning-go/internal/sumtwonumbers"
 	"github.com/thegodeveloper/learning-go/internal/typediffarrayslicesitem"
+	"github.com/thegodeveloper/learning-go/internal/variables"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
 	"github.com/thegodeveloper/learning-go/wAdapter"
 	"github.com/thegodeveloper/learning-go/wArrays"
@@ -52,6 +53,9 @@ import (
 }*/
 
 func main() {
+	// Variables
+	variables.Master(false)
+
 	// Type Diff Array Slices Item
 	typediffarrayslicesitem.Master(false)
 
