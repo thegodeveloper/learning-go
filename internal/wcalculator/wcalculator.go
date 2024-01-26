@@ -1,4 +1,4 @@
-package wCalculator
+package wcalculator
 
 import "fmt"
 
