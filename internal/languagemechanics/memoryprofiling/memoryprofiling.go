@@ -1,11 +1,11 @@
-package main
+package memoryprofiling
 
 import (
 	"bytes"
 	"io"
 )
 
-func main() {
+func Master(show bool) {
 
 }
 

@@ -11,6 +11,10 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/functions"
 	"github.com/thegodeveloper/learning-go/internal/goroutines"
 	"github.com/thegodeveloper/learning-go/internal/helloworld"
+	"github.com/thegodeveloper/learning-go/internal/languagemechanics/escapeanalysis"
+	"github.com/thegodeveloper/learning-go/internal/languagemechanics/memoryprofiling"
+	"github.com/thegodeveloper/learning-go/internal/languagemechanics/stacksandpointers/frameboundaries"
+	"github.com/thegodeveloper/learning-go/internal/languagemechanics/stacksandpointers/indirectmemoryaccess"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
 	"github.com/thegodeveloper/learning-go/wAdapter"
 	"github.com/thegodeveloper/learning-go/wArrays"
@@ -42,6 +46,18 @@ import (
 }*/
 
 func main() {
+	// Indirect Memory Access
+	indirectmemoryaccess.Master(false)
+
+	// Frame Boundaries
+	frameboundaries.Master(false)
+
+	// Escape Analysis
+	escapeanalysis.Master(false)
+
+	// Memory Profiling
+	memoryprofiling.Master(false)
+
 	// Hello World
 	helloworld.Master(false)
 

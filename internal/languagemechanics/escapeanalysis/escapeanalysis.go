@@ -1,4 +1,4 @@
-package main
+package escapeanalysis
 
 import "fmt"
 
@@ -7,11 +7,13 @@ type user struct {
 	email string
 }
 
-func main() {
-	u1 := createUserV1()
-	u2 := createUserV2()
+func Master(show bool) {
+	if show {
+		u1 := createUserV1()
+		u2 := createUserV2()
 
-	fmt.Println("u1", &u1, "u2", &u2)
+		fmt.Println("u1", &u1, "u2", &u2)
+	}
 }
 
 //go:noinline
