@@ -19,6 +19,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/loopsbranches"
 	"github.com/thegodeveloper/learning-go/internal/openfile"
 	"github.com/thegodeveloper/learning-go/internal/passingarguments"
+	"github.com/thegodeveloper/learning-go/internal/sumtwonumbers"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
 	"github.com/thegodeveloper/learning-go/wAdapter"
 	"github.com/thegodeveloper/learning-go/wArrays"
@@ -50,6 +51,9 @@ import (
 }*/
 
 func main() {
+	// Sum two Arguments
+	sumtwonumbers.Master(false)
+
 	// Passing Arguments
 	passingarguments.Master(false)
 
