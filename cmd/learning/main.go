@@ -17,6 +17,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/stacksandpointers/indirectmemoryaccess"
 	"github.com/thegodeveloper/learning-go/internal/lengthcapacity"
 	"github.com/thegodeveloper/learning-go/internal/loopsbranches"
+	"github.com/thegodeveloper/learning-go/internal/openfile"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
 	"github.com/thegodeveloper/learning-go/wAdapter"
 	"github.com/thegodeveloper/learning-go/wArrays"
@@ -48,6 +49,9 @@ import (
 }*/
 
 func main() {
+	// Open File
+	openfile.Master(false)
+
 	// Loops Branches
 	loopsbranches.Master(false)
 
