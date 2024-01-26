@@ -31,8 +31,8 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/unicode"
 	"github.com/thegodeveloper/learning-go/internal/values"
 	"github.com/thegodeveloper/learning-go/internal/variables"
+	"github.com/thegodeveloper/learning-go/internal/wadapter"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
-	"github.com/thegodeveloper/learning-go/wAdapter"
 	"github.com/thegodeveloper/learning-go/wArrays"
 	"github.com/thegodeveloper/learning-go/wCalculator"
 	"github.com/thegodeveloper/learning-go/wComplex"
@@ -165,7 +165,7 @@ func main() {
 	wExternalPackages.Master(false)
 
 	// Adapter Pattern
-	wAdapter.Master(false)
+	wadapter.Master(false)
 
 	// Channels
 	channels.Master(false)

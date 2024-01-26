@@ -1,4 +1,4 @@
-package wAdapter
+package wadapter
 
 type Computer interface {
 	InsertIntoLightningPort()
