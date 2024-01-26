@@ -26,13 +26,14 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/slices"
 	"github.com/thegodeveloper/learning-go/internal/strings"
 	"github.com/thegodeveloper/learning-go/internal/sumtwonumbers"
-	switches "github.com/thegodeveloper/learning-go/internal/switch"
+	"github.com/thegodeveloper/learning-go/internal/switches"
 	"github.com/thegodeveloper/learning-go/internal/typediffarrayslicesitem"
 	"github.com/thegodeveloper/learning-go/internal/unicode"
 	"github.com/thegodeveloper/learning-go/internal/values"
 	"github.com/thegodeveloper/learning-go/internal/variables"
 	"github.com/thegodeveloper/learning-go/internal/wadapter"
 	"github.com/thegodeveloper/learning-go/internal/warrays"
+	"github.com/thegodeveloper/learning-go/internal/winterfaces"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
 	"github.com/thegodeveloper/learning-go/wCalculator"
 	"github.com/thegodeveloper/learning-go/wComplex"
@@ -46,7 +47,6 @@ import (
 	"github.com/thegodeveloper/learning-go/wExternalPackages"
 	"github.com/thegodeveloper/learning-go/wGoroutines"
 	"github.com/thegodeveloper/learning-go/wIntegerTypes"
-	wIntefaces "github.com/thegodeveloper/learning-go/wInterfaces"
 	"github.com/thegodeveloper/learning-go/wJSON"
 	"github.com/thegodeveloper/learning-go/wNilZero"
 	"github.com/thegodeveloper/learning-go/wOpenPage"
@@ -153,7 +153,7 @@ func main() {
 	warrays.Master(false)
 
 	// Interfaces
-	wIntefaces.Master(false)
+	winterfaces.Master(false)
 
 	// Random Values
 	wRand.Master(false)
