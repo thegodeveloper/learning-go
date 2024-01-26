@@ -32,8 +32,8 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/values"
 	"github.com/thegodeveloper/learning-go/internal/variables"
 	"github.com/thegodeveloper/learning-go/internal/wadapter"
+	"github.com/thegodeveloper/learning-go/internal/warrays"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
-	"github.com/thegodeveloper/learning-go/wArrays"
 	"github.com/thegodeveloper/learning-go/wCalculator"
 	"github.com/thegodeveloper/learning-go/wComplex"
 	"github.com/thegodeveloper/learning-go/wConcurrency"
@@ -150,7 +150,7 @@ func main() {
 	deferpanic.Master(false)
 
 	// Arrays
-	wArrays.Master(false)
+	warrays.Master(false)
 
 	// Interfaces
 	wIntefaces.Master(false)

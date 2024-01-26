@@ -1,4 +1,4 @@
-package wArrays
+package warrays
 
 import "fmt"
 
