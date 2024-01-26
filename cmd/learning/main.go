@@ -27,6 +27,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/strings"
 	"github.com/thegodeveloper/learning-go/internal/sumtwonumbers"
 	"github.com/thegodeveloper/learning-go/internal/typediffarrayslicesitem"
+	"github.com/thegodeveloper/learning-go/internal/unicode"
 	"github.com/thegodeveloper/learning-go/internal/values"
 	"github.com/thegodeveloper/learning-go/internal/variables"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
@@ -60,6 +61,9 @@ import (
 }*/
 
 func main() {
+	// Unicode
+	unicode.Master(false)
+
 	// Values
 	values.Master(false)
 
