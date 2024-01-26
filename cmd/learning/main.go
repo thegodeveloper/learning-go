@@ -17,8 +17,10 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/stacksandpointers/indirectmemoryaccess"
 	"github.com/thegodeveloper/learning-go/internal/lengthcapacity"
 	"github.com/thegodeveloper/learning-go/internal/loopsbranches"
+	"github.com/thegodeveloper/learning-go/internal/maps"
 	"github.com/thegodeveloper/learning-go/internal/openfile"
 	"github.com/thegodeveloper/learning-go/internal/passingarguments"
+	"github.com/thegodeveloper/learning-go/internal/pointers"
 	"github.com/thegodeveloper/learning-go/internal/sumtwonumbers"
 	"github.com/thegodeveloper/learning-go/internal/typediffarrayslicesitem"
 	"github.com/thegodeveloper/learning-go/internal/variables"
@@ -53,6 +55,12 @@ import (
 }*/
 
 func main() {
+	// Pointers
+	pointers.Master(false)
+
+	// Maps
+	maps.Master(false)
+
 	// Variables
 	variables.Master(false)
 
