@@ -1,35 +1,37 @@
-package main
+package slices
 
 import (
 	"fmt"
 	"os"
 )
 
-func main() {
-	// this is a string array of 5 elements
-	a := [5]string{"a", "b", "c", "d", "e"}
+func Master(show bool) {
+	if show {
+		// this is a string array of 5 elements
+		a := [5]string{"a", "b", "c", "d", "e"}
 
-	fmt.Println(a)
-	fmt.Println(a[:])
-	fmt.Println(a[0])
-	fmt.Println(a[0], a[1], a[2], a[3], a[4])
-	fmt.Println(a[0:2])
-	fmt.Println(a[1:4])
-	fmt.Println(a[:2])
-	fmt.Println(a[2:])
+		fmt.Println(a)
+		fmt.Println(a[:])
+		fmt.Println(a[0])
+		fmt.Println(a[0], a[1], a[2], a[3], a[4])
+		fmt.Println(a[0:2])
+		fmt.Println(a[1:4])
+		fmt.Println(a[:2])
+		fmt.Println(a[2:])
 
-	slicingSlices()
-	slicesShareMemory()
-	appendOverlappingSlices()
-	copyArrayToSlice()
-	copySlice()
-	copyingSliceToArray()
-	sliceWithSpecificValuesPerIndex()
-	sliceAppend()
-	sliceWithMake()
-	err := slicesAsBuffers("books.txt")
-	if err != nil {
-		fmt.Println(err)
+		slicingSlices()
+		slicesShareMemory()
+		appendOverlappingSlices()
+		copyArrayToSlice()
+		copySlice()
+		copyingSliceToArray()
+		sliceWithSpecificValuesPerIndex()
+		sliceAppend()
+		sliceWithMake()
+		err := slicesAsBuffers("books.txt")
+		if err != nil {
+			fmt.Println(err)
+		}
 	}
 }
 

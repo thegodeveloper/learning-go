@@ -23,6 +23,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/pointers"
 	"github.com/thegodeveloper/learning-go/internal/runes"
 	"github.com/thegodeveloper/learning-go/internal/sha256"
+	"github.com/thegodeveloper/learning-go/internal/slices"
 	"github.com/thegodeveloper/learning-go/internal/sumtwonumbers"
 	"github.com/thegodeveloper/learning-go/internal/typediffarrayslicesitem"
 	"github.com/thegodeveloper/learning-go/internal/variables"
@@ -57,6 +58,9 @@ import (
 }*/
 
 func main() {
+	// Slices
+	slices.Master(false)
+
 	// sha256
 	sha256.Master(false)
 
