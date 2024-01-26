@@ -90,7 +90,7 @@ func main() {
 	maps.Master(false)
 
 	// Variables
-	variables.Master(false)
+	variables.Master(true)
 
 	// Type Diff Array Slices Item
 	typediffarrayslicesitem.Master(false)
