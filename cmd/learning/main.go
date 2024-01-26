@@ -26,6 +26,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/slices"
 	"github.com/thegodeveloper/learning-go/internal/strings"
 	"github.com/thegodeveloper/learning-go/internal/sumtwonumbers"
+	switches "github.com/thegodeveloper/learning-go/internal/switch"
 	"github.com/thegodeveloper/learning-go/internal/typediffarrayslicesitem"
 	"github.com/thegodeveloper/learning-go/internal/unicode"
 	"github.com/thegodeveloper/learning-go/internal/values"
@@ -61,6 +62,9 @@ import (
 }*/
 
 func main() {
+	// Switches
+	switches.Master(false)
+
 	// Unicode
 	unicode.Master(false)
 
