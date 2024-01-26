@@ -1,10 +1,12 @@
-package main
+package strings
 
 import "fmt"
 
-func main() {
-	extractingSingleValue()
-	toBeAwareInStrings()
+func Master(show bool) {
+	if show {
+		extractingSingleValue()
+		toBeAwareInStrings()
+	}
 }
 
 func extractingSingleValue() {
