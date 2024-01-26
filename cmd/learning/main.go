@@ -33,8 +33,8 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/variables"
 	"github.com/thegodeveloper/learning-go/internal/wadapter"
 	"github.com/thegodeveloper/learning-go/internal/warrays"
+	"github.com/thegodeveloper/learning-go/internal/wawspresignedurl"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
-	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
 	"github.com/thegodeveloper/learning-go/wCalculator"
 	"github.com/thegodeveloper/learning-go/wComplex"
 	"github.com/thegodeveloper/learning-go/wConcurrency"
@@ -183,7 +183,7 @@ func main() {
 	wOpenPage.Master(false)
 
 	// AWS Pre-signed URL
-	wAWSPresignedURL.Master(false)
+	wawspresignedurl.Master(false)
 
 	// JSON
 	wJSON.Master(false)

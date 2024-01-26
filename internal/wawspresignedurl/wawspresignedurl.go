@@ -1,4 +1,4 @@
-package wAWSPresignedURL
+package wawspresignedurl
 
 import (
 	"fmt"
