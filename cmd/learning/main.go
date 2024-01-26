@@ -10,6 +10,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/functionaloptions"
 	"github.com/thegodeveloper/learning-go/internal/functions"
 	"github.com/thegodeveloper/learning-go/internal/goroutines"
+	"github.com/thegodeveloper/learning-go/internal/helloworld"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
 	"github.com/thegodeveloper/learning-go/wAdapter"
 	"github.com/thegodeveloper/learning-go/wArrays"
@@ -41,6 +42,9 @@ import (
 }*/
 
 func main() {
+	// Hello World
+	helloworld.Master(false)
+
 	// Functions
 	functions.Master(false)
 
