@@ -18,6 +18,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/lengthcapacity"
 	"github.com/thegodeveloper/learning-go/internal/loopsbranches"
 	"github.com/thegodeveloper/learning-go/internal/openfile"
+	"github.com/thegodeveloper/learning-go/internal/passingarguments"
 	"github.com/thegodeveloper/learning-go/wAWSPresignedURL"
 	"github.com/thegodeveloper/learning-go/wAdapter"
 	"github.com/thegodeveloper/learning-go/wArrays"
@@ -49,6 +50,9 @@ import (
 }*/
 
 func main() {
+	// Passing Arguments
+	passingarguments.Master(false)
+
 	// Open File
 	openfile.Master(false)
 
