@@ -1,4 +1,4 @@
-package wDefer
+package wdefer
 
 import (
 	"io"

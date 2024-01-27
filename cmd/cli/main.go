@@ -40,8 +40,8 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wconstants"
 	"github.com/thegodeveloper/learning-go/internal/wcountoccurrences"
 	"github.com/thegodeveloper/learning-go/internal/wcustomtype"
+	"github.com/thegodeveloper/learning-go/internal/wdefer"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
-	"github.com/thegodeveloper/learning-go/wDefer"
 	"github.com/thegodeveloper/learning-go/wErrorOld"
 	"github.com/thegodeveloper/learning-go/wErrors"
 	"github.com/thegodeveloper/learning-go/wExternalPackages"
@@ -210,7 +210,7 @@ func main() {
 	wcustomtype.Master(false)
 
 	// Defer
-	wDefer.Master(false)
+	wdefer.Master(false)
 
 	// Nil and Zero Values
 	wNilZero.Master(false)
