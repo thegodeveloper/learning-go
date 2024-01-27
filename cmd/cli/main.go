@@ -35,9 +35,9 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/warrays"
 	"github.com/thegodeveloper/learning-go/internal/wawspresignedurl"
 	"github.com/thegodeveloper/learning-go/internal/wcalculator"
+	"github.com/thegodeveloper/learning-go/internal/wcomplex"
 	"github.com/thegodeveloper/learning-go/internal/wconstants"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
-	"github.com/thegodeveloper/learning-go/wComplex"
 	"github.com/thegodeveloper/learning-go/wConcurrency"
 	"github.com/thegodeveloper/learning-go/wCountOccurrencesInFile"
 	"github.com/thegodeveloper/learning-go/wCustomType"
@@ -198,7 +198,7 @@ func main() {
 	wcalculator.Master(false)
 
 	// Complex
-	wComplex.Master(false)
+	wcomplex.Master(false)
 
 	// Constants
 	wconstants.Master(false)

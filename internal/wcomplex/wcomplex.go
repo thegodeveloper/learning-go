@@ -1,4 +1,4 @@
-package wComplex
+package wcomplex
 
 import "fmt"
 

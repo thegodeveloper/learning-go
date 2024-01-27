@@ -9,5 +9,5 @@ vet: fmt
 .PHONY:vet
 
 run: vet
-	go run ./cmd/learning/main.go
+	go run ./cmd/cli/main.go
 .PHONY: run

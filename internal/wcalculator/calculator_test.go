@@ -1,4 +1,4 @@
-package wcalculator_test
+package wcalculator
 
 import (
 	"testing"
