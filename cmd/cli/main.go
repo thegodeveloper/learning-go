@@ -38,8 +38,8 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wcomplex"
 	"github.com/thegodeveloper/learning-go/internal/wconcurrency"
 	"github.com/thegodeveloper/learning-go/internal/wconstants"
+	"github.com/thegodeveloper/learning-go/internal/wcountoccurrences"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
-	"github.com/thegodeveloper/learning-go/wCountOccurrencesInFile"
 	"github.com/thegodeveloper/learning-go/wCustomType"
 	"github.com/thegodeveloper/learning-go/wDefer"
 	"github.com/thegodeveloper/learning-go/wErrorOld"
@@ -204,7 +204,7 @@ func main() {
 	wconstants.Master(false)
 
 	// Occurrences in File
-	wCountOccurrencesInFile.Master(false)
+	wcountoccurrences.Master(false)
 
 	// Custom Type
 	wCustomType.Master(false)

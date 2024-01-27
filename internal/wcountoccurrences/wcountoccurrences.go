@@ -1,4 +1,4 @@
-package wCountOccurrencesInFile
+package wcountoccurrences
 
 import (
 	"bufio"
