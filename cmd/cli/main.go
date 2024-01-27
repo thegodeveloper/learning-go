@@ -36,9 +36,9 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wawspresignedurl"
 	"github.com/thegodeveloper/learning-go/internal/wcalculator"
 	"github.com/thegodeveloper/learning-go/internal/wcomplex"
+	"github.com/thegodeveloper/learning-go/internal/wconcurrency"
 	"github.com/thegodeveloper/learning-go/internal/wconstants"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
-	"github.com/thegodeveloper/learning-go/wConcurrency"
 	"github.com/thegodeveloper/learning-go/wCountOccurrencesInFile"
 	"github.com/thegodeveloper/learning-go/wCustomType"
 	"github.com/thegodeveloper/learning-go/wDefer"
@@ -174,7 +174,7 @@ func main() {
 	goroutines.Master(false)
 
 	// Concurrency
-	wConcurrency.Master(false)
+	wconcurrency.Master(false)
 
 	// Structs
 	wStructs.Master(false)
