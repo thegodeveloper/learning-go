@@ -44,6 +44,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/werrorold"
 	"github.com/thegodeveloper/learning-go/internal/werrors"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
+	"github.com/thegodeveloper/learning-go/internal/wopenpage"
 	"github.com/thegodeveloper/learning-go/internal/wpackages"
 	"github.com/thegodeveloper/learning-go/internal/wrand"
 	"github.com/thegodeveloper/learning-go/internal/wstructs"
@@ -54,7 +55,6 @@ import (
 	"github.com/thegodeveloper/learning-go/wIntegerTypes"
 	"github.com/thegodeveloper/learning-go/wJSON"
 	"github.com/thegodeveloper/learning-go/wNilZero"
-	"github.com/thegodeveloper/learning-go/wOpenPage"
 )
 
 /*func init() {
@@ -180,7 +180,7 @@ func main() {
 	wstructs.Master(false)
 
 	// Open Web Page
-	wOpenPage.Master(false)
+	wopenpage.Master(false)
 
 	// AWS Pre-signed URL
 	wawspresignedurl.Master(false)
