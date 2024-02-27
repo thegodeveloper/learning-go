@@ -43,6 +43,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wdefer"
 	"github.com/thegodeveloper/learning-go/internal/werrorold"
 	"github.com/thegodeveloper/learning-go/internal/werrors"
+	"github.com/thegodeveloper/learning-go/internal/wintegertypes"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
 	"github.com/thegodeveloper/learning-go/internal/wjson"
 	"github.com/thegodeveloper/learning-go/internal/wnilzero"
@@ -54,7 +55,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wtime"
 	"github.com/thegodeveloper/learning-go/wExternalPackages"
 	"github.com/thegodeveloper/learning-go/wGoroutines"
-	"github.com/thegodeveloper/learning-go/wIntegerTypes"
 )
 
 /*func init() {
@@ -222,5 +222,5 @@ func main() {
 	wGoroutines.Master(false)
 
 	// Integer Types
-	wIntegerTypes.Master(false)
+	wintegertypes.Master(false)
 }

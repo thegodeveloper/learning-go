@@ -1,4 +1,4 @@
-package wIntegerTypes
+package wintegertypes
 
 import "fmt"
 
