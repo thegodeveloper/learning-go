@@ -44,6 +44,8 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/werrorold"
 	"github.com/thegodeveloper/learning-go/internal/werrors"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
+	"github.com/thegodeveloper/learning-go/internal/wtest"
+	"github.com/thegodeveloper/learning-go/internal/wtime"
 	"github.com/thegodeveloper/learning-go/wExternalPackages"
 	"github.com/thegodeveloper/learning-go/wGoroutines"
 	"github.com/thegodeveloper/learning-go/wIntegerTypes"
@@ -53,8 +55,6 @@ import (
 	"github.com/thegodeveloper/learning-go/wPackages"
 	"github.com/thegodeveloper/learning-go/wRand"
 	"github.com/thegodeveloper/learning-go/wStructs"
-	"github.com/thegodeveloper/learning-go/wTest"
-	"github.com/thegodeveloper/learning-go/wTime"
 )
 
 /*func init() {
@@ -189,10 +189,10 @@ func main() {
 	wJSON.Master(false)
 
 	// Time
-	wTime.Master(false)
+	wtime.Master(false)
 
 	// Test
-	wTest.Master(false)
+	wtest.Master(false)
 
 	// Calculator
 	wcalculator.Master(false)

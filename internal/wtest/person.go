@@ -1,4 +1,4 @@
-package wTest
+package wtest
 
 import "time"
 

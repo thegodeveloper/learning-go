@@ -1,4 +1,4 @@
-package wTime
+package wtime
 
 import (
 	"fmt"
