@@ -41,8 +41,8 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wcountoccurrences"
 	"github.com/thegodeveloper/learning-go/internal/wcustomtype"
 	"github.com/thegodeveloper/learning-go/internal/wdefer"
+	"github.com/thegodeveloper/learning-go/internal/werrorold"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
-	"github.com/thegodeveloper/learning-go/wErrorOld"
 	"github.com/thegodeveloper/learning-go/wErrors"
 	"github.com/thegodeveloper/learning-go/wExternalPackages"
 	"github.com/thegodeveloper/learning-go/wGoroutines"
@@ -216,7 +216,7 @@ func main() {
 	wNilZero.Master(false)
 
 	// Errors Old
-	wErrorOld.Master(false)
+	werrorold.Master(false)
 
 	// Goroutines Example
 	wGoroutines.Master(false)
