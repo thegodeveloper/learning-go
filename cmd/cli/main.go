@@ -44,6 +44,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/werrorold"
 	"github.com/thegodeveloper/learning-go/internal/werrors"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
+	"github.com/thegodeveloper/learning-go/internal/wstructs"
 	"github.com/thegodeveloper/learning-go/internal/wtest"
 	"github.com/thegodeveloper/learning-go/internal/wtime"
 	"github.com/thegodeveloper/learning-go/wExternalPackages"
@@ -54,7 +55,6 @@ import (
 	"github.com/thegodeveloper/learning-go/wOpenPage"
 	"github.com/thegodeveloper/learning-go/wPackages"
 	"github.com/thegodeveloper/learning-go/wRand"
-	"github.com/thegodeveloper/learning-go/wStructs"
 )
 
 /*func init() {
@@ -177,7 +177,7 @@ func main() {
 	wconcurrency.Master(false)
 
 	// Structs
-	wStructs.Master(false)
+	wstructs.Master(false)
 
 	// Open Web Page
 	wOpenPage.Master(false)

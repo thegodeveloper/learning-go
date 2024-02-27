@@ -1,4 +1,4 @@
-package wStructs
+package wstructs
 
 import "fmt"
 
