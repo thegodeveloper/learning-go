@@ -42,8 +42,8 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wcustomtype"
 	"github.com/thegodeveloper/learning-go/internal/wdefer"
 	"github.com/thegodeveloper/learning-go/internal/werrorold"
+	"github.com/thegodeveloper/learning-go/internal/werrors"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
-	"github.com/thegodeveloper/learning-go/wErrors"
 	"github.com/thegodeveloper/learning-go/wExternalPackages"
 	"github.com/thegodeveloper/learning-go/wGoroutines"
 	"github.com/thegodeveloper/learning-go/wIntegerTypes"
@@ -144,7 +144,7 @@ func main() {
 	deferpanicrecover.Master(false)
 
 	// Errors
-	wErrors.Master(false)
+	werrors.Master(false)
 
 	// Defer Panic
 	deferpanic.Master(false)

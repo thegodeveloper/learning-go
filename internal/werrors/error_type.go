@@ -1,4 +1,4 @@
-package wErrors
+package werrors
 
 import "fmt"
 
