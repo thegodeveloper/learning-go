@@ -1,4 +1,4 @@
-package wJSON
+package wjson
 
 import (
 	"encoding/json"

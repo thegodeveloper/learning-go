@@ -44,6 +44,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/werrorold"
 	"github.com/thegodeveloper/learning-go/internal/werrors"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
+	"github.com/thegodeveloper/learning-go/internal/wjson"
 	"github.com/thegodeveloper/learning-go/internal/wnilzero"
 	"github.com/thegodeveloper/learning-go/internal/wopenpage"
 	"github.com/thegodeveloper/learning-go/internal/wpackages"
@@ -54,7 +55,6 @@ import (
 	"github.com/thegodeveloper/learning-go/wExternalPackages"
 	"github.com/thegodeveloper/learning-go/wGoroutines"
 	"github.com/thegodeveloper/learning-go/wIntegerTypes"
-	"github.com/thegodeveloper/learning-go/wJSON"
 )
 
 /*func init() {
@@ -186,7 +186,7 @@ func main() {
 	wawspresignedurl.Master(false)
 
 	// JSON
-	wJSON.Master(false)
+	wjson.Master(false)
 
 	// Time
 	wtime.Master(false)
