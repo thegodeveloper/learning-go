@@ -44,6 +44,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/werrorold"
 	"github.com/thegodeveloper/learning-go/internal/werrors"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
+	"github.com/thegodeveloper/learning-go/internal/wrand"
 	"github.com/thegodeveloper/learning-go/internal/wstructs"
 	"github.com/thegodeveloper/learning-go/internal/wtest"
 	"github.com/thegodeveloper/learning-go/internal/wtime"
@@ -54,7 +55,6 @@ import (
 	"github.com/thegodeveloper/learning-go/wNilZero"
 	"github.com/thegodeveloper/learning-go/wOpenPage"
 	"github.com/thegodeveloper/learning-go/wPackages"
-	"github.com/thegodeveloper/learning-go/wRand"
 )
 
 /*func init() {
@@ -156,7 +156,7 @@ func main() {
 	winterfaces.Master(false)
 
 	// Random Values
-	wRand.Master(false)
+	wrand.Master(false)
 
 	// Packages
 	wPackages.Master(false)
