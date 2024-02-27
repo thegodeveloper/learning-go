@@ -1,4 +1,4 @@
-package wPackages
+package wpackages
 
 import (
 	"fmt"

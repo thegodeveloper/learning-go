@@ -44,6 +44,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/werrorold"
 	"github.com/thegodeveloper/learning-go/internal/werrors"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
+	"github.com/thegodeveloper/learning-go/internal/wpackages"
 	"github.com/thegodeveloper/learning-go/internal/wrand"
 	"github.com/thegodeveloper/learning-go/internal/wstructs"
 	"github.com/thegodeveloper/learning-go/internal/wtest"
@@ -54,7 +55,6 @@ import (
 	"github.com/thegodeveloper/learning-go/wJSON"
 	"github.com/thegodeveloper/learning-go/wNilZero"
 	"github.com/thegodeveloper/learning-go/wOpenPage"
-	"github.com/thegodeveloper/learning-go/wPackages"
 )
 
 /*func init() {
@@ -159,7 +159,7 @@ func main() {
 	wrand.Master(false)
 
 	// Packages
-	wPackages.Master(false)
+	wpackages.Master(false)
 
 	// External Packages
 	wExternalPackages.Master(false)
