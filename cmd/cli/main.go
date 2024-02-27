@@ -43,6 +43,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wdefer"
 	"github.com/thegodeveloper/learning-go/internal/werrorold"
 	"github.com/thegodeveloper/learning-go/internal/werrors"
+	"github.com/thegodeveloper/learning-go/internal/wexternalpackages"
 	"github.com/thegodeveloper/learning-go/internal/wgoroutines"
 	"github.com/thegodeveloper/learning-go/internal/wintegertypes"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
@@ -54,7 +55,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wstructs"
 	"github.com/thegodeveloper/learning-go/internal/wtest"
 	"github.com/thegodeveloper/learning-go/internal/wtime"
-	"github.com/thegodeveloper/learning-go/wExternalPackages"
 )
 
 /*func init() {
@@ -162,7 +162,7 @@ func main() {
 	wpackages.Master(false)
 
 	// External Packages
-	wExternalPackages.Master(false)
+	wexternalpackages.Master(false)
 
 	// Adapter Pattern
 	wadapter.Master(false)

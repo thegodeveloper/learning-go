@@ -1,4 +1,4 @@
-package wExternalPackages
+package wexternalpackages
 
 import (
 	"fmt"
