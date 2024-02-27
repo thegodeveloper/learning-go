@@ -44,6 +44,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/werrorold"
 	"github.com/thegodeveloper/learning-go/internal/werrors"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
+	"github.com/thegodeveloper/learning-go/internal/wnilzero"
 	"github.com/thegodeveloper/learning-go/internal/wopenpage"
 	"github.com/thegodeveloper/learning-go/internal/wpackages"
 	"github.com/thegodeveloper/learning-go/internal/wrand"
@@ -54,7 +55,6 @@ import (
 	"github.com/thegodeveloper/learning-go/wGoroutines"
 	"github.com/thegodeveloper/learning-go/wIntegerTypes"
 	"github.com/thegodeveloper/learning-go/wJSON"
-	"github.com/thegodeveloper/learning-go/wNilZero"
 )
 
 /*func init() {
@@ -213,7 +213,7 @@ func main() {
 	wdefer.Master(false)
 
 	// Nil and Zero Values
-	wNilZero.Master(false)
+	wnilzero.Master(false)
 
 	// Errors Old
 	werrorold.Master(false)

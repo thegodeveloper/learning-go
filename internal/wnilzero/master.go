@@ -1,4 +1,4 @@
-package wNilZero
+package wnilzero
 
 import "fmt"
 
