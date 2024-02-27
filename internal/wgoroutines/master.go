@@ -1,4 +1,4 @@
-package wGoroutines
+package wgoroutines
 
 import (
 	"fmt"
