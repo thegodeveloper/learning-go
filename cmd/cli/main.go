@@ -53,7 +53,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wpackages"
 	"github.com/thegodeveloper/learning-go/internal/wrand"
 	"github.com/thegodeveloper/learning-go/internal/wstructs"
-	"github.com/thegodeveloper/learning-go/internal/wtest"
 	"github.com/thegodeveloper/learning-go/internal/wtime"
 )
 
@@ -190,9 +189,6 @@ func main() {
 
 	// Time
 	wtime.Master(false)
-
-	// Test
-	wtest.Master(false)
 
 	// Calculator
 	wcalculator.Master(false)
