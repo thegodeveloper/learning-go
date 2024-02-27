@@ -33,7 +33,7 @@ func Test_addNumber(t *testing.T) {
 }
 
 func TestFileLen(t *testing.T) {
-	result, err := FileLen("../README.md", 1)
+	result, err := FileLen("../../README.md", 1)
 	if err != nil {
 		t.Fatal(err)
 	}
