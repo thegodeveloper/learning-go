@@ -194,7 +194,7 @@ func main() {
 	wcalculator.Master(false)
 
 	// Complex
-	wcomplex.Master(false)
+	wcomplex.Master(true)
 
 	// Constants
 	wconstants.Master(false)
