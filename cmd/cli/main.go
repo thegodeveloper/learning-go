@@ -54,6 +54,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wrand"
 	"github.com/thegodeveloper/learning-go/internal/wstructs"
 	"github.com/thegodeveloper/learning-go/internal/wtime"
+	"github.com/thegodeveloper/learning-go/internal/wtypeconversions"
 )
 
 /*func init() {
@@ -194,7 +195,7 @@ func main() {
 	wcalculator.Master(false)
 
 	// Complex
-	wcomplex.Master(true)
+	wcomplex.Master(false)
 
 	// Constants
 	wconstants.Master(false)
@@ -219,4 +220,7 @@ func main() {
 
 	// Integer Types
 	wintegertypes.Master(false)
+
+	// Type Conversions
+	wtypeconversions.Master(false)
 }
