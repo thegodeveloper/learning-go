@@ -2,16 +2,18 @@ package warrays
 
 func Master(show bool) {
 	if show {
-		basics()
+		basics(false)
 
-		arrayDeclaration()
+		arrayDeclaration(false)
 
-		symbols()
+		symbols(false)
 
-		printIndexesAndElements()
+		printIndexesAndElements(false)
 
-		printType()
+		printType(false)
 
-		comparingArrays()
+		comparingArrays(false)
+
+		arrayFunctions(false)
 	}
 }

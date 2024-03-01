@@ -11,7 +11,9 @@ const (
 	RMB
 )
 
-func symbols() {
-	symbol := [...]string{USD: "$", EUR: "€", GBP: "£", RMB: "¥"}
-	fmt.Println(RMB, symbol[RMB])
+func symbols(show bool) {
+	if show {
+		symbol := [...]string{USD: "$", EUR: "€", GBP: "£", RMB: "¥"}
+		fmt.Println(RMB, symbol[RMB])
+	}
 }
