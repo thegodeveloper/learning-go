@@ -19,9 +19,11 @@ func Master(show bool) {
 		sliceAppend(false)
 		sliceWithMake(false)
 
-		err := slicesAsBuffers(true, "./books.txt") // this is wrong
+		err := slicesAsBuffers(false, "./books.txt") // this is wrong
 		if err != nil {
 			fmt.Println(err)
 		}
+
+		compareSlices(false)
 	}
 }

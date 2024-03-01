@@ -75,7 +75,7 @@ func main() {
 	strings.Master(false)
 
 	// Slices
-	slices.Master(true)
+	slices.Master(false)
 
 	// sha256
 	sha256.Master(false)
