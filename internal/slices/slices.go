@@ -19,7 +19,7 @@ func Master(show bool) {
 		sliceAppend(false)
 		sliceWithMake(false)
 
-		err := slicesAsBuffers(false, "books.txt")
+		err := slicesAsBuffers(true, "./books.txt") // this is wrong
 		if err != nil {
 			fmt.Println(err)
 		}
