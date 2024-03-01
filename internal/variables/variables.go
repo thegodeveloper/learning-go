@@ -20,6 +20,8 @@ func Master(show bool) {
 		exe03(true)
 
 		declarationList(false)
+
+		declaringVarInFunctions(false)
 	}
 }
 
@@ -130,5 +132,18 @@ func declarationList(show bool) {
 		println("e = ", e)
 		println("f = ", f)
 		println("g = ", g)
+	}
+}
+
+func declaringVarInFunctions(show bool) {
+	if show {
+		println("--- Declaring variables inside a function")
+
+		x := 7
+		println("x = ", x)
+
+		y, z := 7, 77
+		println("y = ", y)
+		println("z = ", z)
 	}
 }
