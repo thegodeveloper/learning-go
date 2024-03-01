@@ -32,6 +32,7 @@ func sliceAppend(show bool) {
 		y := []int{80, 90, 100}
 		x = append(x, y...)
 		fmt.Println("New x values:", x)
+		// Because there's room in the slice, append doesn't increase the capacity
 		fmt.Println("New x capacity:", cap(x))
 	}
 }
