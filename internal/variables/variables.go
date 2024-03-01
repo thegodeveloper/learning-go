@@ -18,6 +18,8 @@ func Master(show bool) {
 		exe02(false)
 
 		exe03(true)
+
+		declarationList(false)
 	}
 }
 
@@ -26,7 +28,7 @@ func declaration(show bool) {
 		var a int
 		a = 42
 
-		var aa int = 100
+		var aa = 100 // int type by default
 
 		b := -42
 
@@ -53,7 +55,7 @@ func variables(show bool) {
 		var a = "initial"
 		fmt.Println(a)
 
-		var b, c int = 1, 2
+		var b, c = 1, 2 // int type by default
 		fmt.Println(b, c)
 
 		var d = true
@@ -104,5 +106,29 @@ func exe03(show bool) {
 		fmt.Println("b when add 1:", b)
 		fmt.Println("smallI when add 1:", smallI)
 		fmt.Println("bigI when add 1:", bigI)
+	}
+}
+
+func declarationList(show bool) {
+	if show {
+		var (
+			x    int
+			y    = 20
+			z    = 30
+			d, e = 40, "hello"
+			f, g string
+		)
+
+		x = 7
+		f = "seven"
+		g = "seven"
+
+		println("x = ", x)
+		println("y = ", y)
+		println("z = ", z)
+		println("d = ", d)
+		println("e = ", e)
+		println("f = ", f)
+		println("g = ", g)
 	}
 }
