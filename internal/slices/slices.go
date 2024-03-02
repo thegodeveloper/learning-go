@@ -12,7 +12,7 @@ func Master(show bool) {
 		slicingSlices(false)
 		slicesShareMemory(false)
 		appendOverlappingSlices(false)
-		copyArrayToSlice(false)
+		convertingArraysToSlices(false)
 		copySlice(false)
 		copySliceToArray(false)
 		sliceWithSpecificValuesPerIndex(false)
