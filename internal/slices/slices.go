@@ -27,5 +27,6 @@ func Master(show bool) {
 		compareSlices(false)
 		emptyingSlice(false)
 		changeSlicing(false)
+		confusingSlices(false)
 	}
 }
