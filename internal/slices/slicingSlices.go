@@ -20,3 +20,19 @@ func slicingSlices(show bool) {
 		fmt.Println("e:", e)
 	}
 }
+
+func changeSlicing(show bool) {
+	if show {
+		fmt.Println("--- Change Slicing")
+
+		x := []string{"a", "b", "c", "d"}
+		y := x[:2]
+		z := x[1:]
+		x[1] = "y"
+		y[0] = "x"
+		z[1] = "z"
+		fmt.Println("x values:", x)
+		fmt.Println("y values:", y)
+		fmt.Println("z values:", z)
+	}
+}
