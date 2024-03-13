@@ -13,6 +13,8 @@ func Master(show bool) {
 		deletingFromMaps(false)
 
 		mapReadWrite(false)
+
+		comparingMaps(false)
 	}
 }
 
