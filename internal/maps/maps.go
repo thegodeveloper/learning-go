@@ -10,7 +10,7 @@ func Master(show bool) {
 
 		commaOkIdiomInMaps(false)
 
-		deletingFromMaps(false)
+		delitingFromMaps(false)
 
 		mapReadWrite(false)
 	}
