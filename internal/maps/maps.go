@@ -4,6 +4,22 @@ import "fmt"
 
 func Master(show bool) {
 	if show {
+		definition(false)
+
+		mapsDeclarations(false)
+
+		commaOkIdiomInMaps(false)
+
+		deletingFromMaps(false)
+
+		mapReadWrite(true)
+	}
+}
+
+func definition(show bool) {
+	if show {
+		fmt.Println("--- Definition")
+
 		// declaring a map using make:
 		// create a map with string keys and stores data that is an int type
 		// 10 signifies that we want to pre-size for 10 entries
@@ -46,73 +62,71 @@ func Master(show bool) {
 		for key, val := range modelToMake {
 			fmt.Printf("car model %q has make %q\n", key, val)
 		}
-
-		fmt.Println()
-
-		mapsDeclarations()
-
-		commaOkIdiomInMaps()
-
-		deletingFromMaps()
 	}
 }
 
-func mapsDeclarations() {
-	// nilMap is declared to be a map with string keys and int values
-	// the zero value for a map is nil
-	// a nil map has a length of 0
-	// attempting to read a nil map always returns the zero value for the map's value type
-	fmt.Println("--- nil map ---")
-	var nilMap map[string]int
-	fmt.Println("nilMap:", nilMap)
+func mapsDeclarations(show bool) {
+	if show {
+		// nilMap is declared to be a map with string keys and int values
+		// the zero value for a map is nil
+		// a nil map has a length of 0
+		// attempting to read a nil map always returns the zero value for the map's value type
+		fmt.Println("--- nil map ---")
+		var nilMap map[string]int
+		fmt.Println("nilMap:", nilMap)
 
-	// empty map literal
-	// is not the same as a nil map
-	// it has a length of zero
-	// you can read and write to a map assigned an empty map literal
-	fmt.Println("--- map literal ---")
-	totalWins := map[string]int{}
-	fmt.Println("totalWins:", totalWins)
+		// empty map literal
+		// is not the same as a nil map
+		// it has a length of zero
+		// you can read and write to a map assigned an empty map literal
+		fmt.Println("--- map literal ---")
+		totalWins := map[string]int{}
+		fmt.Println("totalWins:", totalWins)
 
-	fmt.Println("--- nonempty map literal ---")
-	teams := map[string][]string{
-		"Orcas":   {"Fred", "Ralph", "Bijou"},
-		"Lions":   {"Sarah", "Peter", "Billie"},
-		"Kittens": {"Waldo", "Raul", "Ze"},
+		fmt.Println("--- nonempty map literal ---")
+		teams := map[string][]string{
+			"Orcas":   {"Fred", "Ralph", "Bijou"},
+			"Lions":   {"Sarah", "Peter", "Billie"},
+			"Kittens": {"Waldo", "Raul", "Ze"},
+		}
+		fmt.Println("teams:", teams)
+		fmt.Println("teams.Orcas:", teams["Orcas"])
+		fmt.Println("teams.Lions.Peter:", teams["Lions"][1])
+
+		fmt.Println("--- map with a default size ---")
+		ages := make(map[int][]string, 10)
+		fmt.Println("ages:", ages)
+		fmt.Println("ages length:", len(ages))
 	}
-	fmt.Println("teams:", teams)
-	fmt.Println("teams.Orcas:", teams["Orcas"])
-	fmt.Println("teams.Lions.Peter:", teams["Lions"][1])
-
-	fmt.Println("--- map with a default size ---")
-	ages := make(map[int][]string, 10)
-	fmt.Println("ages:", ages)
-	fmt.Println("ages length:", len(ages))
 }
 
-func commaOkIdiomInMaps() {
-	fmt.Println("--- Comma OK Idiom in Maps")
-	m := map[string]int{
-		"hello": 7,
-		"world": 7,
+func commaOkIdiomInMaps(show bool) {
+	if show {
+		fmt.Println("--- Comma OK Idiom in Maps")
+		m := map[string]int{
+			"hello": 7,
+			"world": 7,
+		}
+		v, ok := m["hello"]
+		fmt.Println(v, ok)
+
+		v, ok = m["world"]
+		fmt.Println(v, ok)
+
+		v, ok = m["goodbye"]
+		fmt.Println(v, ok) // if the key doesn't exist in the map, it returns false and assign the zero value to v
 	}
-	v, ok := m["hello"]
-	fmt.Println(v, ok)
-
-	v, ok = m["world"]
-	fmt.Println(v, ok)
-
-	v, ok = m["goodbye"]
-	fmt.Println(v, ok) // if the key doesn't exist in the map, it returns false and assign the zero value to v
 }
 
-func deletingFromMaps() {
-	fmt.Println("--- Deleting From Maps ---")
-	m := map[string]int{
-		"hello": 7,
-		"world": 7,
+func deletingFromMaps(show bool) {
+	if show {
+		fmt.Println("--- Deleting From Maps ---")
+		m := map[string]int{
+			"hello": 7,
+			"world": 7,
+		}
+		fmt.Println("Original m value:", m)
+		delete(m, "world")
+		fmt.Println("New m value after removing a key", m)
 	}
-	fmt.Println("Original m value:", m)
-	delete(m, "world")
-	fmt.Println("New m value after removing a key", m)
 }
