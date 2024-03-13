@@ -15,6 +15,8 @@ func Master(show bool) {
 		mapReadWrite(false)
 
 		comparingMaps(false)
+
+		mapSet(false)
 	}
 }
 
