@@ -10,7 +10,7 @@ func Master(show bool) {
 
 		commaOkIdiomInMaps(false)
 
-		delitingFromMaps(false)
+		deletingFromMaps(false)
 
 		mapReadWrite(false)
 	}
@@ -97,5 +97,18 @@ func mapsDeclarations(show bool) {
 		ages := make(map[int][]string, 10)
 		fmt.Println("ages:", ages)
 		fmt.Println("ages length:", len(ages))
+	}
+}
+
+func deletingFromMaps(show bool) {
+	if show {
+		fmt.Println("--- Deleting From Maps ---")
+		m := map[string]int{
+			"hello": 7,
+			"world": 7,
+		}
+		fmt.Println("Original m value:", m)
+		delete(m, "world")
+		fmt.Println("New m value after removing a key", m)
 	}
 }
