@@ -87,7 +87,7 @@ func main() {
 	pointers.Master(false)
 
 	// Maps
-	maps.Master(true)
+	maps.Master(false)
 
 	// Variables
 	variables.Master(false)
