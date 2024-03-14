@@ -1,19 +1,15 @@
 # Learning Go
 
-Mastering Golang.
+I started with Golang in 2019.
 
-## Professional Go Developer
+## Books to study in 2024
 
-- Learn the basics
-- Build a REST API
-- Microservices with gRPC
-- Build & Deployment
-- Build a CLI tool
-- Performance
-- Testing
-- Frontend Apps with Gin Framework
-- Learn Hugo
-- Deploy applications to Google Cloud Run
+- Learning Go Second Edition
+- Microservices with Go
+- gRPC Go for Professionals
+- Building Modern CLI Applications in Go
+- Event-Driven Architecture in Golang
+- Domain-Driven Design in Golang
 
 ## Books
 
