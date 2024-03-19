@@ -1,6 +1,10 @@
 # Learning Go
 
-I started with Golang in 2019.
+This is my personal repository. Where I take notes about my Go journey.
+
+## Starting Year
+
+I started with Go in May 2020.
 
 ## Books to study in 2024
 
@@ -10,6 +14,8 @@ I started with Golang in 2019.
 - Building Modern CLI Applications in Go
 - Event-Driven Architecture in Golang
 - Domain-Driven Design in Golang
+- Let's Go
+- Let's Go Further
 
 ## Books
 
