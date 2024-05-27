@@ -11,3 +11,7 @@ vet: fmt
 run: vet
 	go run ./cmd/cli/main.go
 .PHONY: run
+
+clean:
+	go clean
+.PHONY:clean
