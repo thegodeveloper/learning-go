@@ -28,6 +28,10 @@ func Master(show bool) {
 		var z float64 = x
 		var d byte = x
 
+		i := 20
+		f := float64(i)
+		fmt.Println(f)
+
 		fmt.Println("value of y: ", y)
 		fmt.Println("value of z: ", z)
 		fmt.Println("value of d: ", d)
