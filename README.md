@@ -6,6 +6,11 @@ This is my personal repository. Where I take notes about my Go journey.
 
 I started with Go in May 2020.
 
+### June 2024
+
+- 4 years later.
+- To learn Go is my priority.
+
 ## Books to study in 2024
 
 - Learning Go Second Edition
@@ -66,3 +71,4 @@ go vet ./...
 # github.com/thegodeveloper/learning-go/wTime
 wTime/master.go:13:25: 2006-02-01 should be 2006-01-02
 ```
+
