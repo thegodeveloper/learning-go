@@ -26,7 +26,20 @@ func arrayDefinition(show bool) {
 		fmt.Println(q[0])
 		fmt.Println(r[2])
 
+		// you can replace the number that specifies the number of elements in the array with ...
 		p := [...]int{1, 2, 3}
 		fmt.Printf("%T\n", p)
+
+		// this creates an array of 12 `ints` with the following values:
+		// [1, 0, 0, 0, 0, 4, 6, 0, 0, 0, 100, 15]
+		var x = [12]int{1, 5: 4, 6, 10: 100, 15}
+		fmt.Println(x)
+
+		// Go has only one-dimensional arrays, but you can simulate multidimensional arrays
+		// this declares d to be an array of length 2 whose type is an array of `ints` of length 3
+		var d [2][3]int
+		d[0] = [3]int{1, 2, 3}
+		d[1] = [3]int{4, 5, 6}
+		fmt.Println(d)
 	}
 }
