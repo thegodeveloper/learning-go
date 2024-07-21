@@ -1,4 +1,4 @@
-package warrays
+package arrays
 
 func Master(show bool) {
 	if show {

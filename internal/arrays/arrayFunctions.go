@@ -1,4 +1,4 @@
-package warrays
+package arrays
 
 import (
 	"fmt"

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/thegodeveloper/learning-go/internal/arrays"
 	"github.com/thegodeveloper/learning-go/internal/channels"
 	"github.com/thegodeveloper/learning-go/internal/deferpanic"
 	"github.com/thegodeveloper/learning-go/internal/deferpanicrecover"
@@ -32,7 +33,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/values"
 	"github.com/thegodeveloper/learning-go/internal/variables"
 	"github.com/thegodeveloper/learning-go/internal/wadapter"
-	"github.com/thegodeveloper/learning-go/internal/warrays"
 	"github.com/thegodeveloper/learning-go/internal/wawspresignedurl"
 	"github.com/thegodeveloper/learning-go/internal/wcalculator"
 	"github.com/thegodeveloper/learning-go/internal/wcomplex"
@@ -150,7 +150,7 @@ func main() {
 	deferpanic.Master(false)
 
 	// Arrays
-	warrays.Master(false)
+	arrays.Master(false)
 
 	// Interfaces
 	winterfaces.Master(false)
