@@ -2,9 +2,9 @@ package arrays
 
 func Master(show bool) {
 	if show {
-		basics(false)
+		arrayDefinition(false)
 
-		arrayDeclaration(false)
+		basics(false)
 
 		symbols(false)
 

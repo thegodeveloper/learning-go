@@ -2,11 +2,12 @@ package arrays
 
 import "fmt"
 
-func arrayDeclaration(show bool) {
+func arrayDefinition(show bool) {
 	if show {
 		fmt.Println("\n-- Array Declaration")
 		var a [3]int
 		fmt.Println(a[0])
+
 		fmt.Println(a[len(a)-1])
 
 		// print the indices and elements
