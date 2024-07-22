@@ -8,7 +8,7 @@ func Master(show bool) {
 	if show {
 		fmt.Println("-- Slices")
 
-		sliceDefinition(false)
+		definition(true)
 		slicingSlices(false)
 		slicesShareMemory(false)
 		appendOverlappingSlices(false)

@@ -2,9 +2,12 @@ package slices
 
 import "fmt"
 
-func sliceDefinition(show bool) {
+func definition(show bool) {
 	if show {
 		fmt.Println("--- Slice Definition")
+
+		var x = []int{10, 20, 30}
+		fmt.Println(x)
 
 		// this is a string array of 5 elements
 		a := [5]string{"a", "b", "c", "d", "e"}
@@ -17,5 +20,6 @@ func sliceDefinition(show bool) {
 		fmt.Println(a[1:4])
 		fmt.Println(a[:2])
 		fmt.Println(a[2:])
+
 	}
 }
