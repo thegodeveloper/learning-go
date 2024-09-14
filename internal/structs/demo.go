@@ -11,6 +11,15 @@ type person struct {
 	pet  string
 }
 
+func demo(show bool) {
+	if show {
+		println("\n### Demo ###")
+
+		structDeclaration()
+		anonymousStruct()
+	}
+}
+
 func structDeclaration() {
 	fmt.Println("--- Struct Declaration ---")
 	beth := person{
@@ -37,13 +46,4 @@ func anonymousStruct() {
 	}
 
 	fmt.Println("Pet Value:", pet)
-}
-
-func demo(show bool) {
-	if show {
-		println("\n### Demo ###")
-
-		structDeclaration()
-		anonymousStruct()
-	}
 }

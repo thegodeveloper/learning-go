@@ -8,7 +8,7 @@ func Master(show bool) {
 
 		definition(false)
 
-		demo(false)
+		demo(true)
 
 		activity(false)
 	}
