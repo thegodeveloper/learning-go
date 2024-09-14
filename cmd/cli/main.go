@@ -177,7 +177,7 @@ func main() {
 	wconcurrency.Master(false)
 
 	// Structs
-	structs.Master(true)
+	structs.Master(false)
 
 	// Open Web Page
 	wopenpage.Master(false)
