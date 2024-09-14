@@ -26,6 +26,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/sha256"
 	"github.com/thegodeveloper/learning-go/internal/slices"
 	"github.com/thegodeveloper/learning-go/internal/strings"
+	"github.com/thegodeveloper/learning-go/internal/structs"
 	"github.com/thegodeveloper/learning-go/internal/sumtwonumbers"
 	"github.com/thegodeveloper/learning-go/internal/switches"
 	"github.com/thegodeveloper/learning-go/internal/typediffarrayslicesitem"
@@ -52,7 +53,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wopenpage"
 	"github.com/thegodeveloper/learning-go/internal/wpackages"
 	"github.com/thegodeveloper/learning-go/internal/wrand"
-	"github.com/thegodeveloper/learning-go/internal/wstructs"
 	"github.com/thegodeveloper/learning-go/internal/wtime"
 	"github.com/thegodeveloper/learning-go/internal/wtypeconversions"
 )
@@ -177,7 +177,7 @@ func main() {
 	wconcurrency.Master(false)
 
 	// Structs
-	wstructs.Master(false)
+	structs.Master(false)
 
 	// Open Web Page
 	wopenpage.Master(false)

@@ -1,19 +1,23 @@
-package wstructs
+package structs
 
 import (
 	"fmt"
 	"time"
 )
 
-func Master(show bool) {
-	if show {
+type Employee struct {
+	ID        int
+	Name      string
+	Address   string
+	DoB       string
+	Position  string
+	Salary    int
+	ManagerID int
+}
 
-		definition(false)
-
-		Demo(false)
-
-		Activity(true)
-	}
+type tree struct {
+	value       int
+	left, right *tree
 }
 
 func definition(show bool) {
@@ -46,21 +50,6 @@ func createEmployee(id int, name string, address string, dob string, position st
 		Salary:    salary,
 		ManagerID: managerId,
 	}
-}
-
-type Employee struct {
-	ID        int
-	Name      string
-	Address   string
-	DoB       string
-	Position  string
-	Salary    int
-	ManagerID int
-}
-
-type tree struct {
-	value       int
-	left, right *tree
 }
 
 // Sort sorts values in place.

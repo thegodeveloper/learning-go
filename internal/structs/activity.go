@@ -1,4 +1,4 @@
-package wstructs
+package structs
 
 import "fmt"
 
@@ -12,7 +12,7 @@ func (r Record) String() string {
 	return fmt.Sprintf("%s,%d", r.Name, r.Age)
 }
 
-func Activity(show bool) {
+func activity(show bool) {
 	if show {
 		println("\n-- Structs Activity")
 

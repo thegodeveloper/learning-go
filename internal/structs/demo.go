@@ -1,4 +1,4 @@
-package wstructs
+package structs
 
 import (
 	"fmt"
@@ -39,7 +39,7 @@ func anonymousStruct() {
 	fmt.Println("Pet Value:", pet)
 }
 
-func Demo(show bool) {
+func demo(show bool) {
 	if show {
 		println("\n### Demo ###")
 
