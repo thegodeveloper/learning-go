@@ -8,7 +8,7 @@ func Master(show bool) {
 
 		commaOkIdiomInMaps(false)
 
-		deletingFromMaps(true)
+		deletingFromMaps(false)
 
 		mapReadWrite(false)
 
