@@ -22,6 +22,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/openfile"
 	"github.com/thegodeveloper/learning-go/internal/passingarguments"
 	"github.com/thegodeveloper/learning-go/internal/pointers"
+	"github.com/thegodeveloper/learning-go/internal/printstars"
 	"github.com/thegodeveloper/learning-go/internal/runes"
 	"github.com/thegodeveloper/learning-go/internal/sha256"
 	"github.com/thegodeveloper/learning-go/internal/slices"
@@ -62,165 +63,59 @@ import (
 }*/
 
 func main() {
-	// Switches
 	switches.Master(false)
-
-	// Unicode
 	unicode.Master(false)
-
-	// Values
 	values.Master(false)
-
-	// Strings
 	strings.Master(false)
-
-	// Slices
 	slices.Master(false)
-
-	// sha256
 	sha256.Master(false)
-
-	// Runes
 	runes.Master(false)
-
-	// Pointers
 	pointers.Master(false)
-
-	// Maps
 	maps.Master(false)
-
-	// Variables
 	variables.Master(false)
-
-	// Type Diff Array Slices Item
 	typediffarrayslicesitem.Master(false)
-
-	// Sum two Arguments
 	sumtwonumbers.Master(false)
-
-	// Passing Arguments
 	passingarguments.Master(false)
-
-	// Open File
 	openfile.Master(false)
-
-	// Loops Branches
 	loopsbranches.Master(false)
-
-	// Length Capacity
 	lengthcapacity.Master(false)
-
-	// Indirect Memory Access
 	indirectmemoryaccess.Master(false)
-
-	// Frame Boundaries
 	frameboundaries.Master(false)
-
-	// Escape Analysis
 	escapeanalysis.Master(false)
-
-	// Memory Profiling
 	memoryprofiling.Master(false)
-
-	// Hello World
 	helloworld.Master(false)
-
-	// Functions
 	functions.Master(false)
-
-	// Functional Options Pattern
 	functionaloptions.Master(false)
-
-	// Defer with Panic
 	deferwithpanic.Master(false)
-
-	// For Loops
 	forloops.Master(false)
-
-	// Enums
 	enums.Master(false)
-
-	// Defer Panic Recover
 	deferpanicrecover.Master(false)
-
-	// Errors
 	werrors.Master(false)
-
-	// Defer Panic
 	deferpanic.Master(false)
-
-	// Arrays
 	arrays.Master(false)
-
-	// Interfaces
 	winterfaces.Master(false)
-
-	// Random Values
 	wrand.Master(false)
-
-	// Packages
 	wpackages.Master(false)
-
-	// External Packages
 	wexternalpackages.Master(false)
-
-	// Adapter Pattern
 	wadapter.Master(false)
-
-	// Channels
 	channels.Master(false)
-
-	// Goroutines
 	goroutines.Master(false)
-
-	// Concurrency
 	wconcurrency.Master(false)
-
-	// Structs
 	structs.Master(false)
-
-	// Open Web Page
 	wopenpage.Master(false)
-
-	// AWS Pre-signed URL
 	wawspresignedurl.Master(false)
-
-	// JSON
 	wjson.Master(false)
-
-	// Time
 	wtime.Master(false)
-
-	// Calculator
 	wcalculator.Master(false)
-
-	// Complex
 	wcomplex.Master(false)
-
-	// Constants
 	wconstants.Master(false)
-
-	// Occurrences in File
 	wcountoccurrences.Master(false)
-
-	// Custom Type
 	wcustomtype.Master(false)
-
-	// Defer
 	wdefer.Master(false)
-
-	// Nil and Zero Values
 	wnilzero.Master(false)
-
-	// Errors Old
 	werrorold.Master(false)
-
-	// Goroutines Example
 	wgoroutines.Master(false)
-
-	// Integer Types
 	wintegertypes.Master(false)
-
-	// Type Conversions
 	wtypeconversions.Master(false)
+	printstars.Master(false)
 }
