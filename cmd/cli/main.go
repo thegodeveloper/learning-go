@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/thegodeveloper/learning-go/internal/arrays"
+	"github.com/thegodeveloper/learning-go/internal/box_ui"
 	"github.com/thegodeveloper/learning-go/internal/channels"
 	"github.com/thegodeveloper/learning-go/internal/deferpanic"
 	"github.com/thegodeveloper/learning-go/internal/deferpanicrecover"
@@ -63,6 +64,7 @@ import (
 }*/
 
 func main() {
+	box_ui.Master(false)
 	switches.Master(false)
 	unicode.Master(false)
 	values.Master(false)
