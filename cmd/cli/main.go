@@ -12,6 +12,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/functionaloptions"
 	"github.com/thegodeveloper/learning-go/internal/functions"
 	"github.com/thegodeveloper/learning-go/internal/goroutines"
+	"github.com/thegodeveloper/learning-go/internal/gotousecase"
 	"github.com/thegodeveloper/learning-go/internal/helloworld"
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/escapeanalysis"
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/memoryprofiling"
@@ -120,4 +121,5 @@ func main() {
 	wintegertypes.Master(false)
 	wtypeconversions.Master(false)
 	printstars.Master(false)
+	gotousecase.Master(false)
 }
