@@ -37,11 +37,11 @@ func accumulator(increment int) func() int {
 func Master(show bool) {
 	if show {
 		fmt.Println("--- simulating named and optional parameters ---")
-		simulatingNamedOptionalParams(MyFuncOpts{
+		simulatingNamedOptionalParams(false, MyFuncOpts{
 			LastName: "Patel",
 			Age:      50,
 		})
-		simulatingNamedOptionalParams(MyFuncOpts{
+		simulatingNamedOptionalParams(false, MyFuncOpts{
 			FirstName: "Joe",
 			LastName:  "Smith",
 		})
@@ -69,7 +69,7 @@ func Master(show bool) {
 		}
 		fmt.Printf("result: %d, remainder: %d\n", result, remainder)
 
-		sortSlice()
+		sortSlice(false)
 
 		fmt.Println("--- return a function ---")
 		twoBase := makeMult(2)

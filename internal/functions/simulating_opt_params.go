@@ -8,6 +8,8 @@ type MyFuncOpts struct {
 	Age       int
 }
 
-func simulatingNamedOptionalParams(opts MyFuncOpts) {
-	fmt.Println(opts)
+func simulatingNamedOptionalParams(show bool, opts MyFuncOpts) {
+	if show {
+		fmt.Println(opts)
+	}
 }
