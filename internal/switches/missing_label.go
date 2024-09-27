@@ -6,6 +6,7 @@ func missingLabel(show bool) {
 	if show {
 		fmt.Println("--- Missing Labels")
 
+	loop:
 		for i := 0; i < 10; i++ {
 			switch i {
 			case 0, 2, 4, 6:
@@ -16,7 +17,7 @@ func missingLabel(show bool) {
 				fmt.Println(i, "is the most beautiful number")
 			case 8:
 				fmt.Println(i, "is so boring, exit the loop")
-				break
+				break loop
 			default:
 				fmt.Println(i, "is either boring")
 			}
