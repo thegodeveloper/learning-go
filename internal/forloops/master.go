@@ -13,5 +13,6 @@ func Master(show bool) {
 		forString(false)
 		forWithLabels(false)
 		forBreakFromSwitch(false)
+		rangeIsACopy(false)
 	}
 }
