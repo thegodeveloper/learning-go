@@ -2,16 +2,19 @@ package forloops
 
 import "fmt"
 
-func forWithLabels() {
-	fmt.Println("--- for with labels ---")
-	samples := []string{"hello", "world!"}
+func forWithLabels(show bool) {
+	if show {
+		fmt.Println("--- for with labels")
 
-outer:
-	for _, sample := range samples {
-		for i, r := range sample {
-			fmt.Println(i, r, string(r))
-			if r == 'l' {
-				continue outer
+		samples := []string{"hello", "world!"}
+
+	outer:
+		for _, sample := range samples {
+			for i, r := range sample {
+				fmt.Println(i, r, string(r))
+				if r == 'l' {
+					continue outer
+				}
 			}
 		}
 	}

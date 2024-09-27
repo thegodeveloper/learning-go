@@ -2,8 +2,9 @@ package forloops
 
 import "fmt"
 
-func Master(show bool) {
+func definition(show bool) {
 	if show {
+		fmt.Println("--- Definition")
 		x := 5
 		counter := x
 
@@ -30,12 +31,5 @@ func Master(show bool) {
 			fmt.Println("Never stop")
 			break
 		}
-
-		forContinue()
-		forRange()
-		forRangeMaps()
-		forString()
-		forWithLabels()
-		forBreakFromSwitch()
 	}
 }
