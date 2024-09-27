@@ -7,5 +7,6 @@ func Master(show bool) {
 		switchStatement(false)
 		ifElseWithSwitch(false)
 		missingLabel(false)
+		basicBlankSwitch(false)
 	}
 }
