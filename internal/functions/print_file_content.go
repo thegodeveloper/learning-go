@@ -1,6 +1,7 @@
 package functions
 
 import (
+	"fmt"
 	"io"
 	"log"
 	"os"
@@ -33,5 +34,13 @@ func printFileContent(fileName string) {
 			}
 			break
 		}
+	}
+}
+
+func mainPrintFileContent(show bool) {
+	if show {
+		fmt.Println("--- print file content ---")
+
+		printFileContent("./books.txt")
 	}
 }

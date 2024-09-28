@@ -11,7 +11,7 @@ type Person struct {
 	Age       int
 }
 
-func sortSlice(show bool) {
+func mainSortSlice(show bool) {
 	if show {
 		people := []Person{
 			{"Pat", "Patterson", 37},
