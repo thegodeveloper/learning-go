@@ -4,6 +4,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/arrays"
 	"github.com/thegodeveloper/learning-go/internal/box_ui"
 	"github.com/thegodeveloper/learning-go/internal/channels"
+	"github.com/thegodeveloper/learning-go/internal/closures"
 	"github.com/thegodeveloper/learning-go/internal/deferpanic"
 	"github.com/thegodeveloper/learning-go/internal/deferpanicrecover"
 	"github.com/thegodeveloper/learning-go/internal/deferwithpanic"
@@ -122,4 +123,5 @@ func main() {
 	wtypeconversions.Master(false)
 	printstars.Master(false)
 	gotousecase.Master(false)
+	closures.Master(false)
 }
