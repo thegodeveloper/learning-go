@@ -11,5 +11,6 @@ func Master(show bool) {
 		mainPrintFileContent(false)
 		mainFunctionsAreValues(false)
 		mainAnonymousFunctions(false)
+		mainFunctionsAsParameters(false)
 	}
 }
