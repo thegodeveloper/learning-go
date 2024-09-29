@@ -7,6 +7,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/closures"
 	"github.com/thegodeveloper/learning-go/internal/deferpanic"
 	"github.com/thegodeveloper/learning-go/internal/deferpanicrecover"
+	"github.com/thegodeveloper/learning-go/internal/defersimplecat"
 	"github.com/thegodeveloper/learning-go/internal/deferwithpanic"
 	"github.com/thegodeveloper/learning-go/internal/enums"
 	"github.com/thegodeveloper/learning-go/internal/forloops"
@@ -124,4 +125,5 @@ func main() {
 	printstars.Master(false)
 	gotousecase.Master(false)
 	closures.Master(false)
+	defersimplecat.Master(false)
 }
