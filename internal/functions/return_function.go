@@ -10,7 +10,7 @@ func makeMult(base int) func(int) int {
 
 func mainReturnFunction(show bool) {
 	if show {
-		fmt.Println("--- Return Function ---")
+		fmt.Println("--- Return Functions from Functions ---")
 
 		twoBase := makeMult(2)
 		threeBase := makeMult(3)
