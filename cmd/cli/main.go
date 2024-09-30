@@ -75,7 +75,7 @@ func main() {
 	slices.Master(false)
 	sha256.Master(false)
 	runes.Master(false)
-	pointers.Master(false)
+	pointers.Master(true)
 	maps.Master(false)
 	variables.Master(false)
 	typediffarrayslicesitem.Master(false)
