@@ -12,5 +12,6 @@ func Master(show bool) {
 		mainFunctionsAreValues(false)
 		mainAnonymousFunctions(false)
 		mainFunctionsAsParameters(false)
+		mainPrefixer(false)
 	}
 }
