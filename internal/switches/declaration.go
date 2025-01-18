@@ -4,7 +4,7 @@ import "fmt"
 
 func declaration(show bool) {
 	if show {
-		var finger int = 1
+		var finger = 1
 
 		switch finger {
 		case 0:
