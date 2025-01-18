@@ -20,7 +20,7 @@ func definition(show bool) {
 		}
 		fmt.Println()
 
-		// for with continue and break
+		// for with continue and break, while loop simulation
 		for {
 			if x%2 != 0 {
 				fmt.Printf("%d is odd\n", x)
@@ -34,6 +34,13 @@ func definition(show bool) {
 		for {
 			fmt.Println("Never stop")
 			break
+		}
+
+		// idiomatic for loop
+		i := 0
+		for ok := true; ok; ok = (i != 10) {
+			fmt.Print(i*i, " ")
+			i++
 		}
 	}
 }
