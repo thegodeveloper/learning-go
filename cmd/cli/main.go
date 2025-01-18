@@ -24,6 +24,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/stacksandpointers/frameboundaries"
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/stacksandpointers/indirectmemoryaccess"
 	"github.com/thegodeveloper/learning-go/internal/lengthcapacity"
+	"github.com/thegodeveloper/learning-go/internal/logfatal"
 	"github.com/thegodeveloper/learning-go/internal/loopsbranches"
 	"github.com/thegodeveloper/learning-go/internal/maps"
 	"github.com/thegodeveloper/learning-go/internal/openfile"
@@ -134,4 +135,5 @@ func main() {
 	input.Master(false)
 	which.Master(false)
 	syslog.Master(false)
+	logfatal.Master(false)
 }
