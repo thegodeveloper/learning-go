@@ -53,6 +53,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/werrors"
 	"github.com/thegodeveloper/learning-go/internal/wexternalpackages"
 	"github.com/thegodeveloper/learning-go/internal/wgoroutines"
+	"github.com/thegodeveloper/learning-go/internal/which"
 	"github.com/thegodeveloper/learning-go/internal/wintegertypes"
 	"github.com/thegodeveloper/learning-go/internal/winterfaces"
 	"github.com/thegodeveloper/learning-go/internal/wjson"
@@ -130,4 +131,5 @@ func main() {
 	defersimplecat.Master(false)
 	constants.Master(false)
 	input.Master(false)
+	which.Master(false)
 }
