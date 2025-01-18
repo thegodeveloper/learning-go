@@ -37,6 +37,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/structs"
 	"github.com/thegodeveloper/learning-go/internal/sumtwonumbers"
 	"github.com/thegodeveloper/learning-go/internal/switches"
+	"github.com/thegodeveloper/learning-go/internal/syslog"
 	"github.com/thegodeveloper/learning-go/internal/typediffarrayslicesitem"
 	"github.com/thegodeveloper/learning-go/internal/unicode"
 	"github.com/thegodeveloper/learning-go/internal/values"
@@ -132,4 +133,5 @@ func main() {
 	constants.Master(false)
 	input.Master(false)
 	which.Master(false)
+	syslog.Master(false)
 }
