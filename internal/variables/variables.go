@@ -7,6 +7,8 @@ import (
 
 const value = 10
 
+var Global = 1234
+
 func Master(show bool) {
 	if show {
 		declaration(false)
@@ -49,6 +51,8 @@ func declaration(show bool) {
 		fmt.Println(e)
 		fmt.Println(f)
 		fmt.Println(g)
+
+		fmt.Println("Global value: ", Global)
 	}
 }
 
