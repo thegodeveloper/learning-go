@@ -1,4 +1,4 @@
-package wconcurrency
+package concurrency
 
 import (
 	"errors"

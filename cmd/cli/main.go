@@ -5,6 +5,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/box_ui"
 	"github.com/thegodeveloper/learning-go/internal/channels"
 	"github.com/thegodeveloper/learning-go/internal/closures"
+	"github.com/thegodeveloper/learning-go/internal/concurrency"
 	"github.com/thegodeveloper/learning-go/internal/constants"
 	"github.com/thegodeveloper/learning-go/internal/deferpanic"
 	"github.com/thegodeveloper/learning-go/internal/deferpanicrecover"
@@ -44,7 +45,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wawspresignedurl"
 	"github.com/thegodeveloper/learning-go/internal/wcalculator"
 	"github.com/thegodeveloper/learning-go/internal/wcomplex"
-	"github.com/thegodeveloper/learning-go/internal/wconcurrency"
 	"github.com/thegodeveloper/learning-go/internal/wconstants"
 	"github.com/thegodeveloper/learning-go/internal/wcountoccurrences"
 	"github.com/thegodeveloper/learning-go/internal/wcustomtype"
@@ -107,7 +107,7 @@ func main() {
 	wadapter.Master(false)
 	channels.Master(false)
 	goroutines.Master(false)
-	wconcurrency.Master(false)
+	concurrency.Master(false)
 	structs.Master(false)
 	wopenpage.Master(false)
 	wawspresignedurl.Master(false)
