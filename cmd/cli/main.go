@@ -17,6 +17,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/goroutines"
 	"github.com/thegodeveloper/learning-go/internal/gotousecase"
 	"github.com/thegodeveloper/learning-go/internal/helloworld"
+	"github.com/thegodeveloper/learning-go/internal/input"
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/escapeanalysis"
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/memoryprofiling"
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/stacksandpointers/frameboundaries"
@@ -128,4 +129,5 @@ func main() {
 	closures.Master(false)
 	defersimplecat.Master(false)
 	constants.Master(false)
+	input.Master(false)
 }
