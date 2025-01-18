@@ -5,6 +5,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/box_ui"
 	"github.com/thegodeveloper/learning-go/internal/channels"
 	"github.com/thegodeveloper/learning-go/internal/closures"
+	"github.com/thegodeveloper/learning-go/internal/constants"
 	"github.com/thegodeveloper/learning-go/internal/deferpanic"
 	"github.com/thegodeveloper/learning-go/internal/deferpanicrecover"
 	"github.com/thegodeveloper/learning-go/internal/defersimplecat"
@@ -126,4 +127,5 @@ func main() {
 	gotousecase.Master(false)
 	closures.Master(false)
 	defersimplecat.Master(false)
+	constants.Master(false)
 }
