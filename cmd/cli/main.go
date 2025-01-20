@@ -35,6 +35,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/runes"
 	"github.com/thegodeveloper/learning-go/internal/sha256"
 	"github.com/thegodeveloper/learning-go/internal/slices"
+	"github.com/thegodeveloper/learning-go/internal/statistics"
 	"github.com/thegodeveloper/learning-go/internal/strings"
 	"github.com/thegodeveloper/learning-go/internal/structs"
 	"github.com/thegodeveloper/learning-go/internal/sumtwonumbers"
@@ -138,4 +139,5 @@ func main() {
 	syslog.Master(false)
 	logfatal.Master(false)
 	logging.Master(false)
+	statistics.Master(false)
 }
