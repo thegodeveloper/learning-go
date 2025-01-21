@@ -40,6 +40,12 @@ I started with Go in May 2020.
 - Microservices with Go
 - Building Modern CLI Applications with Go
 
+## How to work with custom packages
+
+- Create a project and store it in GitHub (https://github.com/thegodeveloper/logging)
+- Execute `go get github.com/thegodeveloper/logging`
+- Call it from `main.go`
+
 ## Install goimports
 
 Enhanced version of `go fmt` called `goimports`.

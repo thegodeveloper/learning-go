@@ -1,6 +1,8 @@
 module github.com/thegodeveloper/learning-go
 
-go 1.22
+go 1.23
+
+toolchain go1.23.5
 
 require (
 	github.com/aws/aws-sdk-go v1.44.282
@@ -18,6 +20,7 @@ require (
 	github.com/mattn/go-runewidth v0.0.15 // indirect
 	github.com/rivo/tview v0.0.0-20240921122403-a64fc48d7654 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
+	github.com/thegodeveloper/logging v0.0.0-20250121204023-d85d3e437fb6 // indirect
 	golang.org/x/net v0.7.0 // indirect
 	golang.org/x/sys v0.17.0 // indirect
 	golang.org/x/term v0.17.0 // indirect

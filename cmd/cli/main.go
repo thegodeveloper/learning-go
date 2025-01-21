@@ -25,7 +25,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/stacksandpointers/indirectmemoryaccess"
 	"github.com/thegodeveloper/learning-go/internal/lengthcapacity"
 	"github.com/thegodeveloper/learning-go/internal/logfatal"
-	"github.com/thegodeveloper/learning-go/internal/logging"
 	"github.com/thegodeveloper/learning-go/internal/loopsbranches"
 	"github.com/thegodeveloper/learning-go/internal/maps"
 	"github.com/thegodeveloper/learning-go/internal/openfile"
@@ -67,6 +66,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wrand"
 	"github.com/thegodeveloper/learning-go/internal/wtime"
 	"github.com/thegodeveloper/learning-go/internal/wtypeconversions"
+	"github.com/thegodeveloper/logging"
 )
 
 /*func init() {
@@ -138,6 +138,6 @@ func main() {
 	which.Master(false)
 	syslog.Master(false)
 	logfatal.Master(false)
-	logging.Master(false)
+	logging.Master(true, true, false)
 	statistics.Master(false)
 }
