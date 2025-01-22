@@ -138,6 +138,6 @@ func main() {
 	which.Master(false)
 	syslog.Master(false)
 	logfatal.Master(false)
-	logging.Master(true, true, false)
+	logging.Master(false, true, false)
 	statistics.Master(false)
 }

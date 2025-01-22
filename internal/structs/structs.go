@@ -11,5 +11,7 @@ func Master(show bool) {
 		demo(false)
 
 		activity(false)
+
+		record(false)
 	}
 }
