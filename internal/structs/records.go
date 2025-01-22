@@ -27,3 +27,8 @@ func createPersona(name string, age int) Persona {
 func (r Persona) String() string {
 	return fmt.Sprintf("%s,%d", r.Name, r.Age)
 }
+
+// IncrAge receive a pointer of the Persona struct and increase the Age field
+func (r *Persona) IncrAge() {
+	r.Age++
+}
