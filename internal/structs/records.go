@@ -9,17 +9,21 @@ type Persona struct {
 
 func record(show bool) {
 	if show {
-		record := createPersona("Bill", 50)
+		record, err := NewPersona("Bill", 50)
+		if err != nil {
+			fmt.Println("Error:", err)
+			return
+		}
 
 		fmt.Println(record.String())
 
 		fmt.Println("Name:", record.Name)
 		fmt.Println("Age:", record.Age)
-	}
-}
 
-func createPersona(name string, age int) Persona {
-	return Persona{Name: name, Age: age}
+		record.IncrAge()
+
+		fmt.Println("New Age:", record.Age)
+	}
 }
 
 // String returns a csv representating our record.
@@ -31,4 +35,14 @@ func (r Persona) String() string {
 // IncrAge receive a pointer of the Persona struct and increase the Age field
 func (r *Persona) IncrAge() {
 	r.Age++
+}
+
+func NewPersona(name string, age int) (*Persona, error) {
+	if name == "" {
+		return nil, fmt.Errorf("name cannot be the empty string")
+	}
+	if age <= 0 {
+		return nil, fmt.Errorf("age cannot be <= 0")
+	}
+	return &Persona{Name: name, Age: age}, nil
 }
