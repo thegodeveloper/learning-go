@@ -19,6 +19,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/gotousecase"
 	"github.com/thegodeveloper/learning-go/internal/helloworld"
 	"github.com/thegodeveloper/learning-go/internal/input"
+	"github.com/thegodeveloper/learning-go/internal/interfaces"
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/escapeanalysis"
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/memoryprofiling"
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/stacksandpointers/frameboundaries"
@@ -58,7 +59,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wgoroutines"
 	"github.com/thegodeveloper/learning-go/internal/which"
 	"github.com/thegodeveloper/learning-go/internal/wintegertypes"
-	"github.com/thegodeveloper/learning-go/internal/winterfaces"
 	"github.com/thegodeveloper/learning-go/internal/wjson"
 	"github.com/thegodeveloper/learning-go/internal/wnilzero"
 	"github.com/thegodeveloper/learning-go/internal/wopenpage"
@@ -105,7 +105,7 @@ func main() {
 	werrors.Master(false)
 	deferpanic.Master(false)
 	arrays.Master(false)
-	winterfaces.Master(false)
+	interfaces.Master(false)
 	wrand.Master(false)
 	wpackages.Master(false)
 	wexternalpackages.Master(false)

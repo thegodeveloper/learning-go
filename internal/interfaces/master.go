@@ -1,4 +1,4 @@
-package winterfaces
+package interfaces
 
 import "fmt"
 
