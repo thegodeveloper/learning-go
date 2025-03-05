@@ -17,7 +17,7 @@ func anonymousFunctionOption1(show bool) {
 			fmt.Println("printing", j, "from inside of an anonymous function")
 		}
 
-		for i := 0; i < 5; i++ {
+		for i := range 5 {
 			f(i)
 		}
 	}
@@ -25,7 +25,7 @@ func anonymousFunctionOption1(show bool) {
 
 func anonymousFunctionOption2(show bool) {
 	if show {
-		for i := 0; i < 5; i++ {
+		for i := range 5 {
 			func(j int) {
 				fmt.Println("printing", j, "from inside of an anonymous function")
 			}(i)
