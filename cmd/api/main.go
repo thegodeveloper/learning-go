@@ -32,6 +32,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/passingarguments"
 	"github.com/thegodeveloper/learning-go/internal/pointers"
 	"github.com/thegodeveloper/learning-go/internal/printstars"
+	"github.com/thegodeveloper/learning-go/internal/random_message"
 	"github.com/thegodeveloper/learning-go/internal/runes"
 	"github.com/thegodeveloper/learning-go/internal/sha256"
 	"github.com/thegodeveloper/learning-go/internal/slices"
@@ -140,4 +141,5 @@ func main() {
 	logfatal.Master(false)
 	logging.Master(false, true, false)
 	statistics.Master(false)
+	randommessage.Index(false)
 }
