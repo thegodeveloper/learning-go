@@ -14,13 +14,15 @@ var helloList = []string{
 }
 
 func Index(show bool) {
-	rand.NewSource(time.Now().UnixNano())
-	index := rand.Intn(len(helloList))
-	msg, err := hello(index)
-	if err != nil {
-		log.Fatal(err)
+	if show {
+		rand.NewSource(time.Now().UnixNano())
+		index := rand.Intn(len(helloList))
+		msg, err := hello(index)
+		if err != nil {
+			log.Fatal(err)
+		}
+		fmt.Println(msg)
 	}
-	fmt.Println(msg)
 }
 
 func hello(index int) (string, error) {
