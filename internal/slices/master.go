@@ -29,5 +29,6 @@ func Master(show bool) {
 		changeSlicing(false)
 		confusingSlices(false)
 		slicesWithOverlappingStorage(false)
+		passMapSlice(false)
 	}
 }
