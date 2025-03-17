@@ -1,31 +1,9 @@
 # Learning Go
 
-This is my personal repository. Where I take notes about my Go journey.
-
-## Starting Year
-
-I started with Go in May 2020.
-
-### June 2024
-
-- 4 years later.
-- To learn Go is my priority.
-
-## Books to study in 2024
-
-- Learning Go Second Edition
-- Microservices with Go
-- gRPC Go for Professionals
-- Building Modern CLI Applications in Go
-- Event-Driven Architecture in Golang
-- Domain-Driven Design in Golang
-- Let's Go
-- Let's Go Further
-
 ## Books
 
 - The Go Programming Language
-- Learning Go
+- Learning Go Second Edition
 - The Power of Go Tools
 - Concurrency in Go
 - Distributed Services with Go
@@ -39,6 +17,16 @@ I started with Go in May 2020.
 - Let's Go Further
 - Microservices with Go
 - Building Modern CLI Applications with Go
+- Go for DevOps
+- gRPC Go for Professionals
+- Event-Driven Architecture in Golang
+- Domain-Driven Design with Golang
+- gRPC Microservices in Go
+- Go Programming Cookbook
+- Go Programming From Beginner to Professional
+- Porgramming Backeng with Go
+- For the love of Go
+- The Power of Go Tools
 
 ## How to work with custom packages
 
