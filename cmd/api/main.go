@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/thegodeveloper/learning-go/internal/arrays"
+	"github.com/thegodeveloper/learning-go/internal/books/learning_go/chapter5"
 	"github.com/thegodeveloper/learning-go/internal/box_ui"
 	"github.com/thegodeveloper/learning-go/internal/channels"
 	"github.com/thegodeveloper/learning-go/internal/closures"
@@ -142,4 +143,7 @@ func main() {
 	logging.Master(false, true, false)
 	statistics.Master(false)
 	randommessage.Index(false)
+
+	// Learning Go Exercises
+	chapter5.Index(false)
 }
