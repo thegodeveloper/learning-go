@@ -13,5 +13,7 @@ func Master(show bool) {
 		activity(false)
 
 		record(false)
+
+		pointerReceiver(false)
 	}
 }
