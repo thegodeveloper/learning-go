@@ -15,5 +15,9 @@ func Master(show bool) {
 		record(false)
 
 		pointerReceiver(false)
+
+		methods(false)
+
+		binaryTree(false)
 	}
 }

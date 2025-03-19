@@ -12,7 +12,7 @@ func (p Person) String() string {
 	return fmt.Sprintf("%s %s, age %d", p.FirstName, p.LastName, p.Age)
 }
 
-func Methods(show bool) {
+func methods(show bool) {
 	if show {
 		p := Person{
 			FirstName: "Fred",
