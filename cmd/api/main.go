@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/thegodeveloper/learning-go/internal/arrays"
 	"github.com/thegodeveloper/learning-go/internal/books/learning_go/chapter5"
+	"github.com/thegodeveloper/learning-go/internal/books/learning_go/chapter6"
 	"github.com/thegodeveloper/learning-go/internal/box_ui"
 	"github.com/thegodeveloper/learning-go/internal/channels"
 	"github.com/thegodeveloper/learning-go/internal/closures"
@@ -146,4 +147,5 @@ func main() {
 
 	// Learning Go Exercises
 	chapter5.Index(false)
+	chapter6.Index(false)
 }
