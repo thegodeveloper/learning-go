@@ -5,6 +5,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/books/learning_go/chapter5"
 	"github.com/thegodeveloper/learning-go/internal/books/learning_go/chapter6"
 	"github.com/thegodeveloper/learning-go/internal/box_ui"
+	"github.com/thegodeveloper/learning-go/internal/calculator"
 	"github.com/thegodeveloper/learning-go/internal/channels"
 	"github.com/thegodeveloper/learning-go/internal/closures"
 	"github.com/thegodeveloper/learning-go/internal/concurrency"
@@ -151,4 +152,7 @@ func main() {
 	chapter6.Index(false)
 
 	webrouting.Index(false)
+
+	// For the Love of Go
+	calculator.Index(false)
 }
