@@ -56,6 +56,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wcountoccurrences"
 	"github.com/thegodeveloper/learning-go/internal/wcustomtype"
 	"github.com/thegodeveloper/learning-go/internal/wdefer"
+	"github.com/thegodeveloper/learning-go/internal/webrouting"
 	"github.com/thegodeveloper/learning-go/internal/werrorold"
 	"github.com/thegodeveloper/learning-go/internal/werrors"
 	"github.com/thegodeveloper/learning-go/internal/wexternalpackages"
@@ -148,4 +149,6 @@ func main() {
 	// Learning Go Exercises
 	chapter5.Index(false)
 	chapter6.Index(false)
+
+	webrouting.Index(false)
 }
