@@ -9,7 +9,7 @@ vet: fmt
 .PHONY:vet
 
 run: vet
-	go run ./cmd/cli/main.go
+	go run ./cmd/api/main.go
 .PHONY: run
 
 clean:
