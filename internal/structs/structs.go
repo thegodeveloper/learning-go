@@ -19,5 +19,7 @@ func Master(show bool) {
 		methods(false)
 
 		binaryTree(false)
+
+		songs(false)
 	}
 }
