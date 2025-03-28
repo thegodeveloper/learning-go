@@ -11,6 +11,8 @@ func (e GDEmployee) Description() string {
 	return fmt.Sprintf("%s (%s)", e.Name, e.ID)
 }
 
+// You can embed any type within a struct, not just another struct.
+// This promotes the methods on the embedded type to the containing struct.
 type Manager struct {
 	GDEmployee
 	Reports []GDEmployee
