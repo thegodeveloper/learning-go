@@ -2,6 +2,7 @@ package interfaces
 
 import "fmt"
 
+// list the methods that must be implemented by a concrete type to meet the interface
 type Stringer interface {
 	String() string
 }
