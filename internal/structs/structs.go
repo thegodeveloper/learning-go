@@ -21,5 +21,7 @@ func Master(show bool) {
 		binaryTree(false)
 
 		songs(false)
+
+		embedding(false)
 	}
 }
