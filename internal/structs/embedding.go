@@ -13,6 +13,7 @@ func (e GDEmployee) Description() string {
 
 // You can embed any type within a struct, not just another struct.
 // This promotes the methods on the embedded type to the containing struct.
+// Embedding is not inheritance.
 type Manager struct {
 	GDEmployee
 	Reports []GDEmployee
