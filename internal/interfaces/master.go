@@ -15,5 +15,7 @@ func Master(show bool) {
 
 		fmt.Println("-- Implement Interface")
 		implementInterface()
+
+		implicit(false)
 	}
 }
