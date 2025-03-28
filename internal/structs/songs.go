@@ -16,6 +16,10 @@ func (s *Song) DisplaySong() {
 	fmt.Println("Duration in Seconds:", s.DurationInSeconds)
 }
 
+func (s *Song) DoubleLenght() {
+	s.DurationInSeconds *= 2
+}
+
 func songs(show bool) {
 	if show {
 		song := Song{
@@ -29,5 +33,8 @@ func songs(show bool) {
 
 		// in Go I can continue using song in Rust I cannot
 		fmt.Println("Song Title:", song.Title)
+
+		song.DoubleLenght()
+		fmt.Println("Duration in Seconds:", song.DurationInSeconds)
 	}
 }
