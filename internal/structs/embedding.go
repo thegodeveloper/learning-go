@@ -19,6 +19,20 @@ type Manager struct {
 	Reports []GDEmployee
 }
 
+type Reader interface {
+	Read(p []byte) (n int, err error)
+}
+
+type Closer interface {
+	Close() error
+}
+
+// Here we are embedding two interfaces in one
+type ReadCloser interface {
+	Reader
+	Closer
+}
+
 func embedding(show bool) {
 	if show {
 		m := Manager{
