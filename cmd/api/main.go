@@ -118,7 +118,7 @@ func main() {
 	channels.Master(false)
 	goroutines.Master(false)
 	concurrency.Master(false)
-	structs.Master(true)
+	structs.Master(false)
 	wopenpage.Master(false)
 	wawspresignedurl.Master(false)
 	wjson.Master(false)
