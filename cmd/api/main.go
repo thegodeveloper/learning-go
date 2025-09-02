@@ -79,7 +79,7 @@ import (
 }*/
 
 func main() {
-	box_ui.Master(false)
+	box_ui.Master(true)
 	switches.Master(false)
 	unicode.Master(false)
 	values.Master(false)
