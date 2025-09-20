@@ -7,6 +7,7 @@ type IntTree struct {
 	left, right *IntTree
 }
 
+// here we are dealing with nil receiver
 func (it *IntTree) Insert(val int) *IntTree {
 	if it == nil {
 		return &IntTree{val: val}
