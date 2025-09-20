@@ -110,7 +110,7 @@ func main() {
 	werrors.Master(false)
 	deferpanic.Master(false)
 	arrays.Master(false)
-	interfaces.Master(false)
+	interfaces.Index(false)
 	wrand.Master(false)
 	wpackages.Master(false)
 	wexternalpackages.Master(false)

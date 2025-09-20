@@ -2,7 +2,7 @@ package interfaces
 
 import "fmt"
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		fmt.Println("-- Interface Definition")
 		definition()
