@@ -79,7 +79,7 @@ import (
 }*/
 
 func main() {
-	box_ui.Master(true)
+	box_ui.Master(false)
 	switches.Master(false)
 	unicode.Master(false)
 	values.Master(false)
@@ -118,7 +118,7 @@ func main() {
 	channels.Master(false)
 	goroutines.Master(false)
 	concurrency.Master(false)
-	structs.Master(false)
+	structs.Index(false)
 	wopenpage.Master(false)
 	wawspresignedurl.Master(false)
 	wjson.Master(false)

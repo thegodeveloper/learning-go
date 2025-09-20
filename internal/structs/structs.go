@@ -2,7 +2,7 @@ package structs
 
 import "fmt"
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		fmt.Println("--- Structs")
 
