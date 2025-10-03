@@ -9,7 +9,7 @@ const value = 10
 
 var Global = 1234
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		declaration(false)
 

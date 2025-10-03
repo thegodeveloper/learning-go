@@ -89,7 +89,7 @@ func main() {
 	runes.Master(false)
 	pointers.Master(false)
 	maps.Master(false)
-	variables.Master(false)
+	variables.Index(false)
 	typediffarrayslicesitem.Master(false)
 	sumtwonumbers.Master(false)
 	passingarguments.Master(false)
