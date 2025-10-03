@@ -24,6 +24,8 @@ func Index(show bool) {
 		declarationList(false)
 
 		declaringVarInFunctions(false)
+
+		reviewingVariables(false)
 	}
 }
 
@@ -149,5 +151,13 @@ func declaringVarInFunctions(show bool) {
 		y, z := 7, 77
 		println("y = ", y)
 		println("z = ", z)
+	}
+}
+
+func reviewingVariables(show bool) {
+	if show {
+		message := "Learning Go"
+
+		println(message)
 	}
 }
