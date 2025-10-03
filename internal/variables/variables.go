@@ -158,6 +158,6 @@ func reviewingVariables(show bool) {
 	if show {
 		message := "Learning Go"
 
-		println(message)
+		fmt.Println(message)
 	}
 }
