@@ -51,7 +51,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/pointers"
 	"github.com/thegodeveloper/learning-go/internal/printstars"
 	"github.com/thegodeveloper/learning-go/internal/rand"
-	"github.com/thegodeveloper/learning-go/internal/random_message"
+	"github.com/thegodeveloper/learning-go/internal/randommessage"
 	"github.com/thegodeveloper/learning-go/internal/runes"
 	"github.com/thegodeveloper/learning-go/internal/sha256"
 	"github.com/thegodeveloper/learning-go/internal/slices"
