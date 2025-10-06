@@ -6,7 +6,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/basics"
 	"github.com/thegodeveloper/learning-go/internal/books/learning_go/chapter5"
 	"github.com/thegodeveloper/learning-go/internal/books/learning_go/chapter6"
-	"github.com/thegodeveloper/learning-go/internal/box_ui"
+	"github.com/thegodeveloper/learning-go/internal/boxui"
 	"github.com/thegodeveloper/learning-go/internal/calculator"
 	"github.com/thegodeveloper/learning-go/internal/channels"
 	"github.com/thegodeveloper/learning-go/internal/closures"
@@ -79,7 +79,7 @@ func main() {
 	adapter.Index(false)
 	arrays.Index(false)
 	basics.Index(false)
-	box_ui.Master(false)
+	boxui.Index(false)
 	calculator.Index(false)
 	chapter5.Index(false)
 	chapter6.Index(false)

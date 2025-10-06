@@ -1,11 +1,11 @@
-package box_ui
+package boxui
 
 import (
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		app := tview.NewApplication()
 
