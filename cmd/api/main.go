@@ -77,7 +77,7 @@ func main() {
 	arrays.Run(false)
 	awspresignedurl.Run(false)
 	basics.Run(false)
-	boxui.Run(false)
+	boxui.Run(true)
 	calculator.Run(false)
 	channels.Run(false)
 	chapter5.Run(false)
