@@ -84,7 +84,7 @@ func main() {
 	calculator.Index(false)
 	chapter5.Index(false)
 	chapter6.Index(false)
-	channels.Master(false)
+	channels.Index(false)
 	closures.Master(false)
 	concurrency.Index(false)
 	constants.Master(false)
