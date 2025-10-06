@@ -142,7 +142,7 @@ func main() {
 	wnilzero.Index(false)
 	wopenpage.Index(false)
 	wrand.Index(false)
-	wtime.Index(false)
+	time.Index(false)
 	typeconversions.Index(false)
 	werrors.Index(false)
 	wexternalpackages.Index(false)
