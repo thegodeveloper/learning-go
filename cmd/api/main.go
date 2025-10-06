@@ -11,13 +11,20 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/calculator"
 	"github.com/thegodeveloper/learning-go/internal/channels"
 	"github.com/thegodeveloper/learning-go/internal/closures"
+	"github.com/thegodeveloper/learning-go/internal/complexnumbers"
 	"github.com/thegodeveloper/learning-go/internal/concurrency"
 	"github.com/thegodeveloper/learning-go/internal/constants"
+	"github.com/thegodeveloper/learning-go/internal/countoccurrences"
+	"github.com/thegodeveloper/learning-go/internal/customtype"
 	"github.com/thegodeveloper/learning-go/internal/deferpanic"
 	"github.com/thegodeveloper/learning-go/internal/deferpanicrecover"
 	"github.com/thegodeveloper/learning-go/internal/defersimplecat"
+	"github.com/thegodeveloper/learning-go/internal/deferstatement"
 	"github.com/thegodeveloper/learning-go/internal/deferwithpanic"
 	"github.com/thegodeveloper/learning-go/internal/enums"
+	"github.com/thegodeveloper/learning-go/internal/errorold"
+	"github.com/thegodeveloper/learning-go/internal/errors"
+	"github.com/thegodeveloper/learning-go/internal/externalpackages"
 	"github.com/thegodeveloper/learning-go/internal/forloops"
 	"github.com/thegodeveloper/learning-go/internal/functionaloptions"
 	"github.com/thegodeveloper/learning-go/internal/functions"
@@ -25,7 +32,9 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/gotousecase"
 	"github.com/thegodeveloper/learning-go/internal/helloworld"
 	"github.com/thegodeveloper/learning-go/internal/input"
+	"github.com/thegodeveloper/learning-go/internal/integertypes"
 	"github.com/thegodeveloper/learning-go/internal/interfaces"
+	"github.com/thegodeveloper/learning-go/internal/json"
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/escapeanalysis"
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/memoryprofiling"
 	"github.com/thegodeveloper/learning-go/internal/languagemechanics/stacksandpointers/frameboundaries"
@@ -34,6 +43,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/logfatal"
 	"github.com/thegodeveloper/learning-go/internal/loopsbranches"
 	"github.com/thegodeveloper/learning-go/internal/maps"
+	"github.com/thegodeveloper/learning-go/internal/nilzero"
 	"github.com/thegodeveloper/learning-go/internal/openfile"
 	"github.com/thegodeveloper/learning-go/internal/openpage"
 	"github.com/thegodeveloper/learning-go/internal/packages"
@@ -57,21 +67,8 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/unicode"
 	"github.com/thegodeveloper/learning-go/internal/values"
 	"github.com/thegodeveloper/learning-go/internal/variables"
-	"github.com/thegodeveloper/learning-go/internal/wcalculator"
-	"github.com/thegodeveloper/learning-go/internal/wcomplex"
-	"github.com/thegodeveloper/learning-go/internal/wconstants"
-	"github.com/thegodeveloper/learning-go/internal/wcountoccurrences"
-	"github.com/thegodeveloper/learning-go/internal/wcustomtype"
-	"github.com/thegodeveloper/learning-go/internal/wdefer"
 	"github.com/thegodeveloper/learning-go/internal/webrouting"
-	"github.com/thegodeveloper/learning-go/internal/werrorold"
-	"github.com/thegodeveloper/learning-go/internal/werrors"
-	"github.com/thegodeveloper/learning-go/internal/wexternalpackages"
-	"github.com/thegodeveloper/learning-go/internal/wgoroutines"
 	"github.com/thegodeveloper/learning-go/internal/which"
-	"github.com/thegodeveloper/learning-go/internal/wintegertypes"
-	"github.com/thegodeveloper/learning-go/internal/wjson"
-	"github.com/thegodeveloper/learning-go/internal/wnilzero"
 	"github.com/thegodeveloper/logging"
 )
 
@@ -129,23 +126,20 @@ func main() {
 	unicode.Index(false)
 	values.Index(false)
 	variables.Index(false)
-	wcalculator.Index(false)
-	wcomplex.Index(false)
-	wconstants.Index(false)
-	wcountoccurrences.Index(false)
-	wcustomtype.Index(false)
-	wdefer.Index(false)
-	werrorold.Index(false)
-	wgoroutines.Index(false)
-	wintegertypes.Index(false)
-	wjson.Index(false)
-	wnilzero.Index(false)
+	complexnumbers.Index(false)
+	countoccurrences.Index(false)
+	customtype.Index(false)
+	deferstatement.Index(false)
+	errorold.Index(false)
+	integertypes.Index(false)
+	json.Index(false)
+	nilzero.Index(false)
 	openpage.Index(false)
 	rand.Index(false)
 	time.Index(false)
 	typeconversions.Index(false)
-	werrors.Index(false)
-	wexternalpackages.Index(false)
+	errors.Index(false)
+	externalpackages.Index(false)
 	webrouting.Index(false)
 	which.Index(false)
 
