@@ -75,10 +75,6 @@ import (
 	"github.com/thegodeveloper/logging"
 )
 
-/*func init() {
-	fmt.Println("init from my program")
-}*/
-
 func main() {
 	adapter.Index(false)
 	arrays.Index(false)
