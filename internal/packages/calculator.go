@@ -1,4 +1,4 @@
-package wpackages
+package packages
 
 // Add create add function
 func Add(n1, n2 int) int {

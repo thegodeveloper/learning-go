@@ -1,10 +1,10 @@
-package wpackages
+package packages
 
 import (
 	"fmt"
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		fmt.Println("-- Calculator Package")
 		number1 := 7

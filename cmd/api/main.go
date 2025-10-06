@@ -32,6 +32,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/loopsbranches"
 	"github.com/thegodeveloper/learning-go/internal/maps"
 	"github.com/thegodeveloper/learning-go/internal/openfile"
+	"github.com/thegodeveloper/learning-go/internal/packages"
 	"github.com/thegodeveloper/learning-go/internal/passingarguments"
 	"github.com/thegodeveloper/learning-go/internal/pointers"
 	"github.com/thegodeveloper/learning-go/internal/printstars"
@@ -67,7 +68,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wjson"
 	"github.com/thegodeveloper/learning-go/internal/wnilzero"
 	"github.com/thegodeveloper/learning-go/internal/wopenpage"
-	"github.com/thegodeveloper/learning-go/internal/wpackages"
 	"github.com/thegodeveloper/learning-go/internal/wrand"
 	"github.com/thegodeveloper/learning-go/internal/wtime"
 	"github.com/thegodeveloper/learning-go/internal/wtypeconversions"
@@ -112,7 +112,7 @@ func main() {
 	arrays.Master(false)
 	interfaces.Index(false)
 	wrand.Master(false)
-	wpackages.Master(false)
+	packages.Index(false)
 	wexternalpackages.Master(false)
 	wadapter.Master(false)
 	channels.Master(false)
