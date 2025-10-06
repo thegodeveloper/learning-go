@@ -1,4 +1,4 @@
-package wopenpage
+package openpage
 
 import (
 	"fmt"

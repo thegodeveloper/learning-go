@@ -35,6 +35,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/loopsbranches"
 	"github.com/thegodeveloper/learning-go/internal/maps"
 	"github.com/thegodeveloper/learning-go/internal/openfile"
+	"github.com/thegodeveloper/learning-go/internal/openpage"
 	"github.com/thegodeveloper/learning-go/internal/packages"
 	"github.com/thegodeveloper/learning-go/internal/passingarguments"
 	"github.com/thegodeveloper/learning-go/internal/pointers"
@@ -71,7 +72,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wintegertypes"
 	"github.com/thegodeveloper/learning-go/internal/wjson"
 	"github.com/thegodeveloper/learning-go/internal/wnilzero"
-	"github.com/thegodeveloper/learning-go/internal/wopenpage"
 	"github.com/thegodeveloper/logging"
 )
 
@@ -140,7 +140,7 @@ func main() {
 	wintegertypes.Index(false)
 	wjson.Index(false)
 	wnilzero.Index(false)
-	wopenpage.Index(false)
+	openpage.Index(false)
 	rand.Index(false)
 	time.Index(false)
 	typeconversions.Index(false)
