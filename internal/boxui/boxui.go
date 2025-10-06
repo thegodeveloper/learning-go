@@ -25,6 +25,8 @@ func Run(show bool) {
 	list.SetBorder(true)
 	list.SetTitle(" Packages ")
 	list.SetTitleAlign(tview.AlignCenter)
+	list.SetBorderPadding(0, 0, 1, 0)
+	list.SetBorderColor(tcell.ColorDeepSkyBlue)
 
 	// Right: output area
 	output := tview.NewTextView().
@@ -32,6 +34,7 @@ func Run(show bool) {
 		SetScrollable(true).
 		SetChangedFunc(func() { app.Draw() })
 	output.SetBorder(true)
+	output.SetBorderColor(tcell.ColorAquaMarine)
 	output.SetTitle(" Output ")
 	output.SetTitleAlign(tview.AlignCenter)
 
@@ -42,6 +45,7 @@ func Run(show bool) {
 	footer.SetWrap(false)
 	footer.SetTextAlign(tview.AlignCenter)
 	footer.SetBorder(true)
+	footer.SetBorderColor(tcell.ColorAquaMarine)
 	footer.SetTitle(" Controls ")
 	footer.SetTitleAlign(tview.AlignCenter)
 	footer.SetText("[yellow]Enter[white]/[yellow]r[white] Run   [yellow]TAB[white] Switch Focus   [yellow]q[white] Quit")
@@ -100,11 +104,12 @@ func Run(show bool) {
 	mainFlex := tview.NewFlex().
 		AddItem(list, 30, 1, true).
 		AddItem(output, 0, 3, false)
+	mainFlex.SetBorder(false)
 
 	root := tview.NewFlex().
 		SetDirection(tview.FlexRow).
-		AddItem(mainFlex, 0, 1, true). // main content fills remaining space
-		AddItem(footer, 3, 0, false)   // give footer a fixed height (3 lines)
+		AddItem(mainFlex, 0, 1, true).
+		AddItem(footer, 3, 0, false)
 
 	if err := app.SetRoot(root, true).SetFocus(list).Run(); err != nil {
 		panic(err)
