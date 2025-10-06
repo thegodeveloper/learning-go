@@ -66,3 +66,6 @@ go vet ./...
 wTime/master.go:13:25: 2006-02-01 should be 2006-01-02
 ```
 
+## ToDo
+
+- Refactor the w-directories
