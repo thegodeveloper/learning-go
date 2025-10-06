@@ -2,7 +2,7 @@ package lengthcapacity
 
 import "fmt"
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		a := []int{0, 1, 2, 3, 4}
 		fmt.Println(a, len(a), cap(a))

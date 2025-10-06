@@ -5,8 +5,8 @@ import (
 	"log/syslog"
 )
 
-// Master after running the program, run journalctl -xe
-func Master(show bool) {
+// Index after running the program, run journalctl -xe
+func Index(show bool) {
 	if show {
 		sysLog, err := syslog.New(syslog.LOG_SYSLOG, "main.go")
 		if err != nil {

@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		fmt.Println("---Print Stars---")
 		r := rand.Intn(7) + 1

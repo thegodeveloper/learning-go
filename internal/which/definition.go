@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		arguments := os.Args
 		if len(arguments) == 1 {

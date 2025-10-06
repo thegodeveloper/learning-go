@@ -5,7 +5,7 @@ import (
 	"io"
 )
 
-func Master(show bool) {
+func Index(show bool) {
 
 }
 

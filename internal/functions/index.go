@@ -1,6 +1,6 @@
 package functions
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		mainSimulatingOptionalParams(false)
 		mainVariadicParameters(false)

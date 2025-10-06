@@ -1,6 +1,6 @@
 package strings
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		extractingSingleValue(false)
 		toBeAwareInStrings(false)

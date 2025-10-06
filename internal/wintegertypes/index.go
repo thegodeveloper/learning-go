@@ -2,7 +2,7 @@ package wintegertypes
 
 import "fmt"
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		fmt.Println("The Integer Types in Go.")
 

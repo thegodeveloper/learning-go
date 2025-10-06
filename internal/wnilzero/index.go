@@ -2,7 +2,7 @@ package wnilzero
 
 import "fmt"
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		fmt.Println("\n-- Nil and Zero Values")
 

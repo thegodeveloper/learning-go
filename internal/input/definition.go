@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		fmt.Println("Input Definition")
 

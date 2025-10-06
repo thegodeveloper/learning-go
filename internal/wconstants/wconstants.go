@@ -16,7 +16,7 @@ const (
 	Avogadro float32 = 6.022e23
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		fmt.Println("What is the value of Pi? Pi is", Pi)
 		fmt.Println(reflect.TypeOf(Pi))

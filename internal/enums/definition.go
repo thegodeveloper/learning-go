@@ -14,7 +14,7 @@ const (
 	Sunday
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		fmt.Printf("Monday is %d\n", Monday)
 		fmt.Printf("Tuesday is %d\n", Tuesday)

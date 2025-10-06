@@ -5,7 +5,7 @@ import (
 	"reflect"
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		a := [5]string{"a", "b", "c", "d", "e"}
 

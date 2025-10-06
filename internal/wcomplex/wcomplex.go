@@ -5,7 +5,7 @@ import (
 	"math/cmplx"
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		var a = complex(6, 2) // type can be omitted
 		var b complex64 = complex(9, 2)

@@ -17,7 +17,7 @@ func printSpecial(str specialStr) {
 	fmt.Println(string(str))
 }
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		println("Constants")
 		println("Constant value: ", monthsInYear)

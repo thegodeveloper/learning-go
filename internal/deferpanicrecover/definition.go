@@ -19,7 +19,7 @@ func something() {
 	fmt.Println("closed something normally")
 }
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		defer fmt.Println("closed main")
 		something()

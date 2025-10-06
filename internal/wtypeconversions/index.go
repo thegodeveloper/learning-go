@@ -2,7 +2,7 @@ package wtypeconversions
 
 import "fmt"
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		fmt.Println("-- Type Conversions")
 

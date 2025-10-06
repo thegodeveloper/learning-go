@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		println("\n-- Defer")
 	}

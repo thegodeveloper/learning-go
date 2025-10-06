@@ -12,7 +12,7 @@ func something() {
 	}
 }
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		defer fmt.Println("close main")
 		something()

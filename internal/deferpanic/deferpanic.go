@@ -6,7 +6,7 @@ func closeMsg() {
 	fmt.Println("Closed!!!")
 }
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		defer closeMsg()
 

@@ -2,7 +2,7 @@ package indirectmemoryaccess
 
 import "fmt"
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		// declare variable of type int with a value of 10.
 		count := 10

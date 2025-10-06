@@ -65,7 +65,7 @@ func WithPaneerTopping() func(config *Pizza) {
 	}
 }
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		coolPizza := BuildPizza(WIthPepper(), WithExtraCheese(), WithChickenTopping())
 

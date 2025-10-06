@@ -2,7 +2,7 @@ package frameboundaries
 
 import "fmt"
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		// declare a variable of type int with a value of 10.
 		count := 10

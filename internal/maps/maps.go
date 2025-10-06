@@ -1,6 +1,6 @@
 package maps
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		definition(false)
 

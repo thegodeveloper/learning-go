@@ -5,7 +5,7 @@ import (
 	"unicode/utf8"
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		s := "Hello, 世界"
 		fmt.Println(s)
