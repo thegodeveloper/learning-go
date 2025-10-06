@@ -1,4 +1,4 @@
-package wadapter
+package adapter
 
 import "fmt"
 

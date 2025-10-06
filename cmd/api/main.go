@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/thegodeveloper/learning-go/internal/adapter"
 	"github.com/thegodeveloper/learning-go/internal/arrays"
 	"github.com/thegodeveloper/learning-go/internal/books/learning_go/chapter5"
 	"github.com/thegodeveloper/learning-go/internal/books/learning_go/chapter6"
@@ -50,7 +51,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/unicode"
 	"github.com/thegodeveloper/learning-go/internal/values"
 	"github.com/thegodeveloper/learning-go/internal/variables"
-	"github.com/thegodeveloper/learning-go/internal/wadapter"
 	"github.com/thegodeveloper/learning-go/internal/wawspresignedurl"
 	"github.com/thegodeveloper/learning-go/internal/wcalculator"
 	"github.com/thegodeveloper/learning-go/internal/wcomplex"
@@ -114,7 +114,7 @@ func main() {
 	wrand.Master(false)
 	packages.Index(false)
 	wexternalpackages.Master(false)
-	wadapter.Master(false)
+	adapter.Index(false)
 	channels.Master(false)
 	goroutines.Master(false)
 	concurrency.Master(false)

@@ -1,10 +1,10 @@
-package wadapter
+package adapter
 
 import (
 	"fmt"
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		fmt.Println("-- The Adapter Pattern in Go")
 		client := &Client{}
