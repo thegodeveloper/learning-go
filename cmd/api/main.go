@@ -89,7 +89,7 @@ func main() {
 	chapter6.Index(false)
 	channels.Master(false)
 	closures.Master(false)
-	concurrency.Master(false)
+	concurrency.Index(false)
 	constants.Master(false)
 	deferpanic.Master(false)
 	deferpanicrecover.Master(false)

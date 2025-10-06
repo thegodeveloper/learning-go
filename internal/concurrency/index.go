@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		fmt.Println("-- Concurrency")
 		implementation()
