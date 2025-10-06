@@ -1,4 +1,4 @@
-package wtypeconversions
+package typeconversions
 
 import "fmt"
 

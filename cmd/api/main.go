@@ -49,6 +49,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/sumtwonumbers"
 	"github.com/thegodeveloper/learning-go/internal/switches"
 	"github.com/thegodeveloper/learning-go/internal/syslog"
+	"github.com/thegodeveloper/learning-go/internal/typeconversions"
 	"github.com/thegodeveloper/learning-go/internal/typediffarrayslicesitem"
 	"github.com/thegodeveloper/learning-go/internal/unicode"
 	"github.com/thegodeveloper/learning-go/internal/values"
@@ -71,7 +72,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wopenpage"
 	"github.com/thegodeveloper/learning-go/internal/wrand"
 	"github.com/thegodeveloper/learning-go/internal/wtime"
-	"github.com/thegodeveloper/learning-go/internal/wtypeconversions"
 	"github.com/thegodeveloper/logging"
 )
 
@@ -143,7 +143,7 @@ func main() {
 	wopenpage.Index(false)
 	wrand.Index(false)
 	wtime.Index(false)
-	wtypeconversions.Index(false)
+	typeconversions.Index(false)
 	werrors.Index(false)
 	wexternalpackages.Index(false)
 	webrouting.Index(false)
