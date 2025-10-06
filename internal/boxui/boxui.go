@@ -55,6 +55,12 @@ func Run(show bool) {
 		list.AddItem(name, "", 0, nil)
 	}
 
+	// Select the first item and set `current`
+	if len(names) > 0 {
+		list.SetCurrentItem(0)
+		current = names[0]
+	}
+
 	// update current when selection changes
 	list.SetChangedFunc(func(i int, main, secondary string, r rune) {
 		current = main
