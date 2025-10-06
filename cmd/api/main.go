@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/thegodeveloper/learning-go/internal/adapter"
 	"github.com/thegodeveloper/learning-go/internal/arrays"
+	"github.com/thegodeveloper/learning-go/internal/awspresignedurl"
 	"github.com/thegodeveloper/learning-go/internal/basics"
 	"github.com/thegodeveloper/learning-go/internal/books/learning_go/chapter5"
 	"github.com/thegodeveloper/learning-go/internal/books/learning_go/chapter6"
@@ -52,7 +53,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/unicode"
 	"github.com/thegodeveloper/learning-go/internal/values"
 	"github.com/thegodeveloper/learning-go/internal/variables"
-	"github.com/thegodeveloper/learning-go/internal/wawspresignedurl"
 	"github.com/thegodeveloper/learning-go/internal/wcalculator"
 	"github.com/thegodeveloper/learning-go/internal/wcomplex"
 	"github.com/thegodeveloper/learning-go/internal/wconstants"
@@ -78,6 +78,7 @@ import (
 func main() {
 	adapter.Index(false)
 	arrays.Index(false)
+	awspresignedurl.Index(false)
 	basics.Index(false)
 	boxui.Index(false)
 	calculator.Index(false)
@@ -128,7 +129,6 @@ func main() {
 	unicode.Master(false)
 	values.Master(false)
 	variables.Index(false)
-	wawspresignedurl.Master(false)
 	wcalculator.Master(false)
 	wcomplex.Master(false)
 	wconstants.Master(false)

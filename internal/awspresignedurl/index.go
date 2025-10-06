@@ -1,4 +1,4 @@
-package wawspresignedurl
+package awspresignedurl
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/s3"
 )
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		fmt.Println("-- AWS Pre-signed URL")
 
