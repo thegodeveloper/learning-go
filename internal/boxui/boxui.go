@@ -26,7 +26,7 @@ func Run(show bool) {
 	list.SetTitle(" Packages ")
 	list.SetTitleAlign(tview.AlignCenter)
 	list.SetBorderPadding(0, 0, 1, 0)
-	list.SetBorderColor(tcell.ColorDeepSkyBlue)
+	list.SetBorderColor(tcell.ColorAquaMarine)
 
 	// Right: output area
 	output := tview.NewTextView().
