@@ -39,6 +39,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/passingarguments"
 	"github.com/thegodeveloper/learning-go/internal/pointers"
 	"github.com/thegodeveloper/learning-go/internal/printstars"
+	"github.com/thegodeveloper/learning-go/internal/rand"
 	"github.com/thegodeveloper/learning-go/internal/random_message"
 	"github.com/thegodeveloper/learning-go/internal/runes"
 	"github.com/thegodeveloper/learning-go/internal/sha256"
@@ -49,6 +50,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/sumtwonumbers"
 	"github.com/thegodeveloper/learning-go/internal/switches"
 	"github.com/thegodeveloper/learning-go/internal/syslog"
+	"github.com/thegodeveloper/learning-go/internal/time"
 	"github.com/thegodeveloper/learning-go/internal/typeconversions"
 	"github.com/thegodeveloper/learning-go/internal/typediffarrayslicesitem"
 	"github.com/thegodeveloper/learning-go/internal/unicode"
@@ -70,8 +72,6 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/wjson"
 	"github.com/thegodeveloper/learning-go/internal/wnilzero"
 	"github.com/thegodeveloper/learning-go/internal/wopenpage"
-	"github.com/thegodeveloper/learning-go/internal/wrand"
-	"github.com/thegodeveloper/learning-go/internal/wtime"
 	"github.com/thegodeveloper/logging"
 )
 
@@ -141,7 +141,7 @@ func main() {
 	wjson.Index(false)
 	wnilzero.Index(false)
 	wopenpage.Index(false)
-	wrand.Index(false)
+	rand.Index(false)
 	time.Index(false)
 	typeconversions.Index(false)
 	werrors.Index(false)

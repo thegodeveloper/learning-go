@@ -1,4 +1,4 @@
-package wrand
+package rand
 
 import (
 	crand "crypto/rand"
