@@ -1,6 +1,6 @@
 package arrays
 
-func Master(show bool) {
+func Index(show bool) {
 	if show {
 		arrayDefinition(false)
 

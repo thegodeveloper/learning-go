@@ -81,7 +81,7 @@ import (
 
 func main() {
 	adapter.Index(false)
-	arrays.Master(false)
+	arrays.Index(false)
 	basics.Index(false)
 	box_ui.Master(false)
 	calculator.Index(false)
