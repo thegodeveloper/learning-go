@@ -5,7 +5,7 @@ import (
 	"github.com/rivo/tview"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		app := tview.NewApplication()
 

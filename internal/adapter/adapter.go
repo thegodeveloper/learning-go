@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("-- The Adapter Pattern in Go")
 		client := &Client{}

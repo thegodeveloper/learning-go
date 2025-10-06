@@ -8,7 +8,7 @@ import (
 	"github.com/shopspring/decimal"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("-- Working with External Packages")
 		definition("99.99", "7.25")

@@ -7,7 +7,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		r := mux.NewRouter()
 

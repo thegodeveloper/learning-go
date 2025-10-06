@@ -13,7 +13,7 @@ var helloList = []string{
 	"Hello, world", "Καλημέρα κόσμε", "سلام دنیا", "Привет, мир",
 }
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		rand.NewSource(time.Now().UnixNano())
 		index := rand.Intn(len(helloList))

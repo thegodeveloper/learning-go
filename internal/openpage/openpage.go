@@ -9,7 +9,7 @@ import (
 
 const URL = "https://www.dolar-colombia.com/"
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("-- Open Web Page")
 		fmt.Println(OnPage(URL))

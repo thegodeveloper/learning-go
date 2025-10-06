@@ -2,7 +2,7 @@ package values
 
 import "fmt"
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("go" + "lang")
 

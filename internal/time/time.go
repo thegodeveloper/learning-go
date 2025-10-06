@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("-- Time")
 

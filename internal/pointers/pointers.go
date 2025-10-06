@@ -2,7 +2,7 @@ package pointers
 
 import "fmt"
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("--- Pointers ---")
 

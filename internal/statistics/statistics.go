@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		arguments := os.Args
 		if len(arguments) == 1 {

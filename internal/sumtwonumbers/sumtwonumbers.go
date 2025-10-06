@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		argsWithProg := os.Args
 

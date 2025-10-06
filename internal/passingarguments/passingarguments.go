@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		argsWithProg := os.Args
 		argsWithoutProg := os.Args[1:]

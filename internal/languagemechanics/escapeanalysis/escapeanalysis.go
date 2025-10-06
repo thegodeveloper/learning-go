@@ -7,7 +7,7 @@ type user struct {
 	email string
 }
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		u1 := createUserV1()
 		u2 := createUserV2()

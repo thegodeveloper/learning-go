@@ -6,7 +6,7 @@ import (
 )
 
 // Index after running the program, run journalctl -xe
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		sysLog, err := syslog.New(syslog.LOG_SYSLOG, "main.go")
 		if err != nil {

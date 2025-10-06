@@ -2,7 +2,7 @@ package nilzero
 
 import "fmt"
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("\n-- Nil and Zero Values")
 

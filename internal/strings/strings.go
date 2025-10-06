@@ -1,6 +1,6 @@
 package strings
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		extractingSingleValue(false)
 		toBeAwareInStrings(false)

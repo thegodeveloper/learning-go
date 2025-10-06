@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("--- Defer Simple Cat")
 

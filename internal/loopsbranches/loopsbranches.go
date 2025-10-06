@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		rand.Seed(time.Now().UnixNano())
 		x := rand.Float32()

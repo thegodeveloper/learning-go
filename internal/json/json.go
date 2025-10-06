@@ -13,7 +13,7 @@ type Movie struct {
 	Actors []string
 }
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("-- JSON")
 

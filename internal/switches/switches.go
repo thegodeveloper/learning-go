@@ -1,6 +1,6 @@
 package switches
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		declaration(false)
 		switchWithConditions(false)

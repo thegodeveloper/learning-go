@@ -11,7 +11,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/s3"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("-- AWS Pre-signed URL")
 

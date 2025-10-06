@@ -1,6 +1,6 @@
 package basics
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		net(false)
 	}

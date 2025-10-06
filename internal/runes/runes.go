@@ -2,7 +2,7 @@ package runes
 
 import "fmt"
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		// declaring and initializing a Unicode character
 		emoji := '😀'

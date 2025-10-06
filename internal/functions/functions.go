@@ -1,6 +1,6 @@
 package functions
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		mainSimulatingOptionalParams(false)
 		mainVariadicParameters(false)

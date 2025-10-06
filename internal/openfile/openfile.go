@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		// open the file for reading
 		file, err := os.Open("file.txt")

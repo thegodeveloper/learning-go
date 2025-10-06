@@ -2,7 +2,7 @@ package slices
 
 import "fmt"
 
-func sliceWithSpecificValuesPerIndex(show bool) {
+func sliceWithSpecificValuesPerRun(show bool) {
 	if show {
 		fmt.Println("--- Slice with specific values per index.")
 

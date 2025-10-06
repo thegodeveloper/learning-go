@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		// Open the file
 		file, err := os.Open("wCountOccurrencesInFile/filename.csv")

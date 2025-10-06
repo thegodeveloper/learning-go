@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		if len(os.Args) != 1 {
 			log.Fatal("Fatal: Hello World!")

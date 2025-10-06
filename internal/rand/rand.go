@@ -7,7 +7,7 @@ import (
 	"math/rand"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("-- Working with Random Values")
 		definition()

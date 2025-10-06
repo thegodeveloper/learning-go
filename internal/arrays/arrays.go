@@ -1,6 +1,6 @@
 package arrays
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		arrayDefinition(false)
 

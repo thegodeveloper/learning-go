@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("-- Slices")
 
@@ -15,7 +15,7 @@ func Index(show bool) {
 		convertingArraysToSlices(false)
 		copySlice(false)
 		copySliceToArray(false)
-		sliceWithSpecificValuesPerIndex(false)
+		sliceWithSpecificValuesPerRun(false)
 		sliceAppend(false)
 		sliceWithMake(false)
 

@@ -4,7 +4,7 @@ import "fmt"
 
 type CarModel string
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("\n-- Custom Type")
 

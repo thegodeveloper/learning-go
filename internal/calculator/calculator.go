@@ -13,7 +13,7 @@ func Subtract(a, b float64) float64 {
 	return a - b
 }
 
-func Index(show bool) {
+func Run(show bool) {
 	if show {
 		fmt.Println("Calculator App")
 	}
