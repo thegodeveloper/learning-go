@@ -1,8 +1,14 @@
 package boxui
 
 import (
+	"bytes"
+	"context"
 	"fmt"
+	"io"
+	"os"
+	"runtime/debug"
 	"sync"
+	"time"
 
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
@@ -117,10 +123,90 @@ func Run(show bool) {
 }
 
 func startRun(app *tview.Application, output *tview.TextView, name string) {
+	runLock.Lock()
+	if runActive {
+		runLock.Unlock()
+		return
+	}
+
+	runActive = true
+	runLock.Unlock()
+
 	go func() {
 		app.QueueUpdateDraw(func() {
 			output.Clear()
 			fmt.Fprintf(output, "[green]You selected package: [white]%s\n", name)
 		})
+
+		defer func() {
+			runLock.Lock()
+			runActive = false
+			runLock.Unlock()
+		}()
+
+		fn, ok := registry.Packages[name]
+		if !ok {
+			app.QueueUpdateDraw(func() {
+				fmt.Fprintf(output, "[red]Error: Package '%s' not found in registry.", name)
+			})
+			return
+		}
+
+		ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+		defer cancel()
+
+		originalStdout := os.Stdout
+		r, w, _ := os.Pipe()
+		os.Stdout = w
+
+		outC := make(chan string)
+		go func() {
+			var buf bytes.Buffer
+			_, _ = io.Copy(&buf, r)
+			outC <- buf.String()
+		}()
+
+		var wg sync.WaitGroup
+		wg.Add(1)
+
+		go func() {
+			defer func() {
+				if r := recover(); r != nil {
+					fmt.Fprintf(w, "\n\n[red]FATAL ERROR (panic): %v\n[red]%s", r, string(debug.Stack()))
+				}
+				wg.Done()
+			}()
+			fn(true)
+		}()
+
+		// Wait for either the function to finish or the timeout to occur.
+		doneChan := make(chan struct{})
+		go func() {
+			wg.Wait()
+			close(doneChan)
+		}()
+
+		var timedOut bool
+		select {
+		case <-doneChan:
+			// Execution finished normally.
+		case <-ctx.Done():
+			// Timeout occurred.
+			timedOut = true
+		}
+
+		os.Stdout = originalStdout
+		_ = w.Close()
+
+		capturedOutput := <-outC
+		if timedOut {
+			capturedOutput += fmt.Sprintf("\n\n[red]Execution timed out after 5 seconds.\n[yellow]This usually means the package is waiting for interactive input, which is not supported in this TUI.")
+		}
+
+		app.QueueUpdateDraw(func() {
+			output.SetText(capturedOutput)
+			output.ScrollToBeginning()
+		})
+
 	}()
 }
