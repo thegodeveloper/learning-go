@@ -8,6 +8,8 @@ import (
 
 func Run(show bool) {
 	if show {
+		fmt.Println("-- Loop branches in Go")
+
 		rand.Seed(time.Now().UnixNano())
 		x := rand.Float32()
 

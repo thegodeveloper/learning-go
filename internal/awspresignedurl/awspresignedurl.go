@@ -18,7 +18,8 @@ func Run(show bool) {
 		// Load the bucket name from OS variable
 		s3bucket := os.Getenv("S3_BUCKET")
 		if s3bucket == "" {
-			log.Fatal("unable to load s3 bucket name from os variables")
+			fmt.Println("Unable to load s3 bucket name from os variables")
+			return
 		}
 
 		// S3 request

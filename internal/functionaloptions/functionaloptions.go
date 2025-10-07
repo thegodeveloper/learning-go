@@ -67,6 +67,8 @@ func WithPaneerTopping() func(config *Pizza) {
 
 func Run(show bool) {
 	if show {
+		fmt.Println("-- Functional Options in Go")
+
 		coolPizza := BuildPizza(WIthPepper(), WithExtraCheese(), WithChickenTopping())
 
 		fmt.Printf("eating delicious Pizza: %v", coolPizza)

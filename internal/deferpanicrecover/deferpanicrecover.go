@@ -21,6 +21,8 @@ func something() {
 
 func Run(show bool) {
 	if show {
+		fmt.Println("-- Defer Panic in Go with Recover")
+
 		defer fmt.Println("closed main")
 		something()
 		fmt.Println("main was finished")

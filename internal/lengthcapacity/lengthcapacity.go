@@ -4,6 +4,8 @@ import "fmt"
 
 func Run(show bool) {
 	if show {
+		fmt.Println("-- Length Capacity in Go")
+
 		a := []int{0, 1, 2, 3, 4}
 		fmt.Println(a, len(a), cap(a))
 

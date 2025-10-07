@@ -6,7 +6,7 @@ import (
 
 func Run(show bool) {
 	if show {
-		fmt.Println("-- Calculator Package")
+		fmt.Println("-- Packages in Go")
 		number1 := 7
 		number2 := 17
 

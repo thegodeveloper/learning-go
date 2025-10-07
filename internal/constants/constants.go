@@ -20,6 +20,7 @@ func printSpecial(str specialStr) {
 func Run(show bool) {
 	if show {
 		println("Constants")
+
 		println("Constant value: ", monthsInYear)
 
 		const constHelloWorld = "hello world"

@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-const URL = "https://www.dolar-colombia.com/"
+const URL = "https://hackertyper.com/"
 
 func Run(show bool) {
 	if show {

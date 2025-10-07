@@ -8,6 +8,8 @@ func closeMsg() {
 
 func Run(show bool) {
 	if show {
+		fmt.Println("-- Defer Panic in Go")
+
 		defer closeMsg()
 
 		fmt.Println("Doing something...")

@@ -4,6 +4,8 @@ import "fmt"
 
 func Run(show bool) {
 	if show {
+		fmt.Println("-- Values in Go")
+
 		fmt.Println("go" + "lang")
 
 		fmt.Println("1+1 = ", 1+1)

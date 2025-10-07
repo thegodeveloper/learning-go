@@ -14,16 +14,21 @@ func Run(show bool) {
 		if len(os.Args) < 2 {
 			log.Fatal("no file specified")
 		}
+
 		f, err := os.Open(os.Args[1])
+
 		if err != nil {
-			log.Fatal(err)
+			fmt.Printf("error opening file: %v\n", err)
+			return
 		}
+
 		defer func(f *os.File) {
 			err := f.Close()
 			if err != nil {
 				log.Fatal(err)
 			}
 		}(f)
+
 		data := make([]byte, 2048)
 		for {
 			count, err := f.Read(data)

@@ -11,6 +11,8 @@ var Global = 1234
 
 func Run(show bool) {
 	if show {
+		fmt.Println("-- Variables in Go")
+
 		declaration(false)
 
 		variables(false)

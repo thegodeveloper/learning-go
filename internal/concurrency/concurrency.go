@@ -10,6 +10,7 @@ import (
 func Run(show bool) {
 	if show {
 		fmt.Println("-- Concurrency")
+
 		implementation()
 	}
 }

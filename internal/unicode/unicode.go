@@ -7,6 +7,8 @@ import (
 
 func Run(show bool) {
 	if show {
+		fmt.Println("-- Unicode in Go")
+
 		s := "Hello, 世界"
 		fmt.Println(s)
 

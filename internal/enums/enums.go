@@ -16,6 +16,8 @@ const (
 
 func Run(show bool) {
 	if show {
+		fmt.Println("-- Enums in Go")
+
 		fmt.Printf("Monday is %d\n", Monday)
 		fmt.Printf("Tuesday is %d\n", Tuesday)
 		fmt.Printf("Wednesday is %d\n", Wednesday)

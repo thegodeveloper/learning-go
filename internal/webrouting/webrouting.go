@@ -9,6 +9,8 @@ import (
 
 func Run(show bool) {
 	if show {
+		fmt.Println("-- Web routing in Go")
+
 		r := mux.NewRouter()
 
 		r.HandleFunc("/books/{title}/title/{page}", func(w http.ResponseWriter, r *http.Request) {

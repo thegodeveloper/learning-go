@@ -7,6 +7,8 @@ import (
 
 func Run(show bool) {
 	if show {
+		fmt.Println("-- Complex Numbers in Go")
+
 		var a = complex(6, 2) // type can be omitted
 		var b complex64 = complex(9, 2)
 		var c = complex(7.7, 7.7)
