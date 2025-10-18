@@ -4,6 +4,10 @@ Starting date with Go: May 15, 2020
 
 I probably started earlier with Go, but it was on that date that I built something professional with Go.
 
+## TUI application
+
+![TUI](images/learning-go.png "TUIs are better!")
+
 ## Books
 
 - The Go Programming Language
