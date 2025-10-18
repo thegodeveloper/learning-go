@@ -1,5 +1,9 @@
 # Learning Go
 
+Starting date with Go: May 15, 2020
+
+I probably started earlier with Go, but it was on that date that I built something professional with Go.
+
 ## Books
 
 - The Go Programming Language
