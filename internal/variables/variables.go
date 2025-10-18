@@ -8,6 +8,7 @@ import (
 const value = 10
 
 var Global = 1234
+var s = "seven"
 
 func Run(show bool) {
 	if show {
@@ -21,13 +22,26 @@ func Run(show bool) {
 
 		exe02(false)
 
-		exe03(true)
+		exe03(false)
 
 		declarationList(false)
 
 		declaringVarInFunctions(false)
 
+		varScope(true)
+
 		reviewingVariables(false)
+	}
+}
+
+func varScope(show bool) {
+	if show {
+		fmt.Println(" -- Variables Scope in Go")
+
+		funcScope := "only available in the function"
+		fmt.Println("funcScope: " + funcScope)
+
+		fmt.Println("global scope: " + s + " available for all functions")
 	}
 }
 
