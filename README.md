@@ -21,8 +21,8 @@ I probably started earlier with Go, but it was on that date that I built somethi
 9. Building Distributed Applications in Gin 
 10. Build Systems with Go 
 11. Mastering Go Fourth Edition 
-12. Let's Go 
-13. Let's Go Further 
+12. Let's Go ✳️
+13. Let's Go Further ✳️
 14. Microservices with Go 
 15. Building Modern CLI Applications with Go 
 16. Go for DevOps 
@@ -37,7 +37,7 @@ I probably started earlier with Go, but it was on that date that I built somethi
 25. The Power of Go Tools 
 26. Data Structures & Algorithms 
 27. gRPC Microservices in Go 
-28. Learn Concurrency Programming with Go 
+28. Learn Concurrency Programming with Go ✴️
 29. Backend Software Architecture with Golang 
 30. Kubernetes Programming with Go 
 31. Mastering Go CLI and TUI 
