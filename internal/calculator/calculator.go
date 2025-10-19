@@ -16,5 +16,8 @@ func Subtract(a, b float64) float64 {
 func Run(show bool) {
 	if show {
 		fmt.Println("-- Calculator App")
+
+		fmt.Println("7 + 7:", Add(7.0, 7.0))
+		fmt.Println("7 - 7:", Subtract(7.0, 7.0))
 	}
 }
