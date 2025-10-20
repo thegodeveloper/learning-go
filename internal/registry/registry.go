@@ -45,6 +45,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/pointers"
 	"github.com/thegodeveloper/learning-go/internal/rand"
 	"github.com/thegodeveloper/learning-go/internal/randommessage"
+	"github.com/thegodeveloper/learning-go/internal/reflection"
 	"github.com/thegodeveloper/learning-go/internal/runes"
 	"github.com/thegodeveloper/learning-go/internal/sha256"
 	"github.com/thegodeveloper/learning-go/internal/slices"
@@ -108,6 +109,7 @@ var Packages = map[string]func(bool){
 	"pointers":                pointers.Run,
 	"rand":                    rand.Run,
 	"randommessage":           randommessage.Run,
+	"reflection":              reflection.Run,
 	"runes":                   runes.Run,
 	"sha256":                  sha256.Run,
 	"slices":                  slices.Run,
