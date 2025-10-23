@@ -4,6 +4,25 @@ Starting date with Go: May 15, 2020
 
 I probably started earlier with Go, but it was on that date that I built something professional with Go.
 
+## 🗓️ Complete Timeline
+
+| Phase                                    | Duration   | Description                                                                                        | Primary Focus / Outcome                                                            |
+|------------------------------------------|------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| **1. Let’s Go Further (Rebuild)**        | 3 months   | Recreate *Let’s Go Further* entirely using PostgreSQL.                                             | Modern Go web architecture, PostgreSQL integration, middleware, and testing.       |
+| **2. Let’s Go (Port to PostgreSQL)**     | 2 months   | Restudy *Let’s Go* and adapt it from MySQL → PostgreSQL.                                           | Refresh Go fundamentals and modernize database usage.                              |
+| **3. Web UI for Let’s Go Further**       | 2 months   | Build an interactive web front-end for the Go backend.                                             | Full-stack integration, HTML + HTMX, authentication UX, and form handling.         |
+| **4. gRPC Migration (Go)**               | 2.5 months | Convert REST handlers to gRPC services using `grpc-gateway`.                                       | RPC contracts, `.proto` definitions, service boundaries, interop.                  |
+| **5. CLI Application (Go)**              | 1.5 months | Create a CLI client using **Cobra + Viper**.                                                       | Command design, configuration handling, connecting to API/gRPC.                    |
+| **6. TUI Application (Go)**              | 1.5 months | Build a TUI using **Bubble Tea + Lip Gloss**.                                                      | Async I/O, navigation, data visualization, terminal UX.                            |
+| **7. Microservices Architecture (Go)**   | 3.5 months | Split the monolith into microservices communicating via gRPC.                                      | Distributed design, observability, Docker/Kubernetes deployment.                   |
+| **8. Zero to Production in Rust (Axum)** | 2.5 months | Work through *Zero to Production in Rust* from start to finish.                                    | Master **Axum**, SQLx, async Rust, error handling, and structured logging.         |
+| **9. Axum Rewrite of Let’s Go Further**  | 4 months   | Re-implement the *Let’s Go Further* backend using **Axum** and PostgreSQL.                         | Translate Go patterns into idiomatic Axum-based Rust; strong typing and ownership. |
+| **10. Axum + gRPC Integration**          | 2 months   | Expose gRPC endpoints using **Tonic** alongside Axum HTTP routes.                                  | Hybrid Axum + Tonic stack, shared protobuf types, secure interceptors.             |
+| **11. Rust CLI Client**                  | 2 months   | Build CLI tool using **Clap v4** to consume the Axum/Tonic backend.                                | Async client, configuration management, packaging binary.                          |
+| **12. Rust TUI Application**             | 2 months   | Create TUI using **Ratatui + Crossterm**, connecting to the Axum backend.                          | Terminal UX, event loop management, async backend integration.                     |
+| **13. Rust Web UI**                      | 3 months   | Build a Rust-based web front-end using **Leptos** or **Dioxus Fullstack**, consuming the Axum API. | SSR + WASM integration, authentication, responsive design.                         |
+
+
 ## TUI application
 
 ![TUI](images/learning-go.png "TUIs are better!")
