@@ -2,7 +2,7 @@ package strings
 
 import "fmt"
 
-func toBeAwareInStrings(show bool) {
+func ToBeAwareInStrings(show bool) {
 	if show {
 		fmt.Println("--- to be aware of working with strings ---")
 		s := "Hello ★"

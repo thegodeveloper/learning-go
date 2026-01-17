@@ -252,6 +252,10 @@ var PackageRegistry = map[string]PackageFunctions{
 		"slicesWithOverlappingStorage":  slices.SlicesWithOverlappingStorage,
 		"passMapSlice":                  slices.PassMapSlice,
 	},
+	"strings": {
+		"extractingSingleValue": strings.ExtractingSingleValue,
+		"toBeAwareInStrings":    strings.ToBeAwareInStrings,
+	},
 }
 
 func Names() []string {

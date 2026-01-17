@@ -2,7 +2,7 @@ package strings
 
 import "fmt"
 
-func extractingSingleValue(show bool) {
+func ExtractingSingleValue(show bool) {
 	if show {
 		fmt.Println("--- extracting a single value from a string ---")
 		s := "Hello Golang!"
