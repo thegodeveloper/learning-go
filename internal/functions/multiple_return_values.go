@@ -12,7 +12,8 @@ func divAndRemainder(numerator int, denominator int) (int, int, error) {
 	return numerator / denominator, numerator % denominator, nil
 }
 
-func mainMultipleReturnValues(show bool) {
+// MultipleReturnValues demonstrates returning multiple values from functions
+func MultipleReturnValues(show bool) {
 	if show {
 		fmt.Println("--- Multiple return values ---")
 

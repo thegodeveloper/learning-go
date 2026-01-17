@@ -8,7 +8,8 @@ func makeMult(base int) func(int) int {
 	}
 }
 
-func mainReturnFunction(show bool) {
+// ReturnFunction demonstrates returning functions from functions
+func ReturnFunction(show bool) {
 	if show {
 		fmt.Println("--- Return Functions from Functions ---")
 

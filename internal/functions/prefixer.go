@@ -8,7 +8,8 @@ func prefixer(p string) func(string) string {
 	}
 }
 
-func mainPrefixer(show bool) {
+// Prefixer demonstrates closures with the prefixer example
+func Prefixer(show bool) {
 	if show {
 		helloPrefix := prefixer("hello")
 		fmt.Println(helloPrefix("Box"))

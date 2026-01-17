@@ -11,7 +11,8 @@ type Person struct {
 	Age       int
 }
 
-func mainSortSlice(show bool) {
+// SortSlice demonstrates sorting slices with custom comparators
+func SortSlice(show bool) {
 	if show {
 		people := []Person{
 			{"Pat", "Patterson", 37},

@@ -10,7 +10,8 @@ func addTo(base int, vals ...int) []int {
 	return out
 }
 
-func mainVariadicParameters(show bool) {
+// VariadicParameters demonstrates variadic function parameters
+func VariadicParameters(show bool) {
 	if show {
 		fmt.Println("--- Variadic Parameters ---")
 

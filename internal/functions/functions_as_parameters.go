@@ -5,7 +5,8 @@ import (
 	"sort"
 )
 
-func mainFunctionsAsParameters(show bool) {
+// FunctionsAsParameters demonstrates passing functions as parameters
+func FunctionsAsParameters(show bool) {
 	if show {
 		fmt.Println("--- Functions as Parameters")
 

@@ -3,7 +3,6 @@ package functions
 import (
 	"fmt"
 	"io"
-	"log"
 	"os"
 )
 
@@ -17,10 +16,10 @@ func getFile(name string) (*os.File, func(), error) {
 	}, nil
 }
 
-func printFileContent(fileName string) {
+func printFileContent(fileName string) error {
 	f, closer, err := getFile(fileName)
 	if err != nil {
-		log.Fatal(err)
+		return fmt.Errorf("error opening file: %w", err)
 	}
 	defer closer()
 
@@ -30,17 +29,32 @@ func printFileContent(fileName string) {
 		os.Stdout.Write(data[:count])
 		if err != nil {
 			if err != io.EOF {
-				log.Fatal(err)
+				return fmt.Errorf("error reading file: %w", err)
 			}
 			break
 		}
 	}
+	return nil
 }
 
-func mainPrintFileContent(show bool) {
+// PrintFileContent demonstrates returning cleanup functions
+func PrintFileContent(show bool) {
 	if show {
 		fmt.Println("--- print file content ---")
 
-		printFileContent("./books.txt")
+		// Try to read books.txt from the functions directory
+		err := printFileContent("internal/functions/books.txt")
+		if err != nil {
+			fmt.Println("Error:", err)
+			fmt.Println("\nThis example requires a 'books.txt' file in the internal/functions directory.")
+			fmt.Println("Demonstrating with a simple example instead:\n")
+
+			// Show a simple example of the closure pattern
+			fmt.Println("Example of returning a cleanup function:")
+			cleanup := func() string {
+				return "Cleanup function executed"
+			}
+			fmt.Println(cleanup())
+		}
 	}
 }

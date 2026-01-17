@@ -12,7 +12,8 @@ func simulatingNamedOptionalParams(opts MyFuncOpts) {
 	fmt.Println(opts)
 }
 
-func mainSimulatingOptionalParams(show bool) {
+// SimulatingOptionalParams demonstrates simulating optional parameters
+func SimulatingOptionalParams(show bool) {
 	if show {
 		fmt.Println("--- simulating named and optional parameters ---")
 

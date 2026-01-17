@@ -2,7 +2,8 @@ package functions
 
 import "fmt"
 
-func mainFunctionsAreValues(show bool) {
+// FunctionsAreValues demonstrates that functions are first-class values
+func FunctionsAreValues(show bool) {
 	if show {
 		fmt.Println("--- Functions Are Values ---")
 

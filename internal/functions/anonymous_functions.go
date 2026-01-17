@@ -2,7 +2,8 @@ package functions
 
 import "fmt"
 
-func mainAnonymousFunctions(show bool) {
+// AnonymousFunctions demonstrates anonymous function usage
+func AnonymousFunctions(show bool) {
 	if show {
 		anonymousFunctionOption1(false)
 		anonymousFunctionOption2(false)

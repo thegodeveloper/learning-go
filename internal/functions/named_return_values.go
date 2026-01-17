@@ -14,7 +14,8 @@ func divAndRemainderNamed(numerator int, denominator int) (result int, remainder
 	return result, remainder, nil
 }
 
-func mainNamedReturnValues(show bool) {
+// NamedReturnValues demonstrates named return values
+func NamedReturnValues(show bool) {
 	if show {
 		fmt.Println("--- Named Return Values ---")
 
