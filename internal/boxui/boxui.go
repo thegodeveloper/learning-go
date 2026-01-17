@@ -30,6 +30,7 @@ func Run(show bool) {
 	list := tview.NewList()
 	list.ShowSecondaryText(false)
 	list.SetBorder(true)
+	list.SetSelectedStyle(tcell.StyleDefault.Foreground(tcell.ColorBlack).Background(tcell.ColorYellow))
 	names := registry.Names()
 	list.SetTitle(fmt.Sprintf(" Packages (%d) ", len(names)))
 	list.SetTitleAlign(tview.AlignCenter)
