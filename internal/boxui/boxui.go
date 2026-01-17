@@ -118,22 +118,26 @@ func Run(show bool) {
 	}
 
 	// Helper function to switch back to packages view
-	switchToPackages := func() {
+	switchToPackages := func(selectPackage string) {
 		currentMode = viewPackages
-		currentPackage = ""
 		list.Clear()
 		list.SetTitle(" Packages ")
 
 		names := registry.Names()
-		for _, name := range names {
+		selectedIndex := 0
+		for i, name := range names {
 			list.AddItem(name, "", 0, nil)
+			if name == selectPackage {
+				selectedIndex = i
+			}
 		}
 
 		if len(names) > 0 {
-			list.SetCurrentItem(0)
-			current = names[0]
+			list.SetCurrentItem(selectedIndex)
+			current = names[selectedIndex]
 		}
 
+		currentPackage = ""
 		output.Clear()
 	}
 
@@ -173,7 +177,7 @@ func Run(show bool) {
 			return nil
 		case event.Key() == tcell.KeyEsc:
 			if currentMode == viewFunctions {
-				switchToPackages()
+				switchToPackages(currentPackage)
 				return nil
 			}
 			app.Stop()
