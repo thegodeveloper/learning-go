@@ -208,6 +208,13 @@ var PackageRegistry = map[string]PackageFunctions{
 	"generics": {
 		"introduction": generics.Introduction,
 	},
+	"goroutines": {
+		"implementCountTo":                          goroutines.ImplementCountTo,
+		"implementCancelFunctionTerminateGoroutine": goroutines.ImplementCancelFunctionTerminateGoroutine,
+		"implementBackPressure":                     goroutines.ImplementBackPressure,
+		"passingCopyGoroutine":                      goroutines.PassingCopyGoroutine,
+		"allExamples":                               goroutines.AllExamples,
+	},
 }
 
 func Names() []string {

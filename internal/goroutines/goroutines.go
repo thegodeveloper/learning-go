@@ -14,3 +14,11 @@ func Run(show bool) {
 		passingCopyGoroutine()
 	}
 }
+
+// AllExamples runs all goroutine examples
+func AllExamples(show bool) {
+	if !show {
+		return
+	}
+	Run(true)
+}
