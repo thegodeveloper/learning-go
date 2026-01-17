@@ -7,6 +7,7 @@ import (
 	"io"
 	"os"
 	"runtime/debug"
+	"strings"
 	"sync"
 	"time"
 
@@ -72,18 +73,26 @@ func Run(show bool) {
 
 	// populate list (no inline callback in AddItem)
 	for _, name := range names {
-		list.AddItem(name, "", 0, nil)
+		label := name
+		if registry.HasSubFunctions(name) {
+			funcCount := len(registry.GetFunctionNames(name))
+			if funcCount > 0 {
+				label = fmt.Sprintf("%s (%d)", name, funcCount)
+			}
+		}
+		list.AddItem(label, "", 0, nil)
 	}
 
 	// Select the first item and set `current`
 	if len(names) > 0 {
 		list.SetCurrentItem(0)
-		current = names[0]
+		main, _ := list.GetItemText(0)
+		current = strings.Split(main, " ")[0]
 	}
 
 	// update current when selection changes
 	list.SetChangedFunc(func(i int, main, secondary string, r rune) {
-		current = main
+		current = strings.Split(main, " ")[0]
 	})
 
 	// Helper function to switch to function view
@@ -124,7 +133,14 @@ func Run(show bool) {
 		list.SetTitle(fmt.Sprintf(" Packages (%d) ", len(names)))
 		selectedIndex := 0
 		for i, name := range names {
-			list.AddItem(name, "", 0, nil)
+			label := name
+			if registry.HasSubFunctions(name) {
+				funcCount := len(registry.GetFunctionNames(name))
+				if funcCount > 0 {
+					label = fmt.Sprintf("%s (%d)", name, funcCount)
+				}
+			}
+			list.AddItem(label, "", 0, nil)
 			if name == selectPackage {
 				selectedIndex = i
 			}
@@ -132,7 +148,8 @@ func Run(show bool) {
 
 		if len(names) > 0 {
 			list.SetCurrentItem(selectedIndex)
-			current = names[selectedIndex]
+			main, _ := list.GetItemText(selectedIndex)
+			current = strings.Split(main, " ")[0]
 		}
 
 		currentPackage = ""
