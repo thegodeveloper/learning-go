@@ -231,6 +231,9 @@ var PackageRegistry = map[string]PackageFunctions{
 		"comparing":    maps.ComparingMaps,
 		"set":          maps.MapSet,
 	},
+	"pointers": {
+		"declaration": pointers.Declaration,
+	},
 }
 
 func Names() []string {

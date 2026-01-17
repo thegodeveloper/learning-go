@@ -6,6 +6,6 @@ func Run(show bool) {
 	if show {
 		fmt.Println("--- Pointers ---")
 
-		declaration(false)
+		Declaration(false)
 	}
 }

@@ -16,7 +16,7 @@ func b(i *int) {
 	*i = 101
 }
 
-func declaration(show bool) {
+func Declaration(show bool) {
 	if show {
 		fmt.Println("--- Pointers Declaration")
 		x := 100
