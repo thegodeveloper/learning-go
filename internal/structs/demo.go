@@ -11,7 +11,7 @@ type person struct {
 	pet  string
 }
 
-func demo(show bool) {
+func Demo(show bool) {
 	if show {
 		println("\n### Demo ###")
 

@@ -6,22 +6,22 @@ func Run(show bool) {
 	if show {
 		fmt.Println("--- Structs")
 
-		definition(false)
+		Definition(false)
 
-		demo(false)
+		Demo(false)
 
-		activity(false)
+		Activity(false)
 
-		record(false)
+		Records(false)
 
-		pointerReceiver(false)
+		PointerReceiver(false)
 
-		methods(false)
+		Methods(false)
 
-		binaryTree(false)
+		BinaryTree(false)
 
-		songs(false)
+		Songs(false)
 
-		embedding(false)
+		Embedding(false)
 	}
 }

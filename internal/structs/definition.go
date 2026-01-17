@@ -20,7 +20,7 @@ type tree struct {
 	left, right *tree
 }
 
-func definition(show bool) {
+func Definition(show bool) {
 	if show {
 		fmt.Println("-- Structs")
 		bill := createEmployee(

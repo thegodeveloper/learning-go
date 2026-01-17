@@ -23,7 +23,7 @@ func (c *Counter) String() string {
 	return fmt.Sprintf("total: %d, last updated: %v", c.total, c.lastUpdated)
 }
 
-func pointerReceiver(show bool) {
+func PointerReceiver(show bool) {
 	if show {
 		var c Counter
 		fmt.Println(c.String())

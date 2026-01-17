@@ -256,6 +256,17 @@ var PackageRegistry = map[string]PackageFunctions{
 		"extractingSingleValue": strings.ExtractingSingleValue,
 		"toBeAwareInStrings":    strings.ToBeAwareInStrings,
 	},
+	"structs": {
+		"definition":      structs.Definition,
+		"demo":            structs.Demo,
+		"activity":        structs.Activity,
+		"records":         structs.Records,
+		"pointerReceiver": structs.PointerReceiver,
+		"methods":         structs.Methods,
+		"binaryTree":      structs.BinaryTree,
+		"songs":           structs.Songs,
+		"embedding":       structs.Embedding,
+	},
 }
 
 func Names() []string {

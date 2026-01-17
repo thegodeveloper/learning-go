@@ -12,7 +12,7 @@ func (r Record) String() string {
 	return fmt.Sprintf("%s,%d", r.Name, r.Age)
 }
 
-func activity(show bool) {
+func Activity(show bool) {
 	if show {
 		println("\n-- Structs Activity")
 

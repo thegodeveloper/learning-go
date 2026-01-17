@@ -33,7 +33,7 @@ type ReadCloser interface {
 	Closer
 }
 
-func embedding(show bool) {
+func Embedding(show bool) {
 	if show {
 		m := Manager{
 			GDEmployee: GDEmployee{

@@ -7,7 +7,7 @@ type Persona struct {
 	Age  int
 }
 
-func record(show bool) {
+func Records(show bool) {
 	if show {
 		record, err := NewPersona("Bill", 50)
 		if err != nil {

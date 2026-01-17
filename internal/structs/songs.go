@@ -21,7 +21,7 @@ func (s *Song) DoubleLenght() {
 	s.DurationInSeconds *= 2
 }
 
-func songs(show bool) {
+func Songs(show bool) {
 	if show {
 		song := Song{
 			Title:             "Dream On",

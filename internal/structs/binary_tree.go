@@ -33,7 +33,7 @@ func (it *IntTree) Contains(val int) bool {
 	}
 }
 
-func binaryTree(show bool) {
+func BinaryTree(show bool) {
 	if show {
 		var it *IntTree
 		it = it.Insert(7)
