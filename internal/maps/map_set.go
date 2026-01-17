@@ -2,7 +2,7 @@ package maps
 
 import "fmt"
 
-func mapSet(show bool) {
+func MapSet(show bool) {
 	if show {
 		fmt.Println("--- Map Set")
 

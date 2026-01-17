@@ -2,7 +2,7 @@ package maps
 
 import "fmt"
 
-func commaOkIdiomInMaps(show bool) {
+func CommaOkIdiomInMaps(show bool) {
 	if show {
 		fmt.Println("--- Comma OK Idiom in Maps")
 		m := map[string]int{

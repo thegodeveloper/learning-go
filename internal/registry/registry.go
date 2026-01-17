@@ -222,6 +222,15 @@ var PackageRegistry = map[string]PackageFunctions{
 		"implementInterface": interfaces.ImplementInterface,
 		"implicit":           interfaces.Implicit,
 	},
+	"maps": {
+		"definition":   maps.Definition,
+		"declarations": maps.MapsDeclarations,
+		"commaOkIdiom": maps.CommaOkIdiomInMaps,
+		"deleting":     maps.DeletingFromMaps,
+		"readWrite":    maps.MapReadWrite,
+		"comparing":    maps.ComparingMaps,
+		"set":          maps.MapSet,
+	},
 }
 
 func Names() []string {

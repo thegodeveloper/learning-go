@@ -2,7 +2,7 @@ package maps
 
 import "fmt"
 
-func mapReadWrite(show bool) {
+func MapReadWrite(show bool) {
 	if show {
 		fmt.Println("--- Map Read Write")
 

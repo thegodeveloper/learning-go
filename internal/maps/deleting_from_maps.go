@@ -2,7 +2,7 @@ package maps
 
 import "fmt"
 
-func deletingFromMaps(show bool) {
+func DeletingFromMaps(show bool) {
 	if show {
 		fmt.Println("--- Deleting From Maps ---")
 		m := map[string]int{

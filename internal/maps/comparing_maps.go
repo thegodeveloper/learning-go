@@ -5,7 +5,7 @@ import (
 	"maps"
 )
 
-func comparingMaps(show bool) {
+func ComparingMaps(show bool) {
 	if show {
 		fmt.Println("--- Comparing Maps")
 

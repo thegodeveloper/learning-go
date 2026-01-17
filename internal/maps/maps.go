@@ -6,18 +6,18 @@ func Run(show bool) {
 	if show {
 		fmt.Println("-- Maps in Go")
 
-		definition(false)
+		Definition(false)
 
-		mapsDeclarations(false)
+		MapsDeclarations(false)
 
-		commaOkIdiomInMaps(false)
+		CommaOkIdiomInMaps(false)
 
-		deletingFromMaps(false)
+		DeletingFromMaps(false)
 
-		mapReadWrite(false)
+		MapReadWrite(false)
 
-		comparingMaps(false)
+		ComparingMaps(false)
 
-		mapSet(false)
+		MapSet(false)
 	}
 }
