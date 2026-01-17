@@ -11,3 +11,11 @@ func Run(show bool) {
 		channelsAsFunctionParameters()
 	}
 }
+
+// Definition demonstrates all basic channel operations
+func Definition(show bool) {
+	if !show {
+		return
+	}
+	definition()
+}

@@ -2,6 +2,14 @@ package channels
 
 import "fmt"
 
+// ReadAndWriteToFromChannel demonstrates reading and writing to channels
+func ReadAndWriteToFromChannel(show bool) {
+	if !show {
+		return
+	}
+	readAndWriteToFromChannel()
+}
+
 func readAndWriteToFromChannel() {
 	ch := make(chan int)
 

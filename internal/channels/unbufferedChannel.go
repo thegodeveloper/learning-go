@@ -2,6 +2,14 @@ package channels
 
 import "fmt"
 
+// UnbufferedChannel demonstrates unbuffered channel usage
+func UnbufferedChannel(show bool) {
+	if !show {
+		return
+	}
+	unbufferedChannel()
+}
+
 func unbufferedChannel() {
 	ch := make(chan int)
 	go func() {

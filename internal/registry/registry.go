@@ -153,6 +153,14 @@ var PackageRegistry = map[string]PackageFunctions{
 	"basics": {
 		"net": basics.Net,
 	},
+	"channels": {
+		"bufferedChannel":              channels.BufferedChannel,
+		"unbufferedChannel":            channels.UnbufferedChannel,
+		"readAndWriteToFromChannel":    channels.ReadAndWriteToFromChannel,
+		"closedChannel":                channels.ClosedChannel,
+		"channelsAsFunctionParameters": channels.ChannelsAsFunctionParameters,
+		"definition":                   channels.Definition,
+	},
 	"generics": {
 		"introduction": generics.Introduction,
 	},

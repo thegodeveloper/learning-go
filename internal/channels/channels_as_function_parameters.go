@@ -12,6 +12,14 @@ func f2(c chan<- int, x int) {
 	c <- x
 }
 
+// ChannelsAsFunctionParameters demonstrates using channels as function parameters
+func ChannelsAsFunctionParameters(show bool) {
+	if !show {
+		return
+	}
+	channelsAsFunctionParameters()
+}
+
 func channelsAsFunctionParameters() {
 	c1 := make(chan int)
 	c2 := make(chan int)

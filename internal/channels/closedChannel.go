@@ -2,6 +2,14 @@ package channels
 
 import "fmt"
 
+// ClosedChannel demonstrates closing channels and detecting closed state
+func ClosedChannel(show bool) {
+	if !show {
+		return
+	}
+	closedChannel()
+}
+
 func closedChannel() {
 	ch := make(chan int, 7)
 	ch <- 1
