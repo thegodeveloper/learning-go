@@ -18,7 +18,8 @@ func (se StatusErr) Error() string {
 	return se.Message
 }
 
-func errorsAndValues(show bool) {
+// ErrorsAndValues demonstrates custom error types with values
+func ErrorsAndValues(show bool) {
 	if show {
 		println("\n-- Errors and Values")
 

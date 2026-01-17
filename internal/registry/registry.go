@@ -164,6 +164,14 @@ var PackageRegistry = map[string]PackageFunctions{
 	"closures": {
 		"declaration": closures.Declaration,
 	},
+	"errorold": {
+		"demo":              errorold.Demo,
+		"errorsAndValues":   errorold.ErrorsAndValues,
+		"errorFromFunction": errorold.ErrorFromFunction,
+		"wrappingErrors":    errorold.WrappingErrors,
+		"simple":            errorold.Simple,
+		"sentinelError":     errorold.SentinelError,
+	},
 	"generics": {
 		"introduction": generics.Introduction,
 	},

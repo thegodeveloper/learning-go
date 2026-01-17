@@ -18,7 +18,8 @@ func GetMusketeer(id int) (string, error) {
 	return Musketeers[id], nil
 }
 
-func demo(show bool) {
+// Demo demonstrates basic error handling
+func Demo(show bool) {
 	if show {
 		fmt.Println("\n-- Error Demo")
 
@@ -40,11 +41,11 @@ func Run(show bool) {
 	if show {
 		fmt.Println("\n-- Errors")
 
-		demo(false)
-		errorsAndValues(false)
-		errorFromFunction(false)
-		wrappingErrors(false)
-		simple(false)
-		sentinelError(false)
+		Demo(false)
+		ErrorsAndValues(false)
+		ErrorFromFunction(false)
+		WrappingErrors(false)
+		Simple(false)
+		SentinelError(false)
 	}
 }

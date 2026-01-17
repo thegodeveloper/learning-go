@@ -6,7 +6,8 @@ import (
 	"os"
 )
 
-func errorFromFunction(show bool) {
+// ErrorFromFunction demonstrates returning errors from functions
+func ErrorFromFunction(show bool) {
 	if show {
 		rem, mod, err := calcRemainderAdnMod(7, 7)
 		if err != nil {

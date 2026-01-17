@@ -6,7 +6,8 @@ import (
 	"os"
 )
 
-func wrappingErrors(show bool) {
+// WrappingErrors demonstrates error wrapping with fmt.Errorf
+func WrappingErrors(show bool) {
 	if show {
 		fmt.Println("\n-- Wrapping Errors")
 

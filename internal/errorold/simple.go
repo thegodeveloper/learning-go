@@ -6,7 +6,8 @@ import (
 	"strconv"
 )
 
-func simple(show bool) {
+// Simple demonstrates simple error handling with strconv
+func Simple(show bool) {
 	if show {
 		age := os.Args[1]
 
