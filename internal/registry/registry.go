@@ -182,6 +182,16 @@ var PackageRegistry = map[string]PackageFunctions{
 		"namedErrors":     errors.NamedErrors,
 		"allExamples":     errors.AllExamples,
 	},
+	"forloops": {
+		"definition":         forloops.Definition,
+		"forContinue":        forloops.ForContinue,
+		"forRange":           forloops.ForRange,
+		"forRangeMaps":       forloops.ForRangeMaps,
+		"forString":          forloops.ForString,
+		"forWithLabels":      forloops.ForWithLabels,
+		"forBreakFromSwitch": forloops.ForBreakFromSwitch,
+		"rangeIsACopy":       forloops.RangeIsACopy,
+	},
 	"generics": {
 		"introduction": generics.Introduction,
 	},

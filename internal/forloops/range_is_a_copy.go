@@ -2,7 +2,8 @@ package forloops
 
 import "fmt"
 
-func rangeIsACopy(show bool) {
+// RangeIsACopy demonstrates that range creates copies of values
+func RangeIsACopy(show bool) {
 	if show {
 		fmt.Println("--- Range is a copy")
 

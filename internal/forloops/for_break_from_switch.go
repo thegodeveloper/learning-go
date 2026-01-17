@@ -2,7 +2,8 @@ package forloops
 
 import "fmt"
 
-func forBreakFromSwitch(show bool) {
+// ForBreakFromSwitch demonstrates breaking out of a for loop from within a switch
+func ForBreakFromSwitch(show bool) {
 	if show {
 		fmt.Println("--- Breaking a for from a switch")
 

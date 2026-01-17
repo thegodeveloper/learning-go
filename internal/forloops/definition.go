@@ -2,7 +2,8 @@ package forloops
 
 import "fmt"
 
-func definition(show bool) {
+// Definition demonstrates various for loop patterns
+func Definition(show bool) {
 	if show {
 		fmt.Println("--- Definition")
 		x := 5

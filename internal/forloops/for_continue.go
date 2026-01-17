@@ -2,7 +2,8 @@ package forloops
 
 import "fmt"
 
-func forContinue(show bool) {
+// ForContinue demonstrates using continue in for loops (FizzBuzz)
+func ForContinue(show bool) {
 	if show {
 		fmt.Println("--- Using continue to make code clearer ---")
 

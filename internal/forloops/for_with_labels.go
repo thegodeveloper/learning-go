@@ -2,7 +2,8 @@ package forloops
 
 import "fmt"
 
-func forWithLabels(show bool) {
+// ForWithLabels demonstrates labeled for loops
+func ForWithLabels(show bool) {
 	if show {
 		fmt.Println("--- for with labels")
 

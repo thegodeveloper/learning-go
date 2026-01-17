@@ -6,13 +6,13 @@ func Run(show bool) {
 	if show {
 		fmt.Println("---For Loops---")
 
-		definition(false)
-		forContinue(false)
-		forRange(false)
-		forRangeMaps(false)
-		forString(false)
-		forWithLabels(false)
-		forBreakFromSwitch(false)
-		rangeIsACopy(false)
+		Definition(false)
+		ForContinue(false)
+		ForRange(false)
+		ForRangeMaps(false)
+		ForString(false)
+		ForWithLabels(false)
+		ForBreakFromSwitch(false)
+		RangeIsACopy(false)
 	}
 }

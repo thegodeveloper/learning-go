@@ -2,7 +2,8 @@ package forloops
 
 import "fmt"
 
-func forRangeMaps(show bool) {
+// ForRangeMaps demonstrates for-range loops on maps
+func ForRangeMaps(show bool) {
 	if show {
 		fmt.Println("--- for range maps")
 

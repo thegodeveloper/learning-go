@@ -2,7 +2,8 @@ package forloops
 
 import "fmt"
 
-func forRange(show bool) {
+// ForRange demonstrates for-range loops on slices
+func ForRange(show bool) {
 	if show {
 		fmt.Println("--- for range")
 

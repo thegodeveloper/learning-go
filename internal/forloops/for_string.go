@@ -2,7 +2,8 @@ package forloops
 
 import "fmt"
 
-func forString(show bool) {
+// ForString demonstrates for-range loops on strings
+func ForString(show bool) {
 	if show {
 		fmt.Println("--- for in string")
 
