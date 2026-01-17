@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func switchWithConditions(show bool) {
+func SwitchWithConditions(show bool) {
 	if show {
 		fmt.Println("--- Switch Conditions ---")
 

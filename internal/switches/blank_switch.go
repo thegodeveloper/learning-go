@@ -2,7 +2,7 @@ package switches
 
 import "fmt"
 
-func basicBlankSwitch(show bool) {
+func BasicBlankSwitch(show bool) {
 	if show {
 		words := []string{"hi", "salutations", "seven", "hello"}
 

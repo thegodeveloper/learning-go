@@ -2,7 +2,7 @@ package switches
 
 import "fmt"
 
-func declaration(show bool) {
+func Declaration(show bool) {
 	if show {
 		var finger = 1
 

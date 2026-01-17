@@ -2,7 +2,7 @@ package switches
 
 import "fmt"
 
-func switchStatement(show bool) {
+func SwitchStatement(show bool) {
 	if show {
 		fmt.Println("--- Switch Statement ---")
 

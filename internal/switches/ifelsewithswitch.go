@@ -5,7 +5,7 @@ import (
 	"math/rand"
 )
 
-func ifElseWithSwitch(show bool) {
+func IfElseWithSwitch(show bool) {
 	if show {
 		fmt.Println("--- Rewrite an if/else with a switch ---")
 

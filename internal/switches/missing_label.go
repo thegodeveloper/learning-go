@@ -2,7 +2,7 @@ package switches
 
 import "fmt"
 
-func missingLabel(show bool) {
+func MissingLabel(show bool) {
 	if show {
 		fmt.Println("--- Missing Labels")
 

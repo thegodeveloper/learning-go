@@ -6,11 +6,11 @@ func Run(show bool) {
 	if show {
 		fmt.Println("-- Switches in Go")
 
-		declaration(false)
-		switchWithConditions(false)
-		switchStatement(false)
-		ifElseWithSwitch(false)
-		missingLabel(false)
-		basicBlankSwitch(false)
+		Declaration(false)
+		SwitchWithConditions(false)
+		SwitchStatement(false)
+		IfElseWithSwitch(false)
+		MissingLabel(false)
+		BasicBlankSwitch(false)
 	}
 }

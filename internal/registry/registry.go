@@ -267,6 +267,14 @@ var PackageRegistry = map[string]PackageFunctions{
 		"songs":           structs.Songs,
 		"embedding":       structs.Embedding,
 	},
+	"switches": {
+		"declaration":          switches.Declaration,
+		"switchWithConditions": switches.SwitchWithConditions,
+		"switchStatement":      switches.SwitchStatement,
+		"ifElseWithSwitch":     switches.IfElseWithSwitch,
+		"missingLabel":         switches.MissingLabel,
+		"basicBlankSwitch":     switches.BasicBlankSwitch,
+	},
 }
 
 func Names() []string {
