@@ -2,7 +2,8 @@ package closures
 
 import "fmt"
 
-func declaration(show bool) {
+// Declaration demonstrates closure definition and usage
+func Declaration(show bool) {
 	if show {
 		fmt.Println("--- Closure Definition")
 

@@ -161,6 +161,9 @@ var PackageRegistry = map[string]PackageFunctions{
 		"channelsAsFunctionParameters": channels.ChannelsAsFunctionParameters,
 		"definition":                   channels.Definition,
 	},
+	"closures": {
+		"declaration": closures.Declaration,
+	},
 	"generics": {
 		"introduction": generics.Introduction,
 	},
