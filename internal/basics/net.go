@@ -8,7 +8,8 @@ import (
 
 const staticUrl = "http://www.google.com"
 
-func net(show bool) {
+// Net demonstrates using Go standard library to communicate with a URL
+func Net(show bool) {
 	if show {
 		fmt.Println("Using the Go Standard Library to communicate with an URL")
 

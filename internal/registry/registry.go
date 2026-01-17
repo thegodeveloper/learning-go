@@ -150,6 +150,9 @@ var PackageRegistry = map[string]PackageFunctions{
 		"comparingArrays":         arrays.ComparingArrays,
 		"arrayFunctions":          arrays.ArrayFunctions,
 	},
+	"basics": {
+		"net": basics.Net,
+	},
 	"generics": {
 		"introduction": generics.Introduction,
 	},

@@ -6,6 +6,6 @@ func Run(show bool) {
 	if show {
 		fmt.Println("-- Basics in Go")
 
-		net(true)
+		Net(true)
 	}
 }
