@@ -2,7 +2,8 @@ package arrays
 
 import "fmt"
 
-func basics(show bool) {
+// Basics demonstrates basic array operations
+func Basics(show bool) {
 	if show {
 		fmt.Println("\n-- Arrays Basics")
 		// this creates an array of 5 items, and each item is initialized to 0

@@ -2,7 +2,8 @@ package arrays
 
 import "fmt"
 
-func comparingArrays(show bool) {
+// ComparingArrays demonstrates array comparison
+func ComparingArrays(show bool) {
 	if show {
 		fmt.Println("\n-- Comparing Arrays")
 

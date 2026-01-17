@@ -6,18 +6,18 @@ func Run(show bool) {
 	if show {
 		fmt.Println("-- Arrays in Go")
 
-		arrayDefinition(false)
+		ArrayDefinition(false)
 
-		basics(false)
+		Basics(false)
 
-		symbols(false)
+		Symbols(false)
 
-		printIndexesAndElements(false)
+		PrintIndexesAndElements(false)
 
-		printType(false)
+		PrintType(false)
 
-		comparingArrays(false)
+		ComparingArrays(false)
 
-		arrayFunctions(false)
+		ArrayFunctions(false)
 	}
 }

@@ -2,7 +2,8 @@ package arrays
 
 import "fmt"
 
-func arrayDefinition(show bool) {
+// ArrayDefinition demonstrates array declaration and initialization
+func ArrayDefinition(show bool) {
 	if show {
 		fmt.Println("\n-- Array Declaration")
 		var a [3]int

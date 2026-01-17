@@ -137,6 +137,15 @@ var Packages = map[string]func(bool){
 // PackageRegistry maps package names to their sub-functions
 // Packages that have entries here will show their functions instead of running directly
 var PackageRegistry = map[string]PackageFunctions{
+	"arrays": {
+		"definition":              arrays.ArrayDefinition,
+		"basics":                  arrays.Basics,
+		"symbols":                 arrays.Symbols,
+		"printIndexesAndElements": arrays.PrintIndexesAndElements,
+		"printType":               arrays.PrintType,
+		"comparingArrays":         arrays.ComparingArrays,
+		"arrayFunctions":          arrays.ArrayFunctions,
+	},
 	"generics": {
 		"introduction": generics.Introduction,
 	},

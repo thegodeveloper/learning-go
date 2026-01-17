@@ -11,7 +11,8 @@ const (
 	RMB
 )
 
-func symbols(show bool) {
+// Symbols demonstrates using arrays with custom types
+func Symbols(show bool) {
 	if show {
 		symbol := [...]string{USD: "$", EUR: "€", GBP: "£", RMB: "¥"}
 		fmt.Println(RMB, symbol[RMB])
