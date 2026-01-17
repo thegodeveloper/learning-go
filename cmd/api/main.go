@@ -28,6 +28,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/forloops"
 	"github.com/thegodeveloper/learning-go/internal/functionaloptions"
 	"github.com/thegodeveloper/learning-go/internal/functions"
+	"github.com/thegodeveloper/learning-go/internal/generics"
 	"github.com/thegodeveloper/learning-go/internal/goroutines"
 	"github.com/thegodeveloper/learning-go/internal/gotousecase"
 	"github.com/thegodeveloper/learning-go/internal/helloworld"
@@ -102,6 +103,7 @@ func main() {
 	frameboundaries.Run(false)
 	functionaloptions.Run(false)
 	functions.Run(false)
+	generics.Run(false)
 	goroutines.Run(false)
 	gotousecase.Run(false)
 	helloworld.Run(false)

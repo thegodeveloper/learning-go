@@ -26,6 +26,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/forloops"
 	"github.com/thegodeveloper/learning-go/internal/functionaloptions"
 	"github.com/thegodeveloper/learning-go/internal/functions"
+	"github.com/thegodeveloper/learning-go/internal/generics"
 	"github.com/thegodeveloper/learning-go/internal/goroutines"
 	"github.com/thegodeveloper/learning-go/internal/gotousecase"
 	"github.com/thegodeveloper/learning-go/internal/helloworld"
@@ -65,6 +66,9 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/which"
 )
 
+// PackageFunctions maps function names to their execution functions within a package
+type PackageFunctions map[string]func(bool)
+
 var Packages = map[string]func(bool){
 	"adapter":                 adapter.Run,
 	"arrays":                  arrays.Run,
@@ -90,6 +94,7 @@ var Packages = map[string]func(bool){
 	"forloops":                forloops.Run,
 	"functionaloptions":       functionaloptions.Run,
 	"functions":               functions.Run,
+	"generics":                generics.Run,
 	"goroutines":              goroutines.Run,
 	"gotousecase":             gotousecase.Run,
 	"helloworld":              helloworld.Run,
@@ -129,6 +134,14 @@ var Packages = map[string]func(bool){
 	"which":                   which.Run,
 }
 
+// PackageRegistry maps package names to their sub-functions
+// Packages that have entries here will show their functions instead of running directly
+var PackageRegistry = map[string]PackageFunctions{
+	"generics": {
+		"introduction": generics.Introduction,
+	},
+}
+
 func Names() []string {
 	names := make([]string, 0, len(Packages))
 	for name := range Packages {
@@ -136,4 +149,30 @@ func Names() []string {
 	}
 	sort.Strings(names)
 	return names
+}
+
+// GetPackageFunctions returns the functions for a package, or nil if it doesn't have sub-functions
+func GetPackageFunctions(packageName string) PackageFunctions {
+	return PackageRegistry[packageName]
+}
+
+// GetFunctionNames returns sorted function names for a package
+func GetFunctionNames(packageName string) []string {
+	funcs := PackageRegistry[packageName]
+	if funcs == nil {
+		return []string{}
+	}
+
+	names := make([]string, 0, len(funcs))
+	for name := range funcs {
+		names = append(names, name)
+	}
+	sort.Strings(names)
+	return names
+}
+
+// HasSubFunctions checks if a package has registered sub-functions
+func HasSubFunctions(packageName string) bool {
+	funcs, exists := PackageRegistry[packageName]
+	return exists && len(funcs) > 0
 }
