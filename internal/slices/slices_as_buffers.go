@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func slicesAsBuffers(show bool, fileName string) error {
+func SlicesAsBuffers(show bool, fileName string) error {
 	if show {
 		fmt.Println("--- Slice as Buffers")
 

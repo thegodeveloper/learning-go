@@ -2,7 +2,7 @@ package slices
 
 import "fmt"
 
-func sliceAppend(show bool) {
+func SliceAppend(show bool) {
 	if show {
 		fmt.Println("--- Slice Append")
 

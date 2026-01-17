@@ -5,7 +5,7 @@ import (
 	"slices"
 )
 
-func compareSlices(show bool) {
+func CompareSlices(show bool) {
 	if show {
 		fmt.Println("--- Compare Slices")
 

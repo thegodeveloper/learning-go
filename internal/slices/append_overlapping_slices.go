@@ -2,7 +2,7 @@ package slices
 
 import "fmt"
 
-func appendOverlappingSlices(show bool) {
+func AppendOverlappingSlices(show bool) {
 	if show {
 		fmt.Println("--- append makes overlapping slices more confusing ---")
 

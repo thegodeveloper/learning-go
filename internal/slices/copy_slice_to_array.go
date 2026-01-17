@@ -2,7 +2,7 @@ package slices
 
 import "fmt"
 
-func copySliceToArray(show bool) {
+func CopySliceToArray(show bool) {
 	if show {
 		fmt.Println("--- copying slice to array ---")
 

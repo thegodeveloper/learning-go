@@ -2,7 +2,7 @@ package slices
 
 import "fmt"
 
-func sliceWithMake(show bool) {
+func SliceWithMake(show bool) {
 	if show {
 		x := make([]int, 7)
 		fmt.Println("--- Slice with make ---")

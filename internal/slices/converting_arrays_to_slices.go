@@ -2,7 +2,7 @@ package slices
 
 import "fmt"
 
-func convertingArraysToSlices(show bool) {
+func ConvertingArraysToSlices(show bool) {
 	if show {
 		fmt.Println("--- Converting array to slice ---")
 

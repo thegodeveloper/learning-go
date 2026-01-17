@@ -15,7 +15,7 @@ func modSlices(s []int) {
 	s = append(s, 10)
 }
 
-func passMapSlice(show bool) {
+func PassMapSlice(show bool) {
 	if show {
 		m := map[int]string{
 			1: "first",

@@ -2,7 +2,7 @@ package slices
 
 import "fmt"
 
-func slicesWithOverlappingStorage(show bool) {
+func SlicesWithOverlappingStorage(show bool) {
 	if show {
 		fmt.Println("Slices with Overlapping Storage")
 

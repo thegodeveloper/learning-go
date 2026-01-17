@@ -2,7 +2,7 @@ package slices
 
 import "fmt"
 
-func definition(show bool) {
+func Definition(show bool) {
 	if show {
 		fmt.Println("--- Slice Definition")
 

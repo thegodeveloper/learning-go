@@ -2,7 +2,7 @@ package slices
 
 import "fmt"
 
-func slicingSlices(show bool) {
+func SlicingSlices(show bool) {
 	if show {
 		fmt.Println("--- slicing slices ---")
 
@@ -21,7 +21,7 @@ func slicingSlices(show bool) {
 	}
 }
 
-func changeSlicing(show bool) {
+func ChangeSlicing(show bool) {
 	if show {
 		fmt.Println("--- Change Slicing")
 

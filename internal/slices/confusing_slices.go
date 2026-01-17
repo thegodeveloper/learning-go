@@ -2,7 +2,7 @@ package slices
 
 import "fmt"
 
-func confusingSlices(show bool) {
+func ConfusingSlices(show bool) {
 	if show {
 		fmt.Println("--- Confusing Slices ---")
 

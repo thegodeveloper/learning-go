@@ -2,7 +2,7 @@ package slices
 
 import "fmt"
 
-func emptyingSlice(show bool) {
+func EmptyingSlice(show bool) {
 	if show {
 		fmt.Println("--- Emptying a slice")
 

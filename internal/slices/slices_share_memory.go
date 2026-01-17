@@ -2,7 +2,7 @@ package slices
 
 import "fmt"
 
-func slicesShareMemory(show bool) {
+func SlicesShareMemory(show bool) {
 	if show {
 		fmt.Println("--- slices share memory ---")
 

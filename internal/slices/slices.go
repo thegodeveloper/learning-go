@@ -8,27 +8,21 @@ func Run(show bool) {
 	if show {
 		fmt.Println("-- Slices")
 
-		definition(false)
-		slicingSlices(false)
-		slicesShareMemory(false)
-		appendOverlappingSlices(false)
-		convertingArraysToSlices(false)
-		copySlice(false)
-		copySliceToArray(false)
-		sliceWithSpecificValuesPerRun(false)
-		sliceAppend(false)
-		sliceWithMake(false)
-
-		err := slicesAsBuffers(false, "./books.txt") // this is wrong
-		if err != nil {
-			fmt.Println(err)
-		}
-
-		compareSlices(false)
-		emptyingSlice(false)
-		changeSlicing(false)
-		confusingSlices(false)
-		slicesWithOverlappingStorage(false)
-		passMapSlice(false)
+		Definition(false)
+		SlicingSlices(false)
+		SlicesShareMemory(false)
+		AppendOverlappingSlices(false)
+		ConvertingArraysToSlices(false)
+		CopySlice(false)
+		CopySliceToArray(false)
+		SliceWithSpecificValuesPerRun(false)
+		SliceAppend(false)
+		SliceWithMake(false)
+		CompareSlices(false)
+		EmptyingSlice(false)
+		ChangeSlicing(false)
+		ConfusingSlices(false)
+		SlicesWithOverlappingStorage(false)
+		PassMapSlice(false)
 	}
 }

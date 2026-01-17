@@ -234,6 +234,24 @@ var PackageRegistry = map[string]PackageFunctions{
 	"pointers": {
 		"declaration": pointers.Declaration,
 	},
+	"slices": {
+		"definition":                    slices.Definition,
+		"slicingSlices":                 slices.SlicingSlices,
+		"slicesShareMemory":             slices.SlicesShareMemory,
+		"appendOverlappingSlices":       slices.AppendOverlappingSlices,
+		"convertingArraysToSlices":      slices.ConvertingArraysToSlices,
+		"copySlice":                     slices.CopySlice,
+		"copySliceToArray":              slices.CopySliceToArray,
+		"sliceWithSpecificValuesPerRun": slices.SliceWithSpecificValuesPerRun,
+		"sliceAppend":                   slices.SliceAppend,
+		"sliceWithMake":                 slices.SliceWithMake,
+		"compareSlices":                 slices.CompareSlices,
+		"emptyingSlice":                 slices.EmptyingSlice,
+		"changeSlicing":                 slices.ChangeSlicing,
+		"confusingSlices":               slices.ConfusingSlices,
+		"slicesWithOverlappingStorage":  slices.SlicesWithOverlappingStorage,
+		"passMapSlice":                  slices.PassMapSlice,
+	},
 }
 
 func Names() []string {
