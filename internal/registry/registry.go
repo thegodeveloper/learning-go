@@ -215,6 +215,13 @@ var PackageRegistry = map[string]PackageFunctions{
 		"passingCopyGoroutine":                      goroutines.PassingCopyGoroutine,
 		"allExamples":                               goroutines.AllExamples,
 	},
+	"interfaces": {
+		"definition":         interfaces.Definition,
+		"zeroValue":          interfaces.ZeroValue,
+		"emptyInterface":     interfaces.EmptyInterface,
+		"implementInterface": interfaces.ImplementInterface,
+		"implicit":           interfaces.Implicit,
+	},
 }
 
 func Names() []string {

@@ -18,6 +18,6 @@ func Run(show bool) {
 		fmt.Println("-- Implement Interface")
 		implementInterface()
 
-		implicit(false)
+		Implicit(false)
 	}
 }

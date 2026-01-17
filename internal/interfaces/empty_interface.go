@@ -2,6 +2,14 @@ package interfaces
 
 import "fmt"
 
+// EmptyInterface demonstrates empty interface usage
+func EmptyInterface(show bool) {
+	if !show {
+		return
+	}
+	emptyInterface()
+}
+
 func emptyInterface() {
 	// empty interface
 	// a way to say that a variable could store a value of any type

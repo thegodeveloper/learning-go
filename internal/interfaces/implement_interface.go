@@ -18,6 +18,14 @@ func isAPerson(h Person) {
 	fmt.Println(h.greet())
 }
 
+// ImplementInterface demonstrates implementing an interface
+func ImplementInterface(show bool) {
+	if !show {
+		return
+	}
+	implementInterface()
+}
+
 func implementInterface() {
 	var a = Human{
 		Name: "Will",

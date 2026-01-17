@@ -20,7 +20,8 @@ func (c Client) Program() {
 	c.L.Process(data)
 }
 
-func implicit(show bool) {
+// Implicit demonstrates implicit interface implementation
+func Implicit(show bool) {
 	if show {
 		c := Client{
 			L: LogicProvider{},

@@ -19,6 +19,14 @@ func (p Persona) String() string {
 	return fmt.Sprintf("%s %s", p.First, p.Last)
 }
 
+// Definition demonstrates interface definition and implicit implementation
+func Definition(show bool) {
+	if !show {
+		return
+	}
+	definition()
+}
+
 func definition() {
 	p := Persona{
 		First: "Will",
