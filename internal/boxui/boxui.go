@@ -29,7 +29,8 @@ func Run(show bool) {
 	list := tview.NewList()
 	list.ShowSecondaryText(false)
 	list.SetBorder(true)
-	list.SetTitle(" Packages ")
+	names := registry.Names()
+	list.SetTitle(fmt.Sprintf(" Packages (%d) ", len(names)))
 	list.SetTitleAlign(tview.AlignCenter)
 	list.SetBorderPadding(0, 0, 1, 0)
 	list.SetBorderColor(tcell.ColorAquaMarine)
@@ -68,8 +69,6 @@ func Run(show bool) {
 		current        string
 		currentPackage string
 	)
-
-	names := registry.Names()
 
 	// populate list (no inline callback in AddItem)
 	for _, name := range names {
@@ -121,9 +120,8 @@ func Run(show bool) {
 	switchToPackages := func(selectPackage string) {
 		currentMode = viewPackages
 		list.Clear()
-		list.SetTitle(" Packages ")
-
 		names := registry.Names()
+		list.SetTitle(fmt.Sprintf(" Packages (%d) ", len(names)))
 		selectedIndex := 0
 		for i, name := range names {
 			list.AddItem(name, "", 0, nil)
