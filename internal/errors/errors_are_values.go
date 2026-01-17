@@ -26,6 +26,14 @@ func (se StatusErr) Unwrap() error {
 	return se.Err
 }
 
+// ErrorsAreValues demonstrates custom error types with values
+func ErrorsAreValues(show bool) {
+	if !show {
+		return
+	}
+	UseLoginAndGetData()
+}
+
 func UseLoginAndGetData() {
 	_, err := LoginAndGetData("bill", "xyz", "mozart")
 	if err != nil {

@@ -27,3 +27,11 @@ func Run(show bool) {
 		errorsIs()
 	}
 }
+
+// AllExamples runs all error examples
+func AllExamples(show bool) {
+	if !show {
+		return
+	}
+	Run(true)
+}

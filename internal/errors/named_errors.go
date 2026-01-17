@@ -11,7 +11,8 @@ var (
 	ErrInput   = errors.New("input error")
 )
 
-func namedErrors(show bool) {
+// NamedErrors demonstrates using named sentinel errors
+func NamedErrors(show bool) {
 	if show {
 		for {
 			err := dbConn()

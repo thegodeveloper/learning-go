@@ -172,6 +172,16 @@ var PackageRegistry = map[string]PackageFunctions{
 		"simple":            errorold.Simple,
 		"sentinelError":     errorold.SentinelError,
 	},
+	"errors": {
+		"basics":          errors.Basics,
+		"simpleErrors":    errors.SimpleErrors,
+		"sentinelErrors":  errors.SentinelErrors,
+		"errorsAreValues": errors.ErrorsAreValues,
+		"wrappingErrors":  errors.WrappingErrors,
+		"errorsIs":        errors.ErrorsIs,
+		"namedErrors":     errors.NamedErrors,
+		"allExamples":     errors.AllExamples,
+	},
 	"generics": {
 		"introduction": generics.Introduction,
 	},

@@ -13,6 +13,14 @@ func calcRemainderAndMod(numerator, denominator int) (int, int, error) {
 	return numerator / denominator, numerator % denominator, nil
 }
 
+// Basics demonstrates basic error handling with division
+func Basics(show bool) {
+	if !show {
+		return
+	}
+	basics()
+}
+
 func basics() {
 	numerator := 20
 	denominator := 3

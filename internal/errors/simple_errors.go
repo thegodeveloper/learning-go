@@ -12,6 +12,14 @@ func doubleEven(i int) (int, error) {
 	return i * 2, nil
 }
 
+// SimpleErrors demonstrates simple error creation with errors.New
+func SimpleErrors(show bool) {
+	if !show {
+		return
+	}
+	simpleErrors()
+}
+
 func simpleErrors() {
 	evenNumber, err := doubleEven(7)
 	if err != nil {

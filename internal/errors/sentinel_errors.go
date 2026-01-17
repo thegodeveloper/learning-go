@@ -6,6 +6,14 @@ import (
 	"fmt"
 )
 
+// SentinelErrors demonstrates using sentinel errors for comparison
+func SentinelErrors(show bool) {
+	if !show {
+		return
+	}
+	sentinelErrors()
+}
+
 func sentinelErrors() {
 	data := []byte("This is not a zip file")
 	notAZipFile := bytes.NewReader(data)

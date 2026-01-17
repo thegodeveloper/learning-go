@@ -18,6 +18,14 @@ func fileChecker(name string) error {
 	return nil
 }
 
+// WrappingErrors demonstrates error wrapping with %w
+func WrappingErrors(show bool) {
+	if !show {
+		return
+	}
+	wrappingErrors()
+}
+
 func wrappingErrors() {
 	err := fileChecker("not_here.txt")
 	if err != nil {
@@ -26,6 +34,14 @@ func wrappingErrors() {
 			fmt.Println(wrappedErr)
 		}
 	}
+}
+
+// ErrorsIs demonstrates using errors.Is for error comparison
+func ErrorsIs(show bool) {
+	if !show {
+		return
+	}
+	errorsIs()
 }
 
 func errorsIs() {
