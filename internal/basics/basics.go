@@ -9,5 +9,7 @@ func Run(show bool) {
 		Net(false)
 
 		Arithmetic(false)
+
+		ForLoops(false)
 	}
 }

@@ -153,6 +153,7 @@ var PackageRegistry = map[string]PackageFunctions{
 	"basics": {
 		"net":        basics.Net,
 		"arithmetic": basics.Arithmetic,
+		"forloops":   basics.ForLoops,
 	},
 	"channels": {
 		"bufferedChannel":              channels.BufferedChannel,
