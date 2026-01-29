@@ -21,5 +21,8 @@ func Arithmetic(show bool) {
 
 		result = a % b
 		fmt.Println("Modulo:", result)
+
+		const p = 22 / 7.0
+		fmt.Println("Decimal value:", p)
 	}
 }
