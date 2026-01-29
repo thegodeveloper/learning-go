@@ -151,7 +151,8 @@ var PackageRegistry = map[string]PackageFunctions{
 		"arrayFunctions":          arrays.ArrayFunctions,
 	},
 	"basics": {
-		"net": basics.Net,
+		"net":        basics.Net,
+		"arithmetic": basics.Arithmetic,
 	},
 	"channels": {
 		"bufferedChannel":              channels.BufferedChannel,
