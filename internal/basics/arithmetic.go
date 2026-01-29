@@ -24,5 +24,12 @@ func Arithmetic(show bool) {
 
 		const p = 22 / 7.0
 		fmt.Println("Decimal value:", p)
+
+		// overflow
+		var maxInt = 9223372036854775807
+		fmt.Println("Max value:", maxInt)
+		// it goes to a negative value
+		maxInt++
+		fmt.Println("Max value:", maxInt)
 	}
 }
