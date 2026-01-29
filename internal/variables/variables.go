@@ -28,7 +28,7 @@ func Run(show bool) {
 
 		declaringVarInFunctions(false)
 
-		varScope(true)
+		varScope(false)
 
 		reviewingVariables(false)
 	}
