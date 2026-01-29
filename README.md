@@ -81,6 +81,10 @@ go vet ./...
 wTime/master.go:13:25: 2006-02-01 should be 2006-01-02
 ```
 
-## ToDo
+## Resources
+
+### Go Playground
+
+- [Variables](https://goplay.tools/snippet/qF9L8_3REc7)
 
 - Refactor the w-directories
