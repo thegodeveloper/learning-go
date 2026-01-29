@@ -31,5 +31,10 @@ func Arithmetic(show bool) {
 		// it goes to a negative value
 		maxInt++
 		fmt.Println("Max value:", maxInt)
+
+		// overflow with unsigned integers
+		var uMaxInt uint64 = 18446744073709551615
+		uMaxInt++
+		fmt.Println("Max value uint64:", uMaxInt)
 	}
 }
