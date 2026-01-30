@@ -11,5 +11,7 @@ func Run(show bool) {
 		Arithmetic(false)
 
 		ForLoops(false)
+
+		BreakContinueLoops(false)
 	}
 }
