@@ -156,6 +156,7 @@ var PackageRegistry = map[string]PackageFunctions{
 		"forloops":           basics.ForLoops,
 		"brakeContinueLoops": basics.BreakContinueLoops,
 		"outerLoops":         basics.OuterLoops,
+		"forRange":           basics.ForRange,
 	},
 	"channels": {
 		"bufferedChannel":              channels.BufferedChannel,

@@ -15,5 +15,7 @@ func Run(show bool) {
 		BreakContinueLoops(false)
 
 		OuterLoops(false)
+
+		ForRange(false)
 	}
 }
