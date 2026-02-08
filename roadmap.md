@@ -6,8 +6,8 @@ A curated collection of educational resources, literature, and practical courses
 
 | Resource Name                                | Status |
 |:---------------------------------------------|:------:|
-| The Go Programming Language                  |        |
-| Learning Go Second Edition                   |        |
+| The Go Programming Language                  |   ✴️   |
+| Learning Go Second Edition                   |   ✴️   |
 | The Power of Go Tools                        |        |
 | Concurrency in Go                            |        |
 | Distributed Services with Go                 |        |
@@ -35,3 +35,7 @@ A curated collection of educational resources, literature, and practical courses
 | Kubernetes Programming with Go               |        |
 | Mastering Go CLI and TUI                     |        |
 | Web development with Go                      |        |
+| Build Orchestrator in Go                     |   ✴️   |
+| Go by Example                                |        |
+| Web Programming with Go                      |        |
+| Learning Go with Pocket-Sized Projects       |        |
