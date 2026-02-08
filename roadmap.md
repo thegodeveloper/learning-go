@@ -39,3 +39,9 @@ A curated collection of educational resources, literature, and practical courses
 | 31 | Go by Example                               |        |
 | 32 | Web Programming with Go                     |        |
 | 33 | Learning Go with Pocket-Sized Projects      |        |
+
+## Courses
+
+| # | Resource Name                                               | Status |
+|:-:|:------------------------------------------------------------|:------:|
+| 1 | Go Bootcamp: With gRPC and Protocol Buffers (HTTP/S, HTTP2) |   ✴️   |
