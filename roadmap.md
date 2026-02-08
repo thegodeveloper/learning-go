@@ -45,4 +45,5 @@ A curated collection of educational resources, literature, and practical courses
 | # | Resource Name                                                | Status |
 |:--|:-------------------------------------------------------------|:------:|
 | 1 | Go Bootcamp: With gRPC and Protocol Buffers (HTTP/S, HTTP2)  |   ✴️   |
-| 2 | Learn How To Code: Google's Go (golang) Programming Language |   ✳️   |
+| 2 | Apache Kafka 4.0 Masterclass - Complete Beginners Guide      |        |
+| 3 | Learn How To Code: Google's Go (golang) Programming Language |   ✳️   |
