@@ -1,6 +1,9 @@
 package switches
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func SwitchStatement(show bool) {
 	if show {
@@ -23,6 +26,7 @@ func SwitchStatement(show bool) {
 
 		switchCase(true)
 		multipleSwitchCases(true)
+		switchWithExpression(true)
 	}
 }
 
@@ -52,6 +56,23 @@ func multipleSwitchCases(show bool) {
 			fmt.Println("It's a weekend day!")
 		default:
 			fmt.Println("Unknown day!")
+		}
+	}
+}
+
+func switchWithExpression(show bool) {
+	if show {
+
+		number := rand.Intn(100) + 1
+
+		switch {
+		case number < 10:
+			fmt.Println("Number is less than 10!")
+		case number >= 10 && number < 20:
+			fmt.Println("Number is between 10 and 19")
+		default:
+			fmt.Println("Number is equal or greater than 20")
+
 		}
 	}
 }
