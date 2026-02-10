@@ -20,5 +20,22 @@ func SwitchStatement(show bool) {
 				fmt.Println(word, "is a long word!")
 			}
 		}
+
+		switchCase(true)
+	}
+}
+
+func switchCase(show bool) {
+	if show {
+		fruit := "pineapple"
+
+		switch fruit {
+		case "apple":
+			fmt.Println("It's an apple!")
+		case "banana":
+			fmt.Println("It's a banana!")
+		default:
+			fmt.Println("Unknown fruit!")
+		}
 	}
 }
