@@ -22,6 +22,7 @@ func SwitchStatement(show bool) {
 		}
 
 		switchCase(true)
+		multipleSwitchCases(true)
 	}
 }
 
@@ -36,6 +37,21 @@ func switchCase(show bool) {
 			fmt.Println("It's a banana!")
 		default:
 			fmt.Println("Unknown fruit!")
+		}
+	}
+}
+
+func multipleSwitchCases(show bool) {
+	if show {
+		day := "Monday"
+
+		switch day {
+		case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday":
+			fmt.Println("It's a weekday!")
+		case "Saturday", "Sunday":
+			fmt.Println("It's a weekend day!")
+		default:
+			fmt.Println("Unknown day!")
 		}
 	}
 }
