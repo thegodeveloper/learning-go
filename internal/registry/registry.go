@@ -213,6 +213,7 @@ var PackageRegistry = map[string]PackageFunctions{
 	},
 	"generics": {
 		"introduction": generics.Introduction,
+		"divRemainder": generics.GenericsDemo,
 	},
 	"goroutines": {
 		"implementCountTo":                          goroutines.ImplementCountTo,
