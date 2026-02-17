@@ -47,7 +47,7 @@ func PrintFileContent(show bool) {
 		if err != nil {
 			fmt.Println("Error:", err)
 			fmt.Println("\nThis example requires a 'books.txt' file in the internal/functions directory.")
-			fmt.Println("Demonstrating with a simple example instead:\n")
+			fmt.Println("Demonstrating with a simple example instead:")
 
 			// Show a simple example of the closure pattern
 			fmt.Println("Example of returning a cleanup function:")
