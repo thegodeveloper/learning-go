@@ -149,6 +149,7 @@ var PackageRegistry = map[string]PackageFunctions{
 		"printType":               arrays.PrintType,
 		"comparingArrays":         arrays.ComparingArrays,
 		"arrayFunctions":          arrays.ArrayFunctions,
+		"arrayStrings":            arrays.ArrayStrings,
 	},
 	"basics": {
 		"net":                basics.Net,
