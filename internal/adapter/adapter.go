@@ -8,7 +8,7 @@ func Run(show bool) {
 	if show {
 		fmt.Println("-- The Adapter Pattern in Go")
 		MacExample(true)
-		WindowsExample(true)
+		WindowsExample(false)
 	}
 }
 
