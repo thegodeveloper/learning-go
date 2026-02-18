@@ -149,9 +149,16 @@ var PackageRegistry = map[string]PackageFunctions{
 		"printType":               arrays.PrintType,
 		"comparingArrays":         arrays.ComparingArrays,
 		"arrayFunctions":          arrays.ArrayFunctions,
+		"arrayStrings":            arrays.ArrayStrings,
 	},
 	"basics": {
-		"net": basics.Net,
+		"net":                basics.Net,
+		"arithmetic":         basics.Arithmetic,
+		"forloops":           basics.ForLoops,
+		"brakeContinueLoops": basics.BreakContinueLoops,
+		"outerLoops":         basics.OuterLoops,
+		"forRange":           basics.ForRange,
+		"forASWhile":         basics.ForASWhile,
 	},
 	"channels": {
 		"bufferedChannel":              channels.BufferedChannel,
@@ -207,6 +214,7 @@ var PackageRegistry = map[string]PackageFunctions{
 	},
 	"generics": {
 		"introduction": generics.Introduction,
+		"divRemainder": generics.GenericsDemo,
 	},
 	"goroutines": {
 		"implementCountTo":                          goroutines.ImplementCountTo,

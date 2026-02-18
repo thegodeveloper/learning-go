@@ -19,5 +19,7 @@ func Run(show bool) {
 		ComparingArrays(false)
 
 		ArrayFunctions(false)
+
+		ArrayStrings(false)
 	}
 }

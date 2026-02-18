@@ -5,8 +5,9 @@ import "fmt"
 // AnonymousFunctions demonstrates anonymous function usage
 func AnonymousFunctions(show bool) {
 	if show {
-		anonymousFunctionOption1(false)
-		anonymousFunctionOption2(false)
+		anonymousFunctionOption1(true)
+		anonymousFunctionOption2(true)
+		assignFunctionToVar(true)
 	}
 }
 
@@ -31,5 +32,15 @@ func anonymousFunctionOption2(show bool) {
 				fmt.Println("printing", j, "from inside of an anonymous function")
 			}(i)
 		}
+	}
+}
+
+func assignFunctionToVar(show bool) {
+	if show {
+		value := func() {
+			fmt.Println("Welcome! to GeeksforGeeks")
+		}
+
+		value()
 	}
 }
