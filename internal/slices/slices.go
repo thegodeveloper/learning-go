@@ -24,5 +24,8 @@ func Run(show bool) {
 		ConfusingSlices(false)
 		SlicesWithOverlappingStorage(false)
 		PassMapSlice(false)
+		if err := SlicesAsBuffers(false, "files/books.txt"); err != nil {
+			fmt.Println(err)
+		}
 	}
 }
