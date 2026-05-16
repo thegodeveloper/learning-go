@@ -7,5 +7,7 @@ func Run(show bool) {
 		fmt.Println("Generics")
 
 		Introduction(false)
+
+		FunctionsWithDataStructures(false)
 	}
 }

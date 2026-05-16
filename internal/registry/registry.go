@@ -213,8 +213,9 @@ var PackageRegistry = map[string]PackageFunctions{
 		"prefixer":                 functions.Prefixer,
 	},
 	"generics": {
-		"introduction": generics.Introduction,
-		"divRemainder": generics.GenericsDemo,
+		"introduction":            generics.Introduction,
+		"divRemainder":            generics.GenericsDemo,
+		"functionsDataStructures": generics.FunctionsWithDataStructures,
 	},
 	"goroutines": {
 		"implementCountTo":                          goroutines.ImplementCountTo,
