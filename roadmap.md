@@ -46,6 +46,9 @@ A curated collection of educational resources, literature, and practical courses
 | 38 | Hexagonal Architecture in Go                   |   ✴️   |
 | 39 | Kubuilder for Kubernetes Operators             |        |
 | 40 | Networking Programming with Go                 |        |
+| 41 | Learn Go with Pocket-Sized Projects            |        |
+| 42 | Build an Orchestrator with Go                  |        |
+| 43 | Go by Example                                  |        |
 
 ## Courses
 
