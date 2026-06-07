@@ -7,7 +7,7 @@ A curated collection of educational resources, literature, and practical courses
 | #  | Resource Name                                  | Status |
 |:---|:-----------------------------------------------|:------:|
 | 01 | The Go Programming Language                    |        |
-| 02 | Learning Go Second Edition                     |   ✴️   |
+| 02 | Learning Go Second Edition                     |        |
 | 03 | The Power of Go Tools                          |        |
 | 04 | Concurrency in Go                              |        |
 | 05 | Distributed Services with Go                   |        |
@@ -43,8 +43,8 @@ A curated collection of educational resources, literature, and practical courses
 | 35 | Build Kubernetes Operators with Kubebuilder    |        |
 | 36 | Mastering Go for DevOps                        |        |
 | 37 | Network Automation with Go                     |        |
-| 38 | Hexagonal Architecture in Go                   |   ✴️   |
-| 39 | Kubuilder for Kubernetes Operators             |        |
+| 38 | Hexagonal Architecture in Go                   |        |
+| 39 | Kubuilder for Kubernetes Operators             |   ✴️   |
 | 40 | Networking Programming with Go                 |        |
 | 41 | Learn Go with Pocket-Sized Projects            |        |
 | 42 | Build an Orchestrator with Go                  |        |
