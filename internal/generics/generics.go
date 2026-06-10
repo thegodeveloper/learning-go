@@ -8,6 +8,8 @@ func Run(show bool) {
 
 		Introduction(false)
 
+		Definition(false)
+
 		FunctionsWithDataStructures(false)
 	}
 }

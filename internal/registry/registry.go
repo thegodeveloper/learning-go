@@ -214,6 +214,7 @@ var PackageRegistry = map[string]PackageFunctions{
 	},
 	"generics": {
 		"introduction":            generics.Introduction,
+		"definition":              generics.Definition,
 		"divRemainder":            generics.GenericsDemo,
 		"functionsDataStructures": generics.FunctionsWithDataStructures,
 	},

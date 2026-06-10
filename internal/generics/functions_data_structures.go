@@ -62,6 +62,8 @@ func (n *Node[T]) Contains(f OrderableFunc[T], v T) bool {
 
 func FunctionsWithDataStructures(show bool) {
 	if show {
+		fmt.Println("Generics - Functions with Data Structures")
+
 		t1 := NewTree(cmp.Compare[int])
 		t1.Add(10)
 		t1.Add(30)

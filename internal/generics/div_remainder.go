@@ -11,7 +11,7 @@ type Integer interface {
 
 func GenericsDemo(show bool) {
 	if show {
-		fmt.Println("Generics Demo")
+		fmt.Println("Generics - Find Div Remainder")
 
 		var a uint = 18_446_744_073_709_551_615
 		var b uint = 9_223_372_036_854_775_808
