@@ -260,6 +260,7 @@ var PackageRegistry = map[string]PackageFunctions{
 		"confusingSlices":               slices.ConfusingSlices,
 		"slicesWithOverlappingStorage":  slices.SlicesWithOverlappingStorage,
 		"passMapSlice":                  slices.PassMapSlice,
+		"multiDimensional":              slices.MultiDimensional,
 	},
 	"strings": {
 		"extractingSingleValue": strings.ExtractingSingleValue,

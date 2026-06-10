@@ -221,7 +221,7 @@ func Run(show bool) {
 		AddItem(footer, 3, 0, false)
 
 	if err := app.SetRoot(root, true).SetFocus(list).Run(); err != nil {
-		panic(err)
+		fmt.Fprintf(os.Stderr, "boxui: TUI requires a real terminal (not available in this environment): %v\n", err)
 	}
 }
 
