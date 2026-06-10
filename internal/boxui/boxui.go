@@ -57,7 +57,7 @@ func Run(show bool) {
 	footer.SetBorderColor(tcell.ColorAquaMarine)
 	footer.SetTitle(" Controls ")
 	footer.SetTitleAlign(tview.AlignCenter)
-	footer.SetText("[yellow]Enter[white]/[yellow]r[white] Run   [yellow]TAB[white] Switch Focus   [yellow]ESC[white] Back   [yellow]q[white] Quit")
+	footer.SetText("[yellow]Enter[white]/[yellow]r[white] Run   [yellow]TAB[white] Switch Focus   [yellow]ESC[white]/[yellow]b[white] Back   [yellow]q[white] Quit")
 
 	// Navigation state
 	type viewMode int
@@ -157,20 +157,27 @@ func Run(show bool) {
 		output.Clear()
 	}
 
-	// keybindings: q to quit, r/Enter to run, Tab to switch focus, ESC to go back
+	// ESC via tview List's built-in DoneFunc
+	list.SetDoneFunc(func() {
+		if currentMode == viewFunctions {
+			switchToPackages(currentPackage)
+			app.SetFocus(list)
+		} else {
+			app.Stop()
+		}
+	})
+
 	app.SetInputCapture(func(event *tcell.EventKey) *tcell.EventKey {
 		switch {
 		case event.Key() == tcell.KeyEnter:
 			if current != "" {
 				if currentMode == viewPackages {
-					// Check if package has sub-functions
 					if registry.HasSubFunctions(current) {
 						switchToFunctions(current)
 					} else {
 						startRunPackage(app, output, current)
 					}
 				} else {
-					// Run the selected function
 					startRunFunction(app, output, currentPackage, current)
 				}
 			}
@@ -194,9 +201,16 @@ func Run(show bool) {
 		case event.Key() == tcell.KeyEsc:
 			if currentMode == viewFunctions {
 				switchToPackages(currentPackage)
-				return nil
+				app.SetFocus(list)
+			} else {
+				app.Stop()
 			}
-			app.Stop()
+			return nil
+		case event.Rune() == 'b' || event.Rune() == 'B':
+			if currentMode == viewFunctions {
+				switchToPackages(currentPackage)
+				app.SetFocus(list)
+			}
 			return nil
 		case event.Key() == tcell.KeyTAB:
 			if app.GetFocus() == list {
