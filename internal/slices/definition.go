@@ -6,7 +6,10 @@ func Definition(show bool) {
 	if show {
 		fmt.Println("--- Slice Definition")
 
+		// this is a slice of tipe int
 		var x = []int{10, 20, 30}
+		fmt.Println(x)
+		x = append(x, 40)
 		fmt.Println(x)
 
 		// this is a string array of 5 elements
