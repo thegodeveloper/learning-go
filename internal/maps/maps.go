@@ -23,5 +23,7 @@ func Run(show bool) {
 		MapSet(false)
 
 		MapLiteral(false)
+
+		MapNil(false)
 	}
 }

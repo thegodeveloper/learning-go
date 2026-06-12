@@ -242,6 +242,7 @@ var PackageRegistry = map[string]PackageFunctions{
 		"comparing":    maps.ComparingMaps,
 		"set":          maps.MapSet,
 		"mapLiteral":   maps.MapLiteral,
+		"mapNil":       maps.MapNil,
 	},
 	"pointers": {
 		"declaration": pointers.Declaration,
