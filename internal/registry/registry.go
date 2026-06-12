@@ -233,6 +233,7 @@ var PackageRegistry = map[string]PackageFunctions{
 		"implicit":           interfaces.Implicit,
 	},
 	"maps": {
+		"introduction": maps.Introduction,
 		"definition":   maps.Definition,
 		"declarations": maps.MapsDeclarations,
 		"commaOkIdiom": maps.CommaOkIdiomInMaps,

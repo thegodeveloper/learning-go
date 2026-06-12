@@ -6,6 +6,8 @@ func Run(show bool) {
 	if show {
 		fmt.Println("-- Maps in Go")
 
+		Introduction(false)
+
 		Definition(false)
 
 		MapsDeclarations(false)
