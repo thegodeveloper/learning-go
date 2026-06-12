@@ -28,6 +28,7 @@ func anonymousFunctionOption1(show bool) {
 func anonymousFunctionOption2(show bool) {
 	if show {
 		for i := range 5 {
+			// the function is called immediately
 			func(j int) {
 				fmt.Println("printing", j, "from inside of an anonymous function")
 			}(i)
