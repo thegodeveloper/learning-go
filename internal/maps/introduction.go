@@ -4,7 +4,7 @@ import "fmt"
 
 func Introduction(show bool) {
 	// var mapVariable map[keyType]valueType
-	// mapVariable = make(map[keyType]valueType)
+	// mapVariable := make(map[keyType]valueType)
 
 	// using a map literal
 	// mapVariable = map[keyType]valueType{

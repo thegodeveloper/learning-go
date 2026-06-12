@@ -21,5 +21,7 @@ func Run(show bool) {
 		ComparingMaps(false)
 
 		MapSet(false)
+
+		MapLiteral(false)
 	}
 }
