@@ -1,6 +1,8 @@
 package functions
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func Run(show bool) {
 	if show {
@@ -18,5 +20,6 @@ func Run(show bool) {
 		FunctionsAsParameters(false)
 		Prefixer(false)
 		DeferFunctions(false)
+		DeferWithPanic(false)
 	}
 }
