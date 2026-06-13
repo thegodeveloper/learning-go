@@ -2,7 +2,7 @@
 
 Starting date with Go: May 15, 2020
 
-I probably started earlier with Go, but it was on that date that I built something professional with Go.
+I may have experimented with Go before then, but May 15, 2020, marks the date I first used it to build something professionally.
 
 ## TUI application
 
