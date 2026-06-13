@@ -21,5 +21,6 @@ func Run(show bool) {
 		Prefixer(false)
 		DeferFunctions(false)
 		DeferWithPanic(false)
+		RecoverFunction(false)
 	}
 }
