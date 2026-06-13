@@ -211,6 +211,7 @@ var PackageRegistry = map[string]PackageFunctions{
 		"anonymousFunctions":       functions.AnonymousFunctions,
 		"functionsAsParameters":    functions.FunctionsAsParameters,
 		"prefixer":                 functions.Prefixer,
+		"deferFunctions":           functions.DeferFunctions,
 	},
 	"generics": {
 		"introduction":            generics.Introduction,

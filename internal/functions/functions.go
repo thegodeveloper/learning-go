@@ -17,5 +17,6 @@ func Run(show bool) {
 		AnonymousFunctions(false)
 		FunctionsAsParameters(false)
 		Prefixer(false)
+		DeferFunctions(false)
 	}
 }
