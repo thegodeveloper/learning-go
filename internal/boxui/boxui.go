@@ -261,7 +261,7 @@ func startRunPackage(app *tview.Application, output *tview.TextView, name string
 			runLock.Unlock()
 		}()
 
-		fn, ok := registry.Packages[name]
+		fn, ok := registry.LookupRun(name)
 		if !ok {
 			app.QueueUpdateDraw(func() {
 				fmt.Fprintf(output, "[red]Error: Package '%s' not found in registry.", name)
