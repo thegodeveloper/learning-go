@@ -46,6 +46,7 @@ import (
 	"github.com/thegodeveloper/learning-go/internal/pointers"
 	"github.com/thegodeveloper/learning-go/internal/rand"
 	"github.com/thegodeveloper/learning-go/internal/randommessage"
+	"github.com/thegodeveloper/learning-go/internal/recursion"
 	"github.com/thegodeveloper/learning-go/internal/reflection"
 	"github.com/thegodeveloper/learning-go/internal/runes"
 	"github.com/thegodeveloper/learning-go/internal/sha256"
@@ -114,6 +115,7 @@ var Packages = map[string]func(bool){
 	"pointers":                pointers.Run,
 	"rand":                    rand.Run,
 	"randommessage":           randommessage.Run,
+	"recursion":               recursion.Run,
 	"reflection":              reflection.Run,
 	"runes":                   runes.Run,
 	"sha256":                  sha256.Run,
@@ -250,6 +252,9 @@ var PackageRegistry = map[string]PackageFunctions{
 	},
 	"pointers": {
 		"declaration": pointers.Declaration,
+	},
+	"recursion": {
+		"definition": recursion.Definition,
 	},
 	"slices": {
 		"definition":                    slices.Definition,
