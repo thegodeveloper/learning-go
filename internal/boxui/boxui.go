@@ -47,6 +47,15 @@ func Run(show bool) {
 	output.SetTitle(" Output ")
 	output.SetTitleAlign(tview.AlignCenter)
 
+	go func() {
+		time.Sleep(50 * time.Millisecond)
+		app.QueueUpdateDraw(func() {
+			_, _, _, h := output.GetRect()
+			output.SetTextAlign(tview.AlignCenter)
+			fmt.Fprintf(output, "%s[aqua]ウィリアム", strings.Repeat("\n", (h-3)/2))
+		})
+	}()
+
 	// Bottom: toolbox bar
 	footer := tview.NewTextView()
 	footer.SetDynamicColors(true)
@@ -251,6 +260,7 @@ func startRunPackage(app *tview.Application, output *tview.TextView, name string
 
 	go func() {
 		app.QueueUpdateDraw(func() {
+			output.SetTextAlign(tview.AlignLeft)
 			output.Clear()
 			fmt.Fprintf(output, "[green]You selected package: [white]%s\n", name)
 		})
@@ -340,6 +350,7 @@ func startRunFunction(app *tview.Application, output *tview.TextView, packageNam
 
 	go func() {
 		app.QueueUpdateDraw(func() {
+			output.SetTextAlign(tview.AlignLeft)
 			output.Clear()
 			fmt.Fprintf(output, "[green]Running function: [white]%s[green] from package: [white]%s\n\n", functionName, packageName)
 		})
