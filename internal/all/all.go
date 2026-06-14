@@ -18,6 +18,7 @@ import (
 	_ "github.com/thegodeveloper/learning-go/internal/constants"
 	_ "github.com/thegodeveloper/learning-go/internal/countoccurrences"
 	_ "github.com/thegodeveloper/learning-go/internal/customtype"
+	_ "github.com/thegodeveloper/learning-go/internal/datastructures"
 	_ "github.com/thegodeveloper/learning-go/internal/deferpanic"
 	_ "github.com/thegodeveloper/learning-go/internal/deferpanicrecover"
 	_ "github.com/thegodeveloper/learning-go/internal/defersimplecat"
