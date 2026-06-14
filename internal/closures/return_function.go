@@ -8,6 +8,10 @@ func ReturnFunction(show bool) {
 
 		sequence := adder()
 
+		// the value of i variable is preserved
+		fmt.Println("the value returned by the closure:", sequence())
+		fmt.Println("the value returned by the closure:", sequence())
+		fmt.Println("the value returned by the closure:", sequence())
 		fmt.Println("the value returned by the closure:", sequence())
 	}
 }
