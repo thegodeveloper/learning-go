@@ -49,6 +49,7 @@ A curated collection of educational resources, literature, and practical courses
 | 41 | Learn Go with Pocket-Sized Projects            |        |
 | 42 | Build an Orchestrator with Go                  |        |
 | 43 | Go by Example                                  |        |
+| 44 | Data Structures and Algorithms with Go         |        |
 
 ## Courses
 
