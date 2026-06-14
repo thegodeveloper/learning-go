@@ -7,5 +7,6 @@ func Run(show bool) {
 		fmt.Println("--- Closures ---")
 
 		Declaration(false)
+		ReturnFunction(false)
 	}
 }

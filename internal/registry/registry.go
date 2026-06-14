@@ -169,7 +169,8 @@ var PackageRegistry = map[string]PackageFunctions{
 		"definition":                   channels.Definition,
 	},
 	"closures": {
-		"declaration": closures.Declaration,
+		"declaration":    closures.Declaration,
+		"returnFunction": closures.ReturnFunction,
 	},
 	"errorold": {
 		"demo":              errorold.Demo,
