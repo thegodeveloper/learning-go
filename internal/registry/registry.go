@@ -68,29 +68,20 @@ func GetPackageFunctions(name string) map[string]func(bool) {
 
 // NewSimpleModule creates a Module with no sub-functions.
 func NewSimpleModule(name string, run func(bool)) Module {
-	return &simpleModule{name: name, run: run}
+	return &module{name: name, run: run}
 }
 
 // NewModule creates a Module with named sub-functions.
 func NewModule(name string, run func(bool), fns map[string]func(bool)) Module {
-	return &fullModule{name: name, run: run, fns: fns}
+	return &module{name: name, run: run, fns: fns}
 }
 
-type simpleModule struct {
-	name string
-	run  func(bool)
-}
-
-func (m *simpleModule) Name() string                     { return m.name }
-func (m *simpleModule) Run(show bool)                    { m.run(show) }
-func (m *simpleModule) Functions() map[string]func(bool) { return nil }
-
-type fullModule struct {
+type module struct {
 	name string
 	run  func(bool)
 	fns  map[string]func(bool)
 }
 
-func (m *fullModule) Name() string                     { return m.name }
-func (m *fullModule) Run(show bool)                    { m.run(show) }
-func (m *fullModule) Functions() map[string]func(bool) { return m.fns }
+func (m *module) Name() string                     { return m.name }
+func (m *module) Run(show bool)                    { m.run(show) }
+func (m *module) Functions() map[string]func(bool) { return m.fns }
