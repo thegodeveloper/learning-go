@@ -22,9 +22,14 @@ func (p Person) String() string {
 // Go does not recommend to have Person and *Person on the same struct methods
 
 // Capitalize Method to capitalize the Person string fields
+// we are using here *Person because we are modifying the fields on the struct instance
 func (p *Person) Capitalize() {
 	p.FirstName = strings.ToUpper(p.FirstName)
 	p.LastName = strings.ToUpper(p.LastName)
+}
+
+func (p *Person) IncrementAge() {
+	p.Age++
 }
 
 func Methods(show bool) {
@@ -39,7 +44,9 @@ func Methods(show bool) {
 		fmt.Println("in Methods:", output)
 
 		p.Capitalize()
+		p.IncrementAge()
 		fmt.Println("p.FirstName:", p.FirstName)
 		fmt.Println("p.LastName:", p.LastName)
+		fmt.Println("p.Age:", p.Age)
 	}
 }
