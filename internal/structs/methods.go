@@ -47,6 +47,7 @@ func Methods(show bool) {
 		output := p.String()
 		fmt.Println("in Methods:", output)
 
+		// methods on user defined type
 		p.Capitalize()
 		p.IncrementAge()
 		fmt.Println("p.FirstName:", p.FirstName)
