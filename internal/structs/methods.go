@@ -15,6 +15,7 @@ type Person struct {
 // we are not handle nil
 // we are using a value receiver
 // by convention the first letter of the type, in this case letter p
+// this is a method value receiver because we are not modifying the fields
 func (p Person) String() string {
 	return fmt.Sprintf("%s %s, age %d", p.FirstName, p.LastName, p.Age)
 }
@@ -23,6 +24,7 @@ func (p Person) String() string {
 
 // Capitalize Method to capitalize the Person string fields
 // we are using here *Person because we are modifying the fields on the struct instance
+// this is method with a pointer receiver because we are modifying the fields
 func (p *Person) Capitalize() {
 	p.FirstName = strings.ToUpper(p.FirstName)
 	p.LastName = strings.ToUpper(p.LastName)
