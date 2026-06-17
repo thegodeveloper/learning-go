@@ -44,6 +44,10 @@ func Embedding(show bool) {
 			},
 			Reports: []GDEmployee{},
 		}
+
+		// inherits the fields and methods
+		// ID field and Description method belongs to GDEmployee
+		// not to Manager struct
 		fmt.Println(m.ID)
 		fmt.Println(m.Description())
 	}
