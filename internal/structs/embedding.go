@@ -27,7 +27,7 @@ type Closer interface {
 	Close() error
 }
 
-// Here we are embedding two interfaces in one
+// ReadCloser here we are embedding two interfaces in one
 type ReadCloser interface {
 	Reader
 	Closer
