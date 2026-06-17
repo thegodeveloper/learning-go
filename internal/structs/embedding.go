@@ -35,6 +35,8 @@ type ReadCloser interface {
 
 func Embedding(show bool) {
 	if show {
+		fmt.Println("--- Embedding Structs ---")
+
 		m := Manager{
 			GDEmployee: GDEmployee{
 				Name: "Bob Bobson",

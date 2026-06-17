@@ -14,7 +14,7 @@ func (r Record) String() string {
 
 func Activity(show bool) {
 	if show {
-		println("\n-- Structs Activity")
+		println("--- Structs Activity ---")
 
 		david := Record{Name: "David Justice", Age: 28}
 		sarah := Record{Name: "Sarah Murphy", Age: 28}

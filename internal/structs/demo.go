@@ -13,7 +13,7 @@ type person struct {
 
 func Demo(show bool) {
 	if show {
-		println("\n### Demo ###")
+		println("--- Structs Demo ---")
 
 		structDeclaration()
 		anonymousStruct()

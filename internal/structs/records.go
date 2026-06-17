@@ -9,6 +9,8 @@ type Persona struct {
 
 func Records(show bool) {
 	if show {
+		fmt.Println("--- Structs Records")
+
 		record, err := NewPersona("Bill", 50)
 		if err != nil {
 			fmt.Println("Error:", err)

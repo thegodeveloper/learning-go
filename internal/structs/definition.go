@@ -22,7 +22,8 @@ type tree struct {
 
 func Definition(show bool) {
 	if show {
-		fmt.Println("-- Structs")
+		fmt.Println("--- Structs Definition")
+
 		bill := createEmployee(
 			123,
 			"Bill",

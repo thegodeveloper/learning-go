@@ -38,6 +38,8 @@ func (p *Person) IncrementAge() {
 
 func Methods(show bool) {
 	if show {
+		fmt.Println("--- Structs Methods ---")
+
 		p := Person{
 			FirstName: "Fred",
 			LastName:  "Fredson",

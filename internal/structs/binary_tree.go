@@ -35,6 +35,8 @@ func (it *IntTree) Contains(val int) bool {
 
 func BinaryTree(show bool) {
 	if show {
+		fmt.Println("--- Structs BinaryTree ---")
+
 		var it *IntTree
 		it = it.Insert(7)
 		it = it.Insert(77)

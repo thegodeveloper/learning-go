@@ -23,6 +23,8 @@ func (s *Song) DoubleLenght() {
 
 func Songs(show bool) {
 	if show {
+		fmt.Println("--- Structs Songs ---")
+
 		song := Song{
 			Title:             "Dream On",
 			Artist:            "Aerosmith",

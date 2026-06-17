@@ -25,6 +25,8 @@ func (c *Counter) String() string {
 
 func PointerReceiver(show bool) {
 	if show {
+		fmt.Println("--- Structs Pointer Receiver ---")
+
 		var c Counter
 		fmt.Println(c.String())
 
