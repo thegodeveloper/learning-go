@@ -28,6 +28,8 @@ func (p *Person) Capitalize() {
 	p.LastName = strings.ToUpper(p.LastName)
 }
 
+// IncrementAge increments the age field
+// We use *Person because we are modifying the original struct instance
 func (p *Person) IncrementAge() {
 	p.Age++
 }
