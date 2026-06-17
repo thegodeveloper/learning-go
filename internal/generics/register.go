@@ -6,7 +6,7 @@ func init() {
 	registry.Register(registry.NewModule("generics", Run, map[string]func(bool){
 		"introduction":            Introduction,
 		"definition":              Definition,
-		"divRemainder":            GenericsDemo,
+		"divRemainder":            DemoGenerics,
 		"functionsDataStructures": FunctionsWithDataStructures,
 	}))
 }

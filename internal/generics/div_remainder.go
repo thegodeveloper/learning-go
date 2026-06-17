@@ -9,9 +9,9 @@ type Integer interface {
 	~int | ~int8 | ~int16 | ~int32 | ~int64 | ~uint | ~uint8 | ~uint16 | ~uint32 | ~uint64 | ~uintptr
 }
 
-func GenericsDemo(show bool) {
+func DemoGenerics(show bool) {
 	if show {
-		fmt.Println("Generics - Find Div Remainder")
+		fmt.Println("--- Generics - Find Div Remainder ---")
 
 		var a uint = 18_446_744_073_709_551_615
 		var b uint = 9_223_372_036_854_775_808

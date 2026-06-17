@@ -12,7 +12,7 @@ func Doubler[T ValidTypes](t T) T {
 
 func Definition(show bool) {
 	if show {
-		fmt.Println("Generics Definition")
+		fmt.Println("--- Generics Definition ---")
 
 		fmt.Println(Doubler(7))
 		fmt.Println(Doubler(7.7))

@@ -24,7 +24,7 @@ func (s *Stack[T]) Pop() (T, bool) {
 // Introduction demonstrates basic generics with a Stack example
 func Introduction(show bool) {
 	if show {
-		fmt.Println("Introduction to Generics")
+		fmt.Println("--- Introduction to Generics ---")
 
 		var intStack Stack[int]
 		intStack.Push(10)
