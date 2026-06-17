@@ -1,6 +1,9 @@
 package structs
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 type Person struct {
 	FirstName string
@@ -16,6 +19,14 @@ func (p Person) String() string {
 	return fmt.Sprintf("%s %s, age %d", p.FirstName, p.LastName, p.Age)
 }
 
+// Go does not recommend to have Person and *Person on the same struct methods
+
+// Capitalize Method to capitalize the Person string fields
+func (p *Person) Capitalize() {
+	p.FirstName = strings.ToUpper(p.FirstName)
+	p.LastName = strings.ToUpper(p.LastName)
+}
+
 func Methods(show bool) {
 	if show {
 		p := Person{
@@ -26,5 +37,9 @@ func Methods(show bool) {
 
 		output := p.String()
 		fmt.Println("in Methods:", output)
+
+		p.Capitalize()
+		fmt.Println("p.FirstName:", p.FirstName)
+		fmt.Println("p.LastName:", p.LastName)
 	}
 }
