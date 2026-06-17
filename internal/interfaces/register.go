@@ -9,5 +9,6 @@ func init() {
 		"emptyInterface":     EmptyInterface,
 		"implementInterface": ImplementInterface,
 		"implicit":           Implicit,
+		"shapes":             Shapes,
 	}))
 }

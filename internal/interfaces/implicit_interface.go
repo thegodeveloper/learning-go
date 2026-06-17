@@ -1,5 +1,7 @@
 package interfaces
 
+import "fmt"
+
 type LogicProvider struct{}
 
 func (lp LogicProvider) Process(data string) string {
@@ -23,6 +25,8 @@ func (c Client) Program() {
 // Implicit demonstrates implicit interface implementation
 func Implicit(show bool) {
 	if show {
+		fmt.Println("--- Implicit Interfaces")
+
 		c := Client{
 			L: LogicProvider{},
 		}

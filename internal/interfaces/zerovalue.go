@@ -9,6 +9,9 @@ func ZeroValue(show bool) {
 	if !show {
 		return
 	}
+
+	fmt.Println("--- Zero Value Interfaces")
+
 	zerovalue()
 }
 

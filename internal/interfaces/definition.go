@@ -24,6 +24,8 @@ func Definition(show bool) {
 	if !show {
 		return
 	}
+	fmt.Println("--- Definition Interfaces")
+
 	definition()
 }
 

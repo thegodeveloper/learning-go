@@ -5,19 +5,5 @@ import "fmt"
 func Run(show bool) {
 	if show {
 		fmt.Println("-- Interfaces in Go")
-
-		fmt.Println("-- Interface Definition")
-		definition()
-
-		fmt.Println("-- Zero Value Interfaces")
-		zerovalue()
-
-		fmt.Println("-- Empty Interfaces")
-		emptyInterface()
-
-		fmt.Println("-- Implement Interface")
-		implementInterface()
-
-		Implicit(false)
 	}
 }

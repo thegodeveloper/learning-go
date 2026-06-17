@@ -23,6 +23,9 @@ func ImplementInterface(show bool) {
 	if !show {
 		return
 	}
+
+	fmt.Println("--- Implement Interfaces")
+
 	implementInterface()
 }
 

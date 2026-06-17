@@ -7,6 +7,8 @@ func EmptyInterface(show bool) {
 	if !show {
 		return
 	}
+	fmt.Println("--- Empty Interfaces")
+
 	emptyInterface()
 }
 
