@@ -9,5 +9,6 @@ func init() {
 		"forselectloop":    ForSelectLoop,
 		"preventingleaks":  PreventingLeaks,
 		"orchannelpattern": OrChannelPattern,
+		"errorhandling":    ErrorHandling,
 	}))
 }
