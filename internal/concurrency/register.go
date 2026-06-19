@@ -4,7 +4,8 @@ import "github.com/thegodeveloper/learning-go/internal/registry"
 
 func init() {
 	registry.Register(registry.NewModule("concurrency", Run, map[string]func(bool){
-		"orders":      Orders,
-		"confinement": Confinement,
+		"orders":        Orders,
+		"confinement":   Confinement,
+		"forselectloop": ForSelectLoop,
 	}))
 }
