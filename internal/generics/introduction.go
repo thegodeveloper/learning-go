@@ -42,12 +42,44 @@ func Introduction(show bool) {
 	if show {
 		fmt.Println("--- Introduction to Generics ---")
 
-		var intStack Stack[int]
-		intStack.Push(10)
-		intStack.Push(20)
-		intStack.Push(30)
-		intStack.printAll()
-		v, ok := intStack.Pop()
-		fmt.Println(v, ok)
+		createIntStack()
+		createStringStack()
+
 	}
+}
+
+func createIntStack() {
+	fmt.Println("-- Create intStack")
+
+	var intStack Stack[int]
+	intStack.Push(10)
+	intStack.Push(20)
+	intStack.Push(30)
+	intStack.printAll()
+
+	v, ok := intStack.Pop()
+	fmt.Println(v, ok)
+
+	v, ok = intStack.Pop()
+	fmt.Println("Is stack empty", intStack.isEmpty())
+	v, ok = intStack.Pop()
+	fmt.Println("Is stack empty", intStack.isEmpty())
+}
+
+func createStringStack() {
+	fmt.Println("-- Create stringStack")
+
+	var stringStack Stack[string]
+	stringStack.Push("hello")
+	stringStack.Push("world")
+	stringStack.Push("John")
+	stringStack.printAll()
+	stringStack.Pop()
+	stringStack.printAll()
+	stringStack.Pop()
+	stringStack.printAll()
+	fmt.Println("Is stringStack empty", stringStack.isEmpty())
+	stringStack.Pop()
+	fmt.Println("Is stringStack empty", stringStack.isEmpty())
+	stringStack.printAll()
 }
