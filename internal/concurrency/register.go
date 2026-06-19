@@ -10,5 +10,6 @@ func init() {
 		"preventingleaks":  PreventingLeaks,
 		"orchannelpattern": OrChannelPattern,
 		"errorhandling":    ErrorHandling,
+		"pipelines":        Pipelines,
 	}))
 }
