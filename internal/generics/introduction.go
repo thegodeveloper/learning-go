@@ -21,6 +21,22 @@ func (s *Stack[T]) Pop() (T, bool) {
 	return top, true
 }
 
+func (s *Stack[T]) isEmpty() bool {
+	return len(s.vals) == 0
+}
+
+func (s *Stack[T]) printAll() {
+	if len(s.vals) == 0 {
+		fmt.Println("The stack is empty")
+		return
+	}
+	fmt.Println("Stack elements:")
+	for _, element := range s.vals {
+		fmt.Print(element)
+	}
+	fmt.Println("")
+}
+
 // Introduction demonstrates basic generics with a Stack example
 func Introduction(show bool) {
 	if show {
@@ -30,6 +46,7 @@ func Introduction(show bool) {
 		intStack.Push(10)
 		intStack.Push(20)
 		intStack.Push(30)
+		intStack.printAll()
 		v, ok := intStack.Pop()
 		fmt.Println(v, ok)
 	}
