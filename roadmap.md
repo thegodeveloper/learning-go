@@ -55,5 +55,5 @@ A curated collection of educational resources, literature, and practical courses
 
 | # | Resource Name                                                | Status |
 |:--|:-------------------------------------------------------------|:------:|
-| 1 | Go Bootcamp: With gRPC and Protocol Buffers (HTTP/S, HTTP2)  |   ✴️   |
+| 1 | Go Bootcamp: With gRPC and Protocol Buffers (HTTP/S, HTTP2)  |   ⴵ    |
 | 2 | Learn How To Code: Google's Go (golang) Programming Language |   ✳️   |
