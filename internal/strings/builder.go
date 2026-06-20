@@ -19,5 +19,11 @@ func BuilderString(show bool) {
 		// convert builder to string
 		result := builder.String()
 		fmt.Println(result)
+
+		// reset the builder
+		builder.Reset()
+		builder.WriteString("Starting Fresh")
+		result = builder.String()
+		fmt.Println(result)
 	}
 }
