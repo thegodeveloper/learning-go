@@ -7,7 +7,7 @@ A curated collection of educational resources, literature, and practical courses
 | #  | Resource Name                                  | Status |
 |:---|:-----------------------------------------------|:------:|
 | 01 | The Go Programming Language                    |        |
-| 02 | Learning Go Second Edition                     |        |
+| 02 | Learning Go Second Edition                     |   ½    |
 | 03 | The Power of Go Tools                          |        |
 | 04 | Concurrency in Go                              |        |
 | 05 | Distributed Services with Go                   |        |
