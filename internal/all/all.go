@@ -67,6 +67,7 @@ import (
 	_ "github.com/thegodeveloper/learning-go/internal/sumtwonumbers"
 	_ "github.com/thegodeveloper/learning-go/internal/switches"
 	_ "github.com/thegodeveloper/learning-go/internal/syslog"
+	_ "github.com/thegodeveloper/learning-go/internal/texttemplates"
 	_ "github.com/thegodeveloper/learning-go/internal/time"
 	_ "github.com/thegodeveloper/learning-go/internal/typeconversions"
 	_ "github.com/thegodeveloper/learning-go/internal/typediffarrayslicesitem"
