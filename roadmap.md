@@ -57,3 +57,4 @@ A curated collection of educational resources, literature, and practical courses
 |:--|:-------------------------------------------------------------|:------:|
 | 1 | Go Bootcamp: With gRPC and Protocol Buffers (HTTP/S, HTTP2)  |   ⴵ    |
 | 2 | Learn How To Code: Google's Go (golang) Programming Language |   ✳️   |
+| 3 | Introduction to AI and Machine Learning with Go              |        |
