@@ -4,6 +4,6 @@ import "fmt"
 
 func Run(show bool) {
 	if show {
-		fmt.Println("-- Strings in Go")
+		fmt.Println("--- Strings ---")
 	}
 }
