@@ -10,7 +10,7 @@ func Demo(show bool) {
 	if show {
 		fmt.Println("-- Text Templates Demo")
 
-		tmpl, err := template.New("demo").Parse("Welcome, {{.name}}! How are you doing?")
+		tmpl, err := template.New("demo").Parse("Welcome, {{.name}}! How are you doing?\n")
 		if err != nil {
 			panic(err)
 		}
