@@ -46,6 +46,19 @@ func Demo(show bool) {
 		re = regexp.MustCompile(`[aeiou]`)
 
 		result := re.ReplaceAllString(str, "*")
-		fmt.Printf("Source String: %s, was replaced with: %s", str, result)
+		fmt.Printf("Source String: %s, was replaced with: %s\n", str, result)
+
+		// Flags & Options
+		// i - case insensitive
+		// m - multi line model
+		// s - dot matches all
+
+		re = regexp.MustCompile(`(?i)go`)
+
+		// Text String
+		text := "Go is getting great"
+
+		// Match
+		fmt.Println("Match:", re.MatchString(text))
 	}
 }
