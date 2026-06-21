@@ -4,7 +4,8 @@ import "github.com/thegodeveloper/learning-go/internal/registry"
 
 func init() {
 	registry.Register(registry.NewModule("texttemplates", Run, map[string]func(bool){
-		"Demo":         Demo,
-		"TemplateMust": TemplateMust,
+		"Demo":          Demo,
+		"TemplateMust":  TemplateMust,
+		"TemplateInput": TemplateInput,
 	}))
 }
