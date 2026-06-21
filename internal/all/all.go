@@ -58,6 +58,7 @@ import (
 	_ "github.com/thegodeveloper/learning-go/internal/randommessage"
 	_ "github.com/thegodeveloper/learning-go/internal/recursion"
 	_ "github.com/thegodeveloper/learning-go/internal/reflection"
+	_ "github.com/thegodeveloper/learning-go/internal/regex"
 	_ "github.com/thegodeveloper/learning-go/internal/runes"
 	_ "github.com/thegodeveloper/learning-go/internal/sha256"
 	_ "github.com/thegodeveloper/learning-go/internal/slices"
