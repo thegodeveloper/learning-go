@@ -7,5 +7,6 @@ func init() {
 		"Demo":          Demo,
 		"SpecificTime":  SpecificTime,
 		"TransformTime": TransformTime,
+		"Formatting":    Formatting,
 	}))
 }
