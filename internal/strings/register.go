@@ -7,5 +7,6 @@ func init() {
 		"extractingSingleValue": ExtractingSingleValue,
 		"toBeAwareInStrings":    ToBeAwareInStrings,
 		"builderString":         BuilderString,
+		"stringsRunes":          StringsRunes,
 	}))
 }
