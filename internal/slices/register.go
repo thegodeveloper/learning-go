@@ -21,5 +21,6 @@ func init() {
 		"slicesWithOverlappingStorage":  SlicesWithOverlappingStorage,
 		"passMapSlice":                  PassMapSlice,
 		"multiDimensional":              MultiDimensional,
+		"slicing":                       Slicing,
 	}))
 }
