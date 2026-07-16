@@ -12,5 +12,6 @@ func init() {
 		"errorsIs":        ErrorsIs,
 		"namedErrors":     NamedErrors,
 		"allExamples":     AllExamples,
+		"customErrorType": CustomErrorType,
 	}))
 }
