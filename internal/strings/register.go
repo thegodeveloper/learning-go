@@ -8,5 +8,6 @@ func init() {
 		"toBeAwareInStrings":    ToBeAwareInStrings,
 		"builderString":         BuilderString,
 		"stringsRunes":          StringsRunes,
+		"stringOperations":      StringOperations,
 	}))
 }
