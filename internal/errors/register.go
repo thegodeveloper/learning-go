@@ -13,5 +13,6 @@ func init() {
 		"namedErrors":     NamedErrors,
 		"allExamples":     AllExamples,
 		"customErrorType": CustomErrorType,
+		"panicRecover":    PanicRecover,
 	}))
 }
