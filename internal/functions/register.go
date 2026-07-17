@@ -19,5 +19,6 @@ func init() {
 		"deferFunctions":           DeferFunctions,
 		"deferWithPanic":           DeferWithPanic,
 		"recoverFunction":          RecoverFunction,
+		"iterators":                Iterators,
 	}))
 }
