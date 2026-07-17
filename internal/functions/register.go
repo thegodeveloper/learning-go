@@ -4,6 +4,7 @@ import "github.com/thegodeveloper/learning-go/internal/registry"
 
 func init() {
 	registry.Register(registry.NewModule("functions", Run, map[string]func(bool){
+		"basics":                   Basics,
 		"simulatingOptionalParams": SimulatingOptionalParams,
 		"variadicParameters":       VariadicParameters,
 		"multipleReturnValues":     MultipleReturnValues,
