@@ -4,6 +4,7 @@ import "github.com/thegodeveloper/learning-go/internal/registry"
 
 func init() {
 	registry.Register(registry.NewModule("regex", Run, map[string]func(bool){
-		"Demo": Demo,
+		"Demo":               Demo,
+		"RegularExpressions": RegularExpressions,
 	}))
 }
