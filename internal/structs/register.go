@@ -4,6 +4,7 @@ import "github.com/thegodeveloper/learning-go/internal/registry"
 
 func init() {
 	registry.Register(registry.NewModule("structs", Run, map[string]func(bool){
+		"basics":          Basics,
 		"definition":      Definition,
 		"demo":            Demo,
 		"activity":        Activity,
