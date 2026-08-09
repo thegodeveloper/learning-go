@@ -7,7 +7,7 @@ import (
 )
 
 func worker(id int, wg *sync.WaitGroup) {
-	defer wg.Done()
+	defer wg.Done() // decrements the counter
 
 	fmt.Printf("Worker %d starting\n", id)
 	time.Sleep(time.Millisecond)
@@ -25,7 +25,7 @@ func Demo(show bool) {
 
 		// Launch goroutines without any synchronization.
 		for i := range numGoroutines {
-			wg.Add(1)
+			wg.Add(1) // increments the counter
 			go worker(i, &wg)
 		}
 
