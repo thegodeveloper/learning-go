@@ -29,7 +29,7 @@ func Demo(show bool) {
 			go worker(i, &wg)
 		}
 
-		wg.Wait()
+		wg.Wait() // waits until the counter returns to zero
 	}
 
 	fmt.Println("--- Goroutines Demo function is exiting without waiting! ---")
