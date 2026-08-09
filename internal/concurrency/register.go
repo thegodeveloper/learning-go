@@ -12,6 +12,7 @@ func init() {
 		"errorhandling":            ErrorHandling,
 		"pipelines":                Pipelines,
 		"selectcon":                SelectCon,
+		"sendreceive":              SendReceive,
 		"handygeneratorspipelines": HandyGeneratorsPipelines,
 	}))
 }
