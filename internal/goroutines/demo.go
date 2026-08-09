@@ -30,7 +30,7 @@ func Demo(show bool) {
 		}
 
 		wg.Wait() // waits until the counter returns to zero
-	}
 
-	fmt.Println("--- Goroutines Demo function is exiting without waiting! ---")
+		fmt.Println("--- Goroutines Demo wait for all goroutines to finish! ---")
+	}
 }
