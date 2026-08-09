@@ -11,6 +11,7 @@ func init() {
 		"orchannelpattern":         OrChannelPattern,
 		"errorhandling":            ErrorHandling,
 		"pipelines":                Pipelines,
+		"selectcon":                SelectCon,
 		"handygeneratorspipelines": HandyGeneratorsPipelines,
 	}))
 }
