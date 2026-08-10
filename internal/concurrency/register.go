@@ -15,6 +15,7 @@ func init() {
 		"sendreceive":              SendReceive,
 		"BufferedUnbuffered":       BufferedUnbuffered,
 		"SelectTimeOut":            SelectTimeOut,
+		"WorkerPools":              WorkerPools,
 		"handygeneratorspipelines": HandyGeneratorsPipelines,
 	}))
 }
