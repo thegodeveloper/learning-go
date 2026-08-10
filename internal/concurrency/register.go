@@ -14,6 +14,7 @@ func init() {
 		"selectcon":                SelectCon,
 		"sendreceive":              SendReceive,
 		"BufferedUnbuffered":       BufferedUnbuffered,
+		"SelectTimeOut":            SelectTimeOut,
 		"handygeneratorspipelines": HandyGeneratorsPipelines,
 	}))
 }
