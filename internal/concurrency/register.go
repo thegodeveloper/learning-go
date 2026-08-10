@@ -13,6 +13,7 @@ func init() {
 		"pipelines":                Pipelines,
 		"selectcon":                SelectCon,
 		"sendreceive":              SendReceive,
+		"BufferedUnbuffered":       BufferedUnbuffered,
 		"handygeneratorspipelines": HandyGeneratorsPipelines,
 	}))
 }
