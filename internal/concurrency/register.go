@@ -16,6 +16,7 @@ func init() {
 		"BufferedUnbuffered":       BufferedUnbuffered,
 		"SelectTimeOut":            SelectTimeOut,
 		"WorkerPools":              WorkerPools,
+		"SignalChannels":           SignalChannels,
 		"handygeneratorspipelines": HandyGeneratorsPipelines,
 	}))
 }
