@@ -17,6 +17,7 @@ func init() {
 		"SelectTimeOut":            SelectTimeOut,
 		"WorkerPools":              WorkerPools,
 		"SignalChannels":           SignalChannels,
+		"MonitorGoroutines":        MonitorGoroutines,
 		"handygeneratorspipelines": HandyGeneratorsPipelines,
 	}))
 }
