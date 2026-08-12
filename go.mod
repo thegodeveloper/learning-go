@@ -11,7 +11,6 @@ require (
 	github.com/learning-go-book/formatter v0.0.0-20200921021027-5abc380940ae
 	github.com/rivo/tview v0.0.0-20240921122403-a64fc48d7654
 	github.com/shopspring/decimal v1.3.1
-	github.com/thegodeveloper/logging v0.0.0-20250121204023-d85d3e437fb6
 )
 
 require (
