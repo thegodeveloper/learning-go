@@ -2,6 +2,7 @@ package packages
 
 import (
 	"fmt"
+
 	"github.com/thegodeveloper/learning-go/internal/functions"
 )
 
