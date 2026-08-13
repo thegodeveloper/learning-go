@@ -24,7 +24,7 @@ func Matrix(show bool) {
 
 		// Just for testing purposes
 		n := 2
-		m := 3
+		m := 3 // common to both matrices
 		k := 2
 
 		// Generate matrices
