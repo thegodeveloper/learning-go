@@ -18,6 +18,7 @@ func init() {
 		"WorkerPools":              WorkerPools,
 		"SignalChannels":           SignalChannels,
 		"MonitorGoroutines":        MonitorGoroutines,
+		"Matrix":                   Matrix,
 		"handygeneratorspipelines": HandyGeneratorsPipelines,
 	}))
 }
